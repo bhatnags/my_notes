@@ -1,0 +1,13 @@
+\beamer@sectionintoc {1}{DBMS}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{MySql, Oracle, Cassandra, HBase, MongoDB}{2}{0}{1}
+\beamer@sectionintoc {2}{Hadoop}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hadoop Ecosystem}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{External Data Storages}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Query Engines}{6}{0}{2}
+\beamer@sectionintoc {3}{Which Data Storage?}{9}{0}{3}
+\beamer@sectionintoc {4}{SQL}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{MySql, Vertica}{11}{0}{4}
+\beamer@sectionintoc {5}{NoSQL}{13}{0}{5}
+\beamer@subsectionintoc {5}{1}{Cassandra with solr}{13}{0}{5}
+\beamer@subsectionintoc {5}{2}{No one single point of failure}{13}{0}{5}
+\beamer@sectionintoc {6}{Microservices}{17}{0}{6}

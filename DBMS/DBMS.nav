@@ -1,0 +1,73 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{DBMS}{2}{DBMS}{0}}
+\headcommand {\beamer@subsectionpages {2}{1}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{MySql, Oracle, Cassandra, HBase, MongoDB}}
+\headcommand {\slideentry {1}{1}{1}{2/2}{MySql, Oracle, Cassandra, HBase, MongoDB}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {1}{1}{2}{3/3}{MySql, Oracle, Cassandra, HBase, MongoDB}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{1}{3}{4/4}{MySql, Oracle, Cassandra, HBase, MongoDB}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{4}{5/5}{MySql, Oracle, Cassandra, HBase, MongoDB}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@sectionpages {2}{5}}
+\headcommand {\beamer@subsectionpages {2}{5}}
+\headcommand {\sectionentry {2}{Hadoop}{6}{Hadoop}{0}}
+\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Hadoop Ecosystem}}
+\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{6}{External Data Storages}}
+\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{6}{Query Engines}}
+\headcommand {\slideentry {2}{3}{1}{6/6}{Query Engines}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{3}{2}{7/7}{Query Engines}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{3}{3}{8/8}{Query Engines}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {6}{8}}
+\headcommand {\beamer@subsectionpages {6}{8}}
+\headcommand {\sectionentry {3}{Which Data Storage?}{9}{Which Data Storage?}{0}}
+\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {3}{0}{2}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@sectionpages {9}{10}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\sectionentry {4}{SQL}{11}{SQL}{0}}
+\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{11}{MySql, Vertica}}
+\headcommand {\slideentry {4}{1}{1}{11/11}{MySql, Vertica}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {4}{1}{2}{12/12}{MySql, Vertica}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {11}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\sectionentry {5}{NoSQL}{13}{NoSQL}{0}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{13}{Cassandra with solr}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{13}{No one single point of failure}}
+\headcommand {\slideentry {5}{2}{1}{13/13}{No one single point of failure}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {5}{2}{2}{14/14}{No one single point of failure}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {5}{2}{3}{15/15}{No one single point of failure}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {5}{2}{4}{16/16}{No one single point of failure}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@sectionpages {13}{16}}
+\headcommand {\beamer@subsectionpages {13}{16}}
+\headcommand {\sectionentry {6}{Microservices}{17}{Microservices}{0}}
+\headcommand {\slideentry {6}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {6}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@partpages {1}{18}}
+\headcommand {\beamer@subsectionpages {17}{18}}
+\headcommand {\beamer@sectionpages {17}{18}}
+\headcommand {\beamer@documentpages {18}}
+\headcommand {\gdef \inserttotalframenumber {18}}
