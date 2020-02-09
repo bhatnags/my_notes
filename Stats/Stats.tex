@@ -208,6 +208,10 @@ Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
 	
 \end{frame}
 
+
+\begin{frame}\frametitle{Central Limit Theorem(CLT)}
+	Law of large num \\ law of averages\\
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Types of Distributions} 
@@ -416,6 +420,14 @@ The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
 
 \end{frame}
 
+
+\begin{frame}\frametitle{chi-square dist}
+	$\chi = \sum\frac{(obs-exp)^2}{exp}$\\
+	DF = (row-1)(col-1)\\
+	all expected frequencies are $>$ 5\\
+	$\chi$ is derived from Normal dist, so sample size should be large enough s.t. CLT applies
+\end{frame}
+
 \begin{frame}\frametitle{relation btw various dist}
 	Relation between Bernoulli and Binomial Distribution
 	1. Bernoulli Distribution is a special case of Binomial Distribution with a single trial.
@@ -479,6 +491,16 @@ The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
 \section{Experimental Design}
 
 \subsection{Hypothesis testing}
+
+\begin{frame}\frametitle{p\_value}
+p-value is the probab of getting a sample as extreme as ours, given $H_0$ is true\\
+when population std dev is known then we use z-statistics, if unknown then we use t-statistics\\
+t-statistics assumes that underlying distribution is normal\\
+t-distribution is bell curved, defined by it's DF (degrees of freedom)\\
+
+\end{frame}
+
+
 \begin{frame}[plain]
 \begin{columns}
 	\begin{column}{0.72\textwidth}
@@ -488,38 +510,38 @@ The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
 	\end{column}
 	\begin{column}{0.3\textwidth}
 		\begin{enumerate}
-			\item $H_0: \mu=100$ and $H_1: \mu \ne 100$
-			\item Rejection region is too far away from 100
+			\item $H_0: \mu=100$; $H_1: \mu \ne 100$
 			\item if $H_0$ is true, how extreme is our sample?
 			\item Measure of extremeness, z=$\frac{\bar{x}-\mu}{\sigma/\sqrt{n}}$
-			\item Higher the z value, more likely to reject $H_0$
+			\item $\uparrow$ z value, more likely to reject $H_0$
+			\item either reject $H_0$ or do not reject $H_0$ because there's less evidence to reject it (given $\alpha$ level of significance)
 		\end{enumerate}
 	\end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Confusion matrix}
-
-\end{frame}
 
 {%<--- Start local changes
 	\setbeamertemplate{navigation symbols}{}
 	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{confusionmatrix}}
 	\begin{frame}[plain]
 	\vspace{2.5in}
-	\textbf{Type I and Type II Errors}
-	Type I error: Reject $H_0$ when $H_0$ is true \\
-	Prob of Type I Error = level of significance = $\alpha$ which is generally 5\%
-	Type II error: Not reject $H_0$ when $H_0$ is false \\
-	Prob (Type I Error) = level of significance = $\beta = 1-$ \\
+	\textbf{Type I Error}: Reject $H_0$ when $H_0$ is true \\
+	Prob of Type I Error = level of significance = $\alpha$  5\% (generally)\\
+	\textbf{Type II error}: Not reject $H_0$ when $H_0$ is false \\
+	Prob of Type II Error = $\beta$ and power of hypothesis test = 1-$\beta$ \\
+	1-$\beta$ = prob of rejecting a $H_0$ when $H_0$ is false\\
+	%actual pos $=> H_1 is true$ test outcome is neg $=>$
+	
 	\end{frame}
 }%<---- Finish local changes
 
 
 
+
 \begin{frame}%[plain]
 \begin{figure}\frametitle{test statistics}
-\includegraphics[scale=0.3]{TypesTests} 
+\includegraphics[scale=0.28]{TypesTests} 
 \caption{t-test, anova, chi-square, correlation test}
 \end{figure}
 \end{frame}
