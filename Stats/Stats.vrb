@@ -1,0 +1,18 @@
+\frametitle{Solr provides full text search, term-search}
+\begin{example}[CQL + Solr Code Example]
+	\begin{verbatim}	
+	SELECT name, class, date
+	FROM student WHERE
+	solr_query='{"q":"name:[* TO *] AND subject:math*",
+	             "fq":"date:[2007-01-01T00:00:00Z TO NOW]",
+	             "facet":{"field":"class"},
+	             "sort":"class, marks desc",
+	             "paging":"driver",
+	             "timeAllowed":30000 }'
+	ALLOW FILTERING;
+	\end{verbatim}
+
+\end{example}
+
+Clustering columns can be defined in WHERE clauses if ALLOW FILTERING is also used even if a secondary index is not created
+

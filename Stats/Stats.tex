@@ -1,0 +1,736 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}{\insertcaption}
+\usetheme{Dresden}
+\usepackage{amsmath}
+
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+	\title{Stats for Data Science}  
+	\author{Saumya Bhatnagar}
+	\date{\today} 
+	
+	
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Table of contents}\tableofcontents
+\end{frame} 
+
+
+\section{Glossary}
+\subsection{Initial Terminologies} 
+\begin{frame}
+\begin{figure}
+	\includegraphics[scale=0.4]{Data} 
+	%\caption{t-test, anova, chi-square, correlation test}
+\end{figure}
+\end{frame}
+
+\begin{frame}\textbf{Types of Analysis}
+\begin{itemize}
+\item Qualitative Analysis/Non-Statistical Analysis gives generic information (uses text, sound and other forms of media).
+\item Quantitative Analysis/Statistical Analysis: collecting and interpreting data.
+
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.3]{QuantitativeQualitative} 
+%\caption{t-test, anova, chi-square, correlation test}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Types of Statistics}
+\begin{itemize}
+\item Descriptive Statistics: provides descriptions of the population.
+\item Inferential Statistics makes inferences and predictions from sample to generalize a population. 
+\end{itemize}
+
+\begin{figure}
+\includegraphics[scale=0.29]{DescriptiveInferential} 
+%\caption{t-test, anova, chi-square, correlation test}
+\end{figure}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{figure}%[plain]
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{inferentialstats}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\textbf{Contingency Table and Probabilities}
+\begin{figure}
+\includegraphics[scale=0.5]{JointMarginalConditional} 
+%\caption{t-test, anova, chi-square, correlation test}
+\end{figure}
+\end{frame}
+
+
+\subsection{Mean, Median, Mode, Variance, Standard Deviation, Covariance, Correlation}
+
+
+
+\begin{frame}%\frametitle{Variance, Standard Deviation} 
+	\begin{itemize}
+		\item Variable and Random Variable (RV)
+		\item Parameter and Hyper-parameter
+		\item \hyperlink{meanlabel}{\beamerbutton{Mean}}, Median, Mode
+		\item mode sucks for small samples
+		\item Range, IQR
+		\item Standard Deviation ($\sigma$): Measure of the how spread out data is from its mean.
+		\item Variance ($\sigma^2$): It describes how much a random variable differs from its expected value. It entails computing squares of deviations.The average of the squared differences from the Mean.\\
+		\begin{enumerate}
+			\item Deviation is the difference bw each element from the mean.\\
+			\item Population Variance = avg of squared deviations\\
+			\item Sample Variance = avg of squared differences from the mean
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\hypertarget{meanlabel}{EXPECTED VALUE}\newline
+\textbf{Discrete random variable}	$E(X) = \sum_x x \, p_x(x)$
+	\begin{itemize}
+		\item Provided $\sum_x |x| \, p_x(x) < \infty$. If the sum diverges, the expected value does not exist. 
+		\textbf{For the jar full of numbered balls}
+		\item A ball is selected at random; all balls are equally likely to be chosen $P(X = x_i) = \frac{1}{N}$.
+		\item Say $n_1$ balls have value $v_1$, and $n_2$ balls have value $v_2$, and \ldots  $n_n$ balls have value $v_n$. Unique values are $v_i$, for $i=1, \ldots, n$. Note $n_1 + \cdots + n_n = N$, and $P(X=v_j) = \frac{n_j}{N}$. 
+		$E(X) = \frac{\sum_{i=1}^N x_i}{N}$
+	
+	\end{itemize}
+
+\textbf{Continuous random variable}  $E(X) = \int_{-\infty}^\infty x \, f_x(x) \, dx$
+	
+	\begin{itemize}
+	  \item Provided $ \int_{-\infty}^\infty |x| \, f_x(x) \, dx < \infty$. If the integral diverges, the expected value does not exist. 
+	
+	\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Sometimes the expected value does not exist}
+\framesubtitle{Need $ \int_{-\infty}^\infty |x| \, f_x(x) \, dx < \infty$}  
+For the Cauchy distribution, $f(x) = \frac{1}{\pi(1+x^2)}$.  
+\begin{eqnarray*}
+	E(|X|) & = & \int_{-\infty}^\infty |x| \, \frac{1}{\pi(1+x^2)} \, dx \\ 
+	& = & 2 \int_0^\infty \frac{x}{\pi(1+x^2)} \, dx \\ 
+	&& u = 1+x^2, ~du = 2x \, dx \\  
+	& = & \frac{1}{\pi} \int_1^\infty \frac{1}{u} \, du \\ 
+	& = & \ln u |_1^\infty \\ 
+	& = & \infty - 0 = \infty 
+\end{eqnarray*} 
+$=>$ an integral ``equals" infinity, it is unbounded above.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+For a RV $X$ with PDF $\rho(x)$. The variance($\mathbb{V}$) and the standard deviation($\sigma_X$) of $X$, are defined by
+
+Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
+
+\begin{align*} \mathbb{V} &= \mathbb{E}\left[ \left( X-\mathbb{E}[X] \right)^2 \right]
+=\mathbb{E}[X^2] - \mathbb{E}[X]^2
+= \int_D (x-\mathbb{E})^2 \, dP. \end{align*}
+
+\begin{align*} \mathbb{V} &= \int_D x^2 \, dP - \mathbb{E}^2. \end{align*} 
+
+\begin{align*}\sigma_X&=\sqrt{V[X]}
+&=\sqrt{E[X^2]-E[X]^2}
+\end{align*}
+
+\begin{align*} \mathbb{V} &=\sqrt{\int_D x^2\rho(x)\,dx - \left(\int_D x\rho(x) \,dx\right)^2}. \end{align*}
+
+
+\end{frame}
+
+
+\begin{frame}
+	If one interprets the PDF ($\rho(x)$) as the density of a rod at location ($x$), then:\\
+	
+	The mean, ($\mu = \int x\rho(x)\,dx$), gives the center of mass of the rod.\\
+	The variance, ($V = \int (x-\mu)^2\rho(x)\,dx$), gives the moment of inertia about the line ($x = \mu$).\\
+	The standard deviation, ($\sigma = \sqrt{V}$), gives the radius of gyration about the line ($x = \mu$).
+	
+\end{frame}
+
+\begin{frame}\frametitle{Std error vs std deviation}
+	std error = 
+\end{frame}
+
+
+\begin{frame}\frametitle{coeff of variation}
+	$CV = \frac{sd}{\bar{x}}, where  \bar{x}=sample mean$ \\
+	$x = [1,2,3] => \bar{x}=2$ and $S_x=1 => CV(x)=1/2 $\\
+	$y = [101,102,103] => \bar{y}=102$ and $S_y=1 => CV(y)=1/102 $\\
+	Higher the CV means higher fluctuations in the dataset\\
+
+\end{frame}
+
+
+\begin{frame}\frametitle{skewness and kurtosis}
+	\textbf{skewness}\\
+	mode skewness = $\frac{mean-mode}{std dev}$\\
+	in skewed data: mode = 3(median) - 2(mean) \\
+	for small dataset, use below:\\
+	median skewness = $\frac{3(mean-median)}{std dev}$\\
+	\begin{align}
+		skewness = \left\{ \begin{array}{cc} 
+		approx\_symmetric, & \hspace{5mm} -0.5 <= x <=0.5 \\
+		moderately\_skewed, & \hspace{5mm} 0.5< |x| <1 \\
+		highly\_skewed, & \hspace{5mm} |x|>1 \\
+				\end{array} \right.
+	\end{align}
+	\textbf{kurtosis}: same mean or sd but diff peakedness\\
+	higher peaked $=>$ higher kurtosis \\	
+
+\end{frame}
+
+\begin{frame}\frametitle{Moments}
+	\textbf{I moment}: $\frac{\sum x}{n} =>$ \textbf{mean} $=>$ considered as values from 0\\
+	second moment: $\frac{\sum x^2}{n} => $values further from 0 will be higher, \\so instead we take centralized \\
+	second (centralized) moment: $\frac{\sum (x-\mu)^2}{n} =>$ variance\\
+	third (centralized) moment: $\frac{1}{n} \frac{\sum (x-\mu)^3}{\sigma ^3} ->$ skew\\
+	but since we don't have population mean, we have sample mean, we adjust the above value with degrees of freedom\\
+	\textbf{II (centralized) moment}: $\frac{\sum (x-\bar{x})^2}{n-1} =>$ \textbf{variance}\\
+	\textbf{III (centralized) moment}: $\frac{n}{(n-1)(n-2)} \frac{\sum (x-\bar{x})^3}{s^3} =>$ \textbf{skew}\\
+	\textbf{IV moment}: $\frac{n(n+1)}{(n-1)(n-2)(n-3)} \frac{\sum (x-\bar{x})^4}{s^4}-\frac{3(n-1)^2}{(n-2)(n-3)} =>$ \textbf{kurtosis}\\
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Types of Distributions} 
+\begin{frame}%\frametitle{Uniform, Normal, Binomial, Poisson,}
+	\textbf{Few examples of distributions are,}
+	\begin{itemize}
+		\item Discrete
+			\begin{enumerate}
+			\item Uniform Discrete distribution or Rectangular Dist
+			\item Geometric disctribution
+			\item Binominal distribution
+			\item Poission distribution
+		\end{enumerate}
+		\item Continuous
+			\begin{enumerate}
+			\item Uniform distribution
+			\item Normal distribution/Gaussian distribution/Bell Curve
+			\item Student’s T distribution... to check
+			\item Gamma distribution
+			\item Exponential distribution
+			\item Bernoulli distribution ... to check
+			\item Beta
+			\item Triangular
+		\end{enumerate}
+		
+	\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}%\frametitle{pictures and lists in beamer class}
+\begin{columns}
+	\begin{column}{5cm}
+		\begin{itemize}
+			\item<1> A PMF, “f” returns the probability of an outcome: $f(x)=P(X=x)$ 
+			 \includegraphics[scale=0.35]{CdfPdfPmf} 
+			 \newline
+			\item<2> Reliability function \& Hazard Function
+		\end{itemize}
+		\vspace{3cm} 
+	\end{column}
+	\begin{column}{5cm}
+		\begin{overprint}		
+			\includegraphics<1>[scale=0.3]{PmfCdfContinuous}
+			\includegraphics<1>[scale=0.25]{pdfcdfDiscrete}
+			\includegraphics<2>[scale=0.32]{cdfpdfrfhf}
+		\end{overprint}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\begin{figure}
+		\includegraphics[scale=.7]{Distributions}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{distributionChoice}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[plain]
+	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{DiscreteDistribution}}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{ContinuousDistribution}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{UnivariateProbabDist}}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{distributions}
+\begin{frame}\frametitle{standard uniform density}
+	parameters a = 0 and b = 1, so the PDF for standard uniform density is given by:
+	
+	\begin{align}
+		f(x) = \left\{ \begin{array}{cc} 
+		1, & \hspace{5mm} 0 <= x <=1 \\
+		0, & \hspace{5mm} otherwise \\
+		%T( \lfloor \frac{n}{2} \rfloor) + T(\lceil \frac{n}{2} \rceil)+ 2 & \hspace{5mm} n > 2 \\	
+		\end{array} \right.
+	\end{align}
+	
+\end{frame}
+
+
+\begin{frame}\frametitle{Normal Distribution}
+\textbf{Standard Normal Distribution} $\mu$ = 0 ; $\sigma$ = 1 \\
+\textbf{The 68-95-99.7 rule}: Given a normally distributed random variable:
+$P(\mu-\sigma \leq X \leq \mu+\sigma) \approx .68 =>$68\% of samples fall within 1 SD of the mean \\
+$P(\mu-2\sigma \leq X \leq \mu+2\sigma) \approx .95$ \\
+$P(\mu-3\sigma \leq X \leq \mu+3\sigma) \approx .997$ \\
+
+characteristics of Normal distribution:
+	\begin{enumerate}
+		\item Mean = median = mode
+		\item The distribution curve is bell-shaped and symmetrical about the line x=$\mu$.
+		\item The total AUC = 1.
+		\item Exactly half of the values are to the left of the center and the other half to the right.
+	\end{enumerate}
+	
+\end{frame}
+
+\begin{frame}\frametitle{Beta distribution}
+	Connections to other distributions
+\end{frame}
+
+\begin{frame}
+	\textbf{Prior and Posterior}
+	\begin{enumerate}
+		\item
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Binomial, neg-binomial, geometric, hyper-geometric}
+	Conjugate prior for binomial
+	$ x|p ~ Bin(n,p); p~Beta(a,b) [prior]$
+	$ f(p|X=k) = use bayes$
+	$ rel=place with beta abd bin $
+	$ p|X ~ Beta(a+X, b+n-x) $
+
+	the properties of a Binomial Distribution are
+	\begin{enumerate}
+		\item Each trial is independent.
+		\item There are only two possible outcomes in a trial- either a success or a failure.
+		\item A total number of n identical trials are conducted.
+		\item The probability of success and failure is same for all trials. (Trials are identical.)
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}\frametitle{Poisson}
+	Characteristics of Poisson distribution:
+	\begin{enumerate}
+		\item Any successful event should not influence the outcome of another successful event.
+		\item The probability of success over a short interval must equal the probability of success over a longer interval.
+		\item The probability of success in an interval approaches zero as the interval becomes smaller.
+	\end{enumerate}	
+
+	$\lambda$ is the rate at which an event occurs,
+	$t$ is the length of a time interval,
+	And $X$ is the number of events in that time interval. X is called a Poisson RV\\
+
+Let $\mu$ denote the mean number of events in an interval of length t. Then, $\mu$ = $\lambda$*t.
+
+The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
+
+	
+\end{frame}
+
+\begin{frame}\frametitle{Exponential Dist}
+	rate parameter = $\lambda = 1/\beta $ \\
+	Memoryless property: $P(X>=s+t | X>=s) = P(X>=t) $ \\
+	$P(X>=s) = 1-CDF = 1-P(X<=s) = e^{-\lambda s}$ \\
+	$P(X>=s+t | X>=s) = \frac{P(X>=s+t, X>=s)}{P(X>=s)}$ \\
+	$P(X>=s+t | X>=s) = \frac{P(X>=s+t)}{P(X>=s)}$ \\
+	$P(X>=s+t | X>=s) = \frac{e^{-\lambda (s+t)}}{ e^{-\lambda s}}$ \\
+	$P(X>=s+t | X>=s) = e^{-\lambda t}$ \\
+	Memoryless property: \\
+	$E(X|X>a) = a+E(X-a|X>a)$ \\
+	$E(X|X>a) = a+ 1/\lambda$ \\
+
+\end{frame}
+
+
+\begin{frame}%\frametitle{Poisson}
+	\begin{columns}
+		\begin{column}{0.45\textwidth}
+			failure rate of any device at time t, given that it has survived up to t; $\lambda = \frac{1}{\beta} > 0 $
+			\\ 
+			\textbf{area under the density curve}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[scale=0.5]{exponential}
+			\end{figure}
+		\end{column}
+	\end{columns}
+			to the left of x
+			 $P\{X \leq x\} = 1 – e^{-\lambda x}$
+			\\ to the right of x $P\{X > x\} = e^{-\lambda x}$
+			\\
+			$P\{x1 < X \leq x2\} = e^{-\lambda x1} - e^{-\lambda x2}$
+
+\end{frame}
+
+\begin{frame}\frametitle{relation btw various dist}
+	Relation between Bernoulli and Binomial Distribution
+	1. Bernoulli Distribution is a special case of Binomial Distribution with a single trial.
+	
+	2. There are only two possible outcomes of a Bernoulli and Binomial distribution, namely success and failure.
+	
+	3. Both Bernoulli and Binomial Distributions have independent trails.
+	
+	
+	
+	Relation between Poisson and Binomial Distribution
+	Poisson Distribution is a limiting case of binomial distribution under the following conditions:
+	
+	The number of trials is indefinitely large or $\displaystyle{\lim_{x \to \infty}}$.
+	The probability of success for each trial is same and indefinitely small or $\displaystyle{\lim_{x \to 0}}$.
+	np = $\lambda$, is finite.
+	
+	
+	Relation between Normal and Binomial Distribution \& Normal and Poisson Distribution:
+	Normal distribution is another limiting form of binomial distribution under the following conditions:
+	
+	The number of trials is indefinitely large, $\displaystyle{\lim_{n \to \infty}}$.
+	Both p and q are not indefinitely small.
+	The normal distribution is also a limiting case of Poisson distribution with the parameter $\displaystyle{\lim_{\lambda \to \infty}}$.
+	
+	
+	
+	Relation between Exponential and Poisson Distribution:
+	If the times between random events follow exponential distribution with rate $\lambda$, then the total number of events in a time period of length t follows the Poisson distribution with parameter $\lambda$ t.
+	
+\end{frame}
+
+\begin{frame}%\frametitle{Poisson va exponential}
+\begin{columns}
+	\begin{column}{0.45\textwidth}
+		\textbf{Poisson}
+		how many calls do you get in a day
+		\\ The number of emergency calls recorded at a hospital in a day.
+		\\ The number of thefts reported in an area on a day.
+		\\ The number of customers arriving at a salon in an hour.
+		\\ The number of suicides reported in a particular city.
+		\\ The number of printing errors at each page of the book
+	\end{column}
+	\begin{column}{0.45\textwidth}
+		\textbf{exponential}
+		What about the interval of time between the calls
+		\\ Length of time between metro arrivals,
+		\\ Length of time between arrivals at a gas station
+		\\ The life of an Air Conditioner
+		\\Exponential distribution is widely used for survival analysis. 
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Experimental Design}
+
+\subsection{Hypothesis testing}
+\begin{frame}[plain]
+\begin{columns}
+	\begin{column}{0.72\textwidth}
+		\begin{figure}
+			\includegraphics[scale=0.54]{statisticaltest}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.3\textwidth}
+		\begin{enumerate}
+			\item $H_0: \mu=100$ and $H_1: \mu \ne 100$
+			\item Rejection region is too far away from 100
+			\item if $H_0$ is true, how extreme is our sample?
+			\item Measure of extremeness, z=$\frac{\bar{x}-\mu}{\sigma/\sqrt{n}}$
+			\item Higher the z value, more likely to reject $H_0$
+		\end{enumerate}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Confusion matrix}
+
+\end{frame}
+
+{%<--- Start local changes
+	\setbeamertemplate{navigation symbols}{}
+	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{confusionmatrix}}
+	\begin{frame}[plain]
+	\vspace{2.5in}
+	\textbf{Type I and Type II Errors}
+	Type I error: Reject $H_0$ when $H_0$ is true \\
+	Prob of Type I Error = level of significance = $\alpha$ which is generally 5\%
+	Type II error: Not reject $H_0$ when $H_0$ is false \\
+	Prob (Type I Error) = level of significance = $\beta = 1-$ \\
+	\end{frame}
+}%<---- Finish local changes
+
+
+
+\begin{frame}%[plain]
+\begin{figure}\frametitle{test statistics}
+\includegraphics[scale=0.3]{TypesTests} 
+\caption{t-test, anova, chi-square, correlation test}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{teststats}}
+\end{frame}
+
+\begin{frame}\frametitle{When can AB test fail}
+	\begin{enumerate}
+		\item in the case of a \textbf{referral program}, The referrer and Referee could be split across test and control groups causing spillover on the control or variant group
+		\item Novelty effects: Prompts and CTA tend to exhibit novelty effects, if not measuring their performance over the long term using a holdout a wrong attribution and/or customer fatigue can happen.
+		\item What-if scenarios: If you are looking to understand the impact of \textbf{not having launched a product}, for instance a subscription offering on a website. A/B test wouldn’t be the right fit.
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+	Class Imbalance
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EDA}
+\begin{frame}
+	Univariate and Multivariate Analysis
+\end{frame}
+
+
+\section{Regression, Classification, Clustering}
+\begin{frame}\frametitle{Regression, Classification, Clustering}
+\begin{columns}
+	\begin{column}{0.3\textwidth}
+		\textbf{Regression}
+		\begin{enumerate}
+			\item Linear
+			\item KNN
+			\item SVM
+			\item Random Forest
+		\end{enumerate}
+	\end{column}
+	\begin{column}{0.3\textwidth}
+		\textbf{Classification}
+		\begin{enumerate}
+			\item Logistic
+			\item KNN
+			\item SVM Classifier
+			\item Random Forest
+		\end{enumerate}
+	\end{column}
+	\begin{column}{0.3\textwidth}
+		\textbf{Clustering}
+		\begin{enumerate}
+			\item K-Means
+			\item Hierarchical
+			\item DBSCAN
+			\item HDBSCAN
+		\end{enumerate}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\subsection{Regression}
+\begin{frame}
+	Regression analysis is a statistical technique to assess the relationship between an predictor variable and one or more response factors.
+\end{frame}
+
+
+
+\begin{frame}[plain]%\frametitle{}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cccc}
+	\textbf{Outcome} & \textbf{GLM Family} & \textbf{Link} & \textbf{Mean to} \\
+	\textbf{Variable} & & & \textbf{Variance} \\ 
+	\hline %\pause 
+	Continuous, & Normal or & \\ unbounded & Standard Gaussian & Identity &  \\  
+	\hline
+	Continuous, & Gamma or & \\ non-negative & inverse Gamma &  &  \\ \hline
+	
+	
+	Discrete/ & Poisson & Log & Identity \\
+	counts/ & Quassi-poisson or &  & If not \\
+	rate & negative binomial & & Identity \\
+	
+	
+	\hline
+	
+	Count & Gamma &  & Over dispersion \\ \hline
+	Counts with & Zero inflated poisson & \\ multiple zero & may be checked 
+	for fitting & & \\ \hline
+	Binary & Binomial or & \\  & Logistic regression & & \\ \hline
+	Nominal  & Multinomial regression & \\
+	\hline
+	\end{tabular} 
+\caption{Regression Model Selection Criteria}
+\end{table}
+\end{frame}
+
+
+
+\subsection{Classification}
+\begin{frame}
+	Three methods to classifier
+	\begin{enumerate}
+		\item model a classification rule - knn, decision tree, perceptron, svm
+		\item model the probability of class membership given input data - perceptron with cross-entropy cost
+		\item make a probabilistic model of data within each class - naive bayes
+		1 \& 2 are discriminative classifications
+		3 is generative classification
+		2 \& 3 probabilistic classification
+	\end{enumerate}
+\end{frame}
+
+\subsection{Clustering}
+\begin{frame}
+	content...
+\end{frame}
+
+
+\section{Bayesian Statistics}
+
+\subsection{blocs}
+\begin{frame}\frametitle{blocs}
+
+\begin{block}{title of the bloc}
+bloc text
+\end{block}
+
+\begin{exampleblock}{title of the bloc}
+bloc text
+\end{exampleblock}
+
+
+\begin{alertblock}{title of the bloc}
+bloc text
+\end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}
+	MACHINE LEARNING
+	
+	chi square
+	
+	big O notation
+	
+	
+	book - kevin murphy
+	
+	Precision Recall tradeoff
+	How to choose the method of predictive modelling.
+	algorithms
+	Bayesian Modelling (Topic Modelling), NLP, Bayesian Nonparametric Techniques, Social Network Analysis, Sentiment Analysis
+	- https://www.springboard.com/blog/machine-learning-interview-questions/
+	- https://www.quora.com/What-is-the-difference-between-supervised-and-unsupervised-learning-algorithms
+	
+	https://blog.udacity.com/2016/04/5-skills-you-need-to-become-a-machine-learning-engineer.html
+	https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c
+	
+	http://www.smdi.com/evolution-machine-learning
+	https://vinodsblog.com/2018/03/11/the-exciting-evolution-of-machine-learning/
+	
+	
+	https://software.intel.com/en-us/articles/an-introduction-to-neural-networks-with-an-application-to-games
+	
+	https://towardsdatascience.com/introduction-to-neural-networks-advantages-and-applications-96851bd1a207
+	
+	What are type 1 error and type 2 error? what is p-value 
+	
+	ML
+	https://www.youtube.com/watch?v=qv6UVOQ0F44
+	
+	https://www.quora.com/What-is-the-relation-between-standard-normal-and-gamma-distribution
+	
+	
+	https://stats.stackexchange.com/questions/37461/the-relationship-between-the-gamma-distribution-and-the-normal-distribution
+	
+	http://www.statisticshowto.com/probability-and-statistics/regression-analysis/
+	(go to definitions)
+	
+	https://www.thoughtco.com/what-is-kurtosis-3126241
+	
+	http://www.statisticshowto.com/what-is-statistical-significance/
+	
+	https://en.wikipedia.org/wiki/F-test
+	
+	numpy matplotlib
+	
+	http://slideplayer.com/slide/6260251/
+	
+	http://www.sfu.ca/~ber1/iat802/pdfs/When%20to%20use%20what%20test.pdf
+	
+	https://www.youtube.com/watch?v=RlhnNbPZC0A
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+
+\end{frame}
+
+\begin{frame}
+	Thank You!
+\end{frame}
+
+\end{document}
