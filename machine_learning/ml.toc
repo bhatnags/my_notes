@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{Regression, Classification, Clustering}{3}{0}{1}
+\beamer@sectionintoc {2}{Regression}{4}{0}{2}
+\beamer@sectionintoc {3}{Classification}{6}{0}{3}
+\beamer@sectionintoc {4}{Clustering}{7}{0}{4}
+\beamer@subsectionintoc {4}{1}{Monothetic vs pulythetic}{7}{0}{4}
+\beamer@subsectionintoc {4}{2}{K means}{8}{0}{4}
+\beamer@subsectionintoc {4}{3}{hierarchical}{8}{0}{4}
+\beamer@subsectionintoc {4}{4}{dbscan}{8}{0}{4}
+\beamer@subsectionintoc {4}{5}{Analysis}{8}{0}{4}

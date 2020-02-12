@@ -1,0 +1,143 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}{\insertcaption}
+\usetheme{Dresden}
+\usepackage{amsmath}
+\usecolortheme{crane}
+
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+	\title{Stats for Data Science}  
+	\author{Saumya Bhatnagar}
+	\date{\today} 
+	
+	
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Table of contents}\tableofcontents
+\end{frame} 
+
+
+
+
+
+\section{Regression, Classification, Clustering}
+\begin{frame}\frametitle{Regression, Classification, Clustering}
+\begin{columns}
+	\begin{column}{0.3\textwidth}
+		\textbf{Regression}
+		\begin{enumerate}
+			\item Linear
+			\item KNN
+			\item SVM
+			\item Random Forest
+		\end{enumerate}
+	\end{column}
+	\begin{column}{0.3\textwidth}
+		\textbf{Classification}
+		\begin{enumerate}
+			\item Logistic
+			\item KNN
+			\item SVM Classifier
+			\item Random Forest
+		\end{enumerate}
+	\end{column}
+	\begin{column}{0.3\textwidth}
+		\textbf{Clustering}
+		\begin{enumerate}
+			\item K-Means
+			\item Hierarchical
+			\item DBSCAN
+			\item HDBSCAN
+		\end{enumerate}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\section{Regression}
+\begin{frame}
+	Regression analysis is a statistical technique to assess the relationship between an predictor variable and one or more response factors.
+\end{frame}
+
+
+
+\begin{frame}[plain]%\frametitle{}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cccc}
+	\textbf{Outcome} & \textbf{GLM Family} & \textbf{Link} & \textbf{Mean to} \\
+	\textbf{Variable} & & & \textbf{Variance} \\ 
+	\hline %\pause 
+	Continuous, & Normal or & \\ unbounded & Standard Gaussian & Identity &  \\  
+	\hline
+	Continuous, & Gamma or & \\ non-negative & inverse Gamma &  &  \\ \hline
+	
+	
+	Discrete/ & Poisson & Log & Identity \\
+	counts/ & Quassi-poisson or &  & If not \\
+	rate & negative binomial & & Identity \\
+	
+	
+	\hline
+	
+	Count & Gamma &  & Over dispersion \\ \hline
+	Counts with & Zero inflated poisson & \\ multiple zero & may be checked 
+	for fitting & & \\ \hline
+	Binary & Binomial or & \\  & Logistic regression & & \\ \hline
+	Nominal  & Multinomial regression & \\
+	\hline
+	\end{tabular} 
+\caption{Regression Model Selection Criteria}
+\end{table}
+\end{frame}
+
+
+
+\section{Classification}
+\begin{frame}
+	Three methods to classifier
+	\begin{enumerate}
+		\item model a classification rule - knn, decision tree, perceptron, svm
+		\item model the probability of class membership given input data - perceptron with cross-entropy cost
+		\item make a probabilistic model of data within each class - naive bayes
+		1 \& 2 are discriminative classifications
+		3 is generative classification
+		2 \& 3 probabilistic classification
+	\end{enumerate}
+\end{frame}
+
+\section{Clustering}
+\subsection{Monothetic vs pulythetic}
+\begin{frame}
+	“Help me understand our customers better so that we can market our products to them in a better manner!\\
+	Monothetic: Cluster members have some common property\\
+	Polythetic: Cluster members are similar to each other. Distance between elements define relationship\\
+\end{frame}
+
+\subsection{K means}
+
+\subsection{hierarchical}
+
+\subsection{dbscan}
+
+
+\subsection{Analysis}
+
+\begin{frame}\frametitle{Life Time Value (LTV)}
+	content...
+\end{frame}
+\begin{frame}\frametitle{Propensity of Cross-sell}
+content...
+\end{frame}
+
+\begin{frame}
+	Thank You!
+\end{frame}
+
+\end{document}

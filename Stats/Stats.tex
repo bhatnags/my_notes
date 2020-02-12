@@ -71,180 +71,16 @@
 \end{frame}
 
 
-\subsection{Mean, Median, Mode, Variance, Standard Deviation, Covariance, Correlation}
-
-
-
-\begin{frame}%\frametitle{Variance, Standard Deviation} 
-	\begin{itemize}
-		\item Variable and Random Variable (RV)
-		\item Parameter and Hyper-parameter
-		\item \hyperlink{meanlabel}{\beamerbutton{Mean}}, Median, Mode
-		\item mode sucks for small samples
-		\item Range, IQR
-		\item Standard Deviation ($\sigma$): Measure of the how spread out data is from its mean.
-		\item Variance ($\sigma^2$): It describes how much a random variable differs from its expected value. It entails computing squares of deviations.The average of the squared differences from the Mean.\\
-		\begin{enumerate}
-			\item Deviation is the difference bw each element from the mean.\\
-			\item Population Variance = avg of squared deviations\\
-			\item Sample Variance = avg of squared differences from the mean
-		\end{enumerate}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-\hypertarget{meanlabel}{EXPECTED VALUE}\newline
-\textbf{Discrete random variable}	$E(X) = \sum_x x \, p_x(x)$
-	\begin{itemize}
-		\item Provided $\sum_x |x| \, p_x(x) < \infty$. If the sum diverges, the expected value does not exist. 
-		\textbf{For the jar full of numbered balls}
-		\item A ball is selected at random; all balls are equally likely to be chosen $P(X = x_i) = \frac{1}{N}$.
-		\item Say $n_1$ balls have value $v_1$, and $n_2$ balls have value $v_2$, and \ldots  $n_n$ balls have value $v_n$. Unique values are $v_i$, for $i=1, \ldots, n$. Note $n_1 + \cdots + n_n = N$, and $P(X=v_j) = \frac{n_j}{N}$. 
-		$E(X) = \frac{\sum_{i=1}^N x_i}{N}$
-	
-	\end{itemize}
-
-\textbf{Continuous random variable}  $E(X) = \int_{-\infty}^\infty x \, f_x(x) \, dx$
-	
-	\begin{itemize}
-	  \item Provided $ \int_{-\infty}^\infty |x| \, f_x(x) \, dx < \infty$. If the integral diverges, the expected value does not exist. 
-	
-	\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}
-\frametitle{Sometimes the expected value does not exist}
-\framesubtitle{Need $ \int_{-\infty}^\infty |x| \, f_x(x) \, dx < \infty$}  
-For the Cauchy distribution, $f(x) = \frac{1}{\pi(1+x^2)}$.  
-\begin{eqnarray*}
-	E(|X|) & = & \int_{-\infty}^\infty |x| \, \frac{1}{\pi(1+x^2)} \, dx \\ 
-	& = & 2 \int_0^\infty \frac{x}{\pi(1+x^2)} \, dx \\ 
-	&& u = 1+x^2, ~du = 2x \, dx \\  
-	& = & \frac{1}{\pi} \int_1^\infty \frac{1}{u} \, du \\ 
-	& = & \ln u |_1^\infty \\ 
-	& = & \infty - 0 = \infty 
-\end{eqnarray*} 
-$=>$ an integral ``equals" infinity, it is unbounded above.
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-
-For a RV $X$ with PDF $\rho(x)$. The variance($\mathbb{V}$) and the standard deviation($\sigma_X$) of $X$, are defined by
-
-Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
-
-\begin{align*} \mathbb{V} &= \mathbb{E}\left[ \left( X-\mathbb{E}[X] \right)^2 \right]
-=\mathbb{E}[X^2] - \mathbb{E}[X]^2
-= \int_D (x-\mathbb{E})^2 \, dP. \end{align*}
-
-\begin{align*} \mathbb{V} &= \int_D x^2 \, dP - \mathbb{E}^2. \end{align*} 
-
-\begin{align*}\sigma_X&=\sqrt{V[X]}
-&=\sqrt{E[X^2]-E[X]^2}
-\end{align*}
-
-\begin{align*} \mathbb{V} &=\sqrt{\int_D x^2\rho(x)\,dx - \left(\int_D x\rho(x) \,dx\right)^2}. \end{align*}
-
-
-\end{frame}
-
-
-\begin{frame}
-	If one interprets the PDF ($\rho(x)$) as the density of a rod at location ($x$), then:\\
-	
-	The mean, ($\mu = \int x\rho(x)\,dx$), gives the center of mass of the rod.\\
-	The variance, ($V = \int (x-\mu)^2\rho(x)\,dx$), gives the moment of inertia about the line ($x = \mu$).\\
-	The standard deviation, ($\sigma = \sqrt{V}$), gives the radius of gyration about the line ($x = \mu$).
-	
-\end{frame}
-
-\begin{frame}\frametitle{Std error vs std deviation}
-	std error = 
-\end{frame}
-
-
-\begin{frame}\frametitle{coeff of variation}
-	$CV = \frac{sd}{\bar{x}}, where  \bar{x}=sample mean$ \\
-	$x = [1,2,3] => \bar{x}=2$ and $S_x=1 => CV(x)=1/2 $\\
-	$y = [101,102,103] => \bar{y}=102$ and $S_y=1 => CV(y)=1/102 $\\
-	Higher the CV means higher fluctuations in the dataset\\
-
-\end{frame}
-
-
-\begin{frame}\frametitle{skewness and kurtosis}
-	\textbf{skewness}\\
-	mode skewness = $\frac{mean-mode}{std dev}$\\
-	in skewed data: mode = 3(median) - 2(mean) \\
-	for small dataset, use below:\\
-	median skewness = $\frac{3(mean-median)}{std dev}$\\
-	\begin{align}
-		skewness = \left\{ \begin{array}{cc} 
-		approx\_symmetric, & \hspace{5mm} -0.5 <= x <=0.5 \\
-		moderately\_skewed, & \hspace{5mm} 0.5< |x| <1 \\
-		highly\_skewed, & \hspace{5mm} |x|>1 \\
-				\end{array} \right.
-	\end{align}
-	\textbf{kurtosis}: same mean or sd but diff peakedness\\
-	higher peaked $=>$ higher kurtosis \\	
-
-\end{frame}
-
-\begin{frame}\frametitle{Moments}
-	\textbf{I moment}: $\frac{\sum x}{n} =>$ \textbf{mean} $=>$ considered as values from 0\\
-	second moment: $\frac{\sum x^2}{n} => $values further from 0 will be higher, \\so instead we take centralized \\
-	second (centralized) moment: $\frac{\sum (x-\mu)^2}{n} =>$ variance\\
-	third (centralized) moment: $\frac{1}{n} \frac{\sum (x-\mu)^3}{\sigma ^3} ->$ skew\\
-	but since we don't have population mean, we have sample mean, we adjust the above value with degrees of freedom\\
-	\textbf{II (centralized) moment}: $\frac{\sum (x-\bar{x})^2}{n-1} =>$ \textbf{variance}\\
-	\textbf{III (centralized) moment}: $\frac{n}{(n-1)(n-2)} \frac{\sum (x-\bar{x})^3}{s^3} =>$ \textbf{skew}\\
-	\textbf{IV moment}: $\frac{n(n+1)}{(n-1)(n-2)(n-3)} \frac{\sum (x-\bar{x})^4}{s^4}-\frac{3(n-1)^2}{(n-2)(n-3)} =>$ \textbf{kurtosis}\\
-	
-\end{frame}
-
 
 \begin{frame}\frametitle{Central Limit Theorem(CLT)}
-	Law of large num \\ law of averages\\
+\textbf{CLT}: as n $\uparrow$, the distribution of sample mean or sum approaches a Normal Dist\\
+Law of large num \\ law of averages\\
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \subsection{Types of Distributions} 
-\begin{frame}%\frametitle{Uniform, Normal, Binomial, Poisson,}
-	\textbf{Few examples of distributions are,}
-	\begin{itemize}
-		\item Discrete
-			\begin{enumerate}
-			\item Uniform Discrete distribution or Rectangular Dist
-			\item Geometric disctribution
-			\item Binominal distribution
-			\item Poission distribution
-		\end{enumerate}
-		\item Continuous
-			\begin{enumerate}
-			\item Uniform distribution
-			\item Normal distribution/Gaussian distribution/Bell Curve
-			\item Student’s T distribution... to check
-			\item Gamma distribution
-			\item Exponential distribution
-			\item Bernoulli distribution ... to check
-			\item Beta
-			\item Triangular
-		\end{enumerate}
-		
-	\end{itemize}
 
-\end{frame}
-
-
-
-
-\begin{frame}%\frametitle{pictures and lists in beamer class}
+\begin{frame}\frametitle{PMF, CMF, PDF, CDF}
 \begin{columns}
 	\begin{column}{5cm}
 		\begin{itemize}
@@ -268,10 +104,53 @@ Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\begin{figure}
-		\includegraphics[scale=.7]{Distributions}
-	\end{figure}
+	\begin{columns}
+		\begin{column}{0.69\paperwidth}
+			\begin{figure}
+				\includegraphics[scale=.4]{Distributions}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.3\paperwidth}
+				\textbf{Discrete}
+				\begin{enumerate}
+					\item Uniform Discrete or Rectangular
+					\setlength{\itemsep}{0.mm}
+					\item Binomial
+					\setlength{\itemsep}{0.mm}
+					\item Hypergeometric
+					\setlength{\itemsep}{0.mm}
+					\item Poisson
+					\setlength{\itemsep}{0.mm}
+					\item Geometric
+				\end{enumerate}
+				\textbf{Continuous}
+				\begin{enumerate}
+					\item Uniform 
+					\setlength{\itemsep}{0.mm}
+					\item Normal/Gaussian
+					\setlength{\itemsep}{0.mm}
+					\item Student’s T
+					\setlength{\itemsep}{0.mm}
+					\item chi-squared
+					\item Exponential
+					\setlength{\itemsep}{0.mm}
+					\item Beta
+					\setlength{\itemsep}{0.mm}
+					\item Triangular
+					\setlength{\itemsep}{0.mm}
+					\item Gamma
+
+				\end{enumerate}
+		
+		\end{column}
+	\end{columns}
+
 \end{frame}
+
+
+
+
+
 
 \begin{frame}
 \begin{figure}
@@ -280,7 +159,7 @@ Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
 \end{frame}
 
 
-\begin{frame}[plain]
+\begin{frame}[plain]\frametitle{}
 	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{DiscreteDistribution}}
 \end{frame}
 
@@ -305,8 +184,75 @@ Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{distributions}
-\begin{frame}\frametitle{standard uniform density}
+
+\begin{frame}\frametitle{relation btw various dist}
+\textbf{Bernoulli and Binomial}: Bernoulli Distribution is a special case of Binomial Distribution with a single trial.
+
+\textbf{Poisson and Binomial}: Poisson Distribution is a limiting case of binomial distribution under the following conditions:
+
+The number of trials is indefinitely large or $\displaystyle{\lim_{x \to \infty}}$.
+The probability of success for each trial is same and indefinitely small or $\displaystyle{\lim_{x \to 0}}$.
+np = $\lambda$, is finite.
+
+\textbf{Normal and Binomial}: Normal distribution is another limiting form of binomial distribution under the following conditions:
+
+The number of trials is indefinitely large, $\displaystyle{\lim_{n \to \infty}}$.
+Both p and q are not indefinitely small.
+\textbf{Normal and Poisson Distribution}:
+The normal distribution is also a limiting case of Poisson distribution with the parameter $\displaystyle{\lim_{\lambda \to \infty}}$.
+
+
+
+\end{frame}
+
+\begin{frame}{Beta and Binomial}
+\textbf{Prior and Posterior}
+\begin{enumerate}
+\item 	Conjugate prior for binomial
+$ x|p ~ Bin(n,p); p~Beta(a,b) [prior]$\\
+$ f(p|X=k) = use bayes$ \\
+$ replace with beta abd bin $ \\
+$ p|X ~ Beta(a+X, b+n-x) $
+
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}%\frametitle{Poisson va exponential}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\textbf{Poisson}
+event per unit time
+\\how many calls do you get in a day
+\\The number of printing errors at each page of the book
+\\Num of metro arrivals in t time
+\\The number of arrivals reported in an area on a day.
+\\ The number of soldiers killed by horse-kick per year
+\\ Air conditioners in a lifetime
+\end{column}
+\begin{column}{0.45\textwidth}
+\textbf{exponential}
+time per event
+\\What about the interval of time btw the calls
+\\Num of pages before until x num of printing errors
+\\ Length of time btw metro arrivals,
+\\ Length of time between arrivals at a gas station
+\\Num of years btw horse-kick deaths in the army
+\\ The life of an Air Conditioner
+
+\end{column}
+
+\end{columns}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Distributions}
+\begin{frame}\frametitle{Standard Uniform Density}
 	parameters a = 0 and b = 1, so the PDF for standard uniform density is given by:
 	
 	\begin{align}
@@ -337,56 +283,105 @@ characteristics of Normal distribution:
 	
 \end{frame}
 
-\begin{frame}\frametitle{Beta distribution}
-	Connections to other distributions
-\end{frame}
-
-\begin{frame}
-	\textbf{Prior and Posterior}
+\begin{frame}\frametitle{Student's t distribution}
+	characteristics\\
 	\begin{enumerate}
-		\item
+		\item Underlying dist is Normal
+		\item Pop dist is unknown
+		\item sample size is too small for CLT to apply
+	\end{enumerate}
+	$z \sim \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} \longleftrightarrow$
+	$t_{n-1} \sim \frac{\bar{x}-\mu}{s/\sqrt{n}} $	
+	\textbf{t test measures}
+	\begin{enumerate}
+		\item to test hypothesized population mean $\frac{\bar{x}-\mu}{s/\sqrt{n}}$
+		\item regression $\frac{b-\beta}{SE(b)}$ (uses Std error, as pop std dev is known)
+		\item 2 sampled t-test: assessing the diff btw 2 pop 
+		$\frac{(\bar{x_1}-\mu_1)-(\bar{x_2}-\mu_2)}
+		{\sqrt{\frac{s_1^2}{\sqrt{n_1}}+\frac{s_1^2}{\sqrt{n_1}}}}$
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Binomial, neg-binomial, geometric, hyper-geometric}
-	Conjugate prior for binomial
-	$ x|p ~ Bin(n,p); p~Beta(a,b) [prior]$
-	$ f(p|X=k) = use bayes$
-	$ rel=place with beta abd bin $
-	$ p|X ~ Beta(a+X, b+n-x) $
+\begin{frame}\frametitle{Chi-squared dist}
+	comes directly from a normal dist (square of selection from standard Normal Distribution) so sample size should be large enough ($>$5) s.t. CLT applies\\
+	for k degrees of freedom: $\chi_k^2 = \sum_{i=1}^{k}Z_i^2$\\
+	$\chi = \sum\frac{(obs-exp)^2}{exp}$ with
+	DF = (row-1)(col-1)\\
+	\begin{figure}
+		\includegraphics[scale=0.5]{chisq}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Binomial, bernoulli, hyper-geometric}
+	Repeat Bernoulli n times and it's Binomial.\\
+	Hypergeometric is Binomial without replacement\\
 
 	the properties of a Binomial Distribution are
 	\begin{enumerate}
 		\item Each trial is independent.
-		\item There are only two possible outcomes in a trial- either a success or a failure.
+		\item There are only two possible outcomes per trial.
 		\item A total number of n identical trials are conducted.
 		\item The probability of success and failure is same for all trials. (Trials are identical.)
 	\end{enumerate}
+
 \end{frame}
 
+
+\begin{frame}\frametitle{Hypergeometric}
+\begin{enumerate}
+	\item Discrete
+	\item equivalent to Binomial, without replacement
+	\item N = total population\\ m=total items of interest in population\\n=sample size
+	\item region bounded by 0 and m
+\end{enumerate}
+Characteristics of Poisson distribution:
+\begin{enumerate}
+	\item Event are not Independent.
+	\item 
+\end{enumerate}	
+
+\end{frame}
 
 \begin{frame}\frametitle{Poisson}
+	\begin{enumerate}
+		\item Discrete
+		\item events in fixed region of opportunity (or time interval, t)
+		\item region bounded by 0 and $\infty$
+	\end{enumerate}
 	Characteristics of Poisson distribution:
 	\begin{enumerate}
-		\item Any successful event should not influence the outcome of another successful event.
+		\item Independent event.
 		\item The probability of success over a short interval must equal the probability of success over a longer interval.
 		\item The probability of success in an interval approaches zero as the interval becomes smaller.
+		\item The rate at which event occurs is constant ($\lambda$)
 	\end{enumerate}	
 
-	$\lambda$ is the rate at which an event occurs,
-	$t$ is the length of a time interval,
-	And $X$ is the number of events in that time interval. X is called a Poisson RV\\
-
-Let $\mu$ denote the mean number of events in an interval of length t. Then, $\mu$ = $\lambda$*t.
-
-The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
-
-	
+	Poisson RV, $X$ = number of events in t.\\
+	mean number of events in t, $\mu$ = $\lambda$*t\\
+	The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
 \end{frame}
 
+
 \begin{frame}\frametitle{Exponential Dist}
-	rate parameter = $\lambda = 1/\beta $ \\
-	Memoryless property: $P(X>=s+t | X>=s) = P(X>=t) $ \\
+	inverse of Poisson: rate parameter or mean for poisson = $\lambda$ and mean for expo = $\beta=1/\lambda$ \\
+	Exponential distribution is widely used for survival analysis.\\
+	Memoryless-ness:\\
+	events must occur at constant rate\\
+	events must be independent of each other\\
+	probab of event occurring in first min = probab of the event occuring in (t+1)min\\
+	probab of first visitor on website in first min = p\\
+	probab of first visitor on website in second min = (1-p)p\\
+	probab of first visitor on website within third min = (1-p)$^2$p\\
+	Each minute graph dropping $\rightarrow$ exponential decay
+	
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Memorylessness}
+		Memoryless property: $P(X>=s+t | X>=s) = P(X>=t) $ \\
 	$P(X>=s) = 1-CDF = 1-P(X<=s) = e^{-\lambda s}$ \\
 	$P(X>=s+t | X>=s) = \frac{P(X>=s+t, X>=s)}{P(X>=s)}$ \\
 	$P(X>=s+t | X>=s) = \frac{P(X>=s+t)}{P(X>=s)}$ \\
@@ -395,7 +390,7 @@ The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
 	Memoryless property: \\
 	$E(X|X>a) = a+E(X-a|X>a)$ \\
 	$E(X|X>a) = a+ 1/\lambda$ \\
-
+	
 \end{frame}
 
 
@@ -421,72 +416,157 @@ The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
 \end{frame}
 
 
-\begin{frame}\frametitle{chi-square dist}
-	$\chi = \sum\frac{(obs-exp)^2}{exp}$\\
-	DF = (row-1)(col-1)\\
-	all expected frequencies are $>$ 5\\
-	$\chi$ is derived from Normal dist, so sample size should be large enough s.t. CLT applies
+
+\section{EDA}
+\begin{frame}\frametitle{Univariate and Multivariate Analysis}
 \end{frame}
 
-\begin{frame}\frametitle{relation btw various dist}
-	Relation between Bernoulli and Binomial Distribution
-	1. Bernoulli Distribution is a special case of Binomial Distribution with a single trial.
-	
-	2. There are only two possible outcomes of a Bernoulli and Binomial distribution, namely success and failure.
-	
-	3. Both Bernoulli and Binomial Distributions have independent trails.
-	
-	
-	
-	Relation between Poisson and Binomial Distribution
-	Poisson Distribution is a limiting case of binomial distribution under the following conditions:
-	
-	The number of trials is indefinitely large or $\displaystyle{\lim_{x \to \infty}}$.
-	The probability of success for each trial is same and indefinitely small or $\displaystyle{\lim_{x \to 0}}$.
-	np = $\lambda$, is finite.
-	
-	
-	Relation between Normal and Binomial Distribution \& Normal and Poisson Distribution:
-	Normal distribution is another limiting form of binomial distribution under the following conditions:
-	
-	The number of trials is indefinitely large, $\displaystyle{\lim_{n \to \infty}}$.
-	Both p and q are not indefinitely small.
-	The normal distribution is also a limiting case of Poisson distribution with the parameter $\displaystyle{\lim_{\lambda \to \infty}}$.
-	
-	
-	
-	Relation between Exponential and Poisson Distribution:
-	If the times between random events follow exponential distribution with rate $\lambda$, then the total number of events in a time period of length t follows the Poisson distribution with parameter $\lambda$ t.
-	
+\begin{frame}\frametitle{Dimensionality Reduction}
 \end{frame}
 
-\begin{frame}%\frametitle{Poisson va exponential}
-\begin{columns}
-	\begin{column}{0.45\textwidth}
-		\textbf{Poisson}
-		how many calls do you get in a day
-		\\ The number of emergency calls recorded at a hospital in a day.
-		\\ The number of thefts reported in an area on a day.
-		\\ The number of customers arriving at a salon in an hour.
-		\\ The number of suicides reported in a particular city.
-		\\ The number of printing errors at each page of the book
-	\end{column}
-	\begin{column}{0.45\textwidth}
-		\textbf{exponential}
-		What about the interval of time between the calls
-		\\ Length of time between metro arrivals,
-		\\ Length of time between arrivals at a gas station
-		\\ The life of an Air Conditioner
-		\\Exponential distribution is widely used for survival analysis. 
-	\end{column}
-\end{columns}
+\begin{frame}\frametitle{Under and Over Sampling}
 \end{frame}
 
 
+\section{Descriptive Statistics}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}%\frametitle{Variance, Standard Deviation} 
+\begin{itemize}
+	\item Variable and Random Variable (RV)
+	\item Parameter and Hyper-parameter
+	\item \hyperlink{meanlabel}{\beamerbutton{Mean}}, Median, Mode
+	\item mode sucks for small samples
+	\item Range, IQR
+	\item Standard Deviation ($\sigma$): Measure of the how spread out data is from its mean.
+	\item Variance ($\sigma^2$): It describes how much a random variable differs from its expected value. It entails computing squares of deviations.The average of the squared differences from the Mean.\\
+	\begin{enumerate}
+		\item Deviation is the difference bw each element from the mean.\\
+		\item Population Variance = avg of squared deviations\\
+		\item Sample Variance = avg of squared differences from the mean
+	\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\hypertarget{meanlabel}{EXPECTED VALUE}\newline
+\textbf{Discrete random variable}	$E(X) = \sum_x x \, p_x(x)$
+\begin{itemize}
+\item Provided $\sum_x |x| \, p_x(x) < \infty$. If the sum diverges, the expected value does not exist. 
+\textbf{For the jar full of numbered balls}
+\item A ball is selected at random; all balls are equally likely to be chosen $P(X = x_i) = \frac{1}{N}$.
+\item Say $n_1$ balls have value $v_1$, and $n_2$ balls have value $v_2$, and \ldots  $n_n$ balls have value $v_n$. Unique values are $v_i$, for $i=1, \ldots, n$. Note $n_1 + \cdots + n_n = N$, and $P(X=v_j) = \frac{n_j}{N}$. 
+$E(X) = \frac{\sum_{i=1}^N x_i}{N}$
+
+\end{itemize}
+
+\textbf{Continuous random variable}  $E(X) = \int_{-\infty}^\infty x \, f_x(x) \, dx$
+
+\begin{itemize}
+\item Provided $ \int_{-\infty}^\infty |x| \, f_x(x) \, dx < \infty$. If the integral diverges, the expected value does not exist. 
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Sometimes the expected value does not exist}
+\framesubtitle{Need $ \int_{-\infty}^\infty |x| \, f_x(x) \, dx < \infty$}  
+For the Cauchy distribution, $f(x) = \frac{1}{\pi(1+x^2)}$.  
+\begin{eqnarray*}
+E(|X|) & = & \int_{-\infty}^\infty |x| \, \frac{1}{\pi(1+x^2)} \, dx \\ 
+& = & 2 \int_0^\infty \frac{x}{\pi(1+x^2)} \, dx \\ 
+&& u = 1+x^2, ~du = 2x \, dx \\  
+& = & \frac{1}{\pi} \int_1^\infty \frac{1}{u} \, du \\ 
+& = & \ln u |_1^\infty \\ 
+& = & \infty - 0 = \infty 
+\end{eqnarray*} 
+$=>$ an integral ``equals" infinity, it is unbounded above.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+For a RV $X$ with PDF $\rho(x)$. The variance($\mathbb{V}$) and the standard deviation($\sigma_X$) of $X$, are defined by
+
+Variance   $\sigma^2 = (1/n)\sum_{i=1}^{n}(x_i - \mu)^2$
+
+\begin{align*} \mathbb{V} &= \mathbb{E}\left[ \left( X-\mathbb{E}[X] \right)^2 \right]
+=\mathbb{E}[X^2] - \mathbb{E}[X]^2
+= \int_D (x-\mathbb{E})^2 \, dP. \end{align*}
+
+\begin{align*} \mathbb{V} &= \int_D x^2 \, dP - \mathbb{E}^2. \end{align*} 
+
+\begin{align*}\sigma_X&=\sqrt{V[X]}
+&=\sqrt{E[X^2]-E[X]^2}
+\end{align*}
+
+\begin{align*} \mathbb{V} &=\sqrt{\int_D x^2\rho(x)\,dx - \left(\int_D x\rho(x) \,dx\right)^2}. \end{align*}
+
+
+\end{frame}
+
+
+\begin{frame}
+If one interprets the PDF ($\rho(x)$) as the density of a rod at location ($x$), then:\\
+
+The mean, ($\mu = \int x\rho(x)\,dx$), gives the center of mass of the rod.\\
+The variance, ($V = \int (x-\mu)^2\rho(x)\,dx$), gives the moment of inertia about the line ($x = \mu$).\\
+The standard deviation, ($\sigma = \sqrt{V}$), gives the radius of gyration about the line ($x = \mu$).
+
+\end{frame}
+
+\begin{frame}\frametitle{Std error vs std deviation}
+std error = 
+\end{frame}
+
+
+\begin{frame}\frametitle{coeff of variation}
+$CV = \frac{sd}{\bar{x}}, where  \bar{x}=sample mean$ \\
+$x = [1,2,3] => \bar{x}=2$ and $S_x=1 => CV(x)=1/2 $\\
+$y = [101,102,103] => \bar{y}=102$ and $S_y=1 => CV(y)=1/102 $\\
+Higher the CV means higher fluctuations in the dataset\\
+
+\end{frame}
+
+
+\begin{frame}\frametitle{skewness and kurtosis}
+\textbf{skewness}\\
+mode skewness = $\frac{mean-mode}{std dev}$\\
+in skewed data: mode = 3(median) - 2(mean) \\
+for small dataset, use below:\\
+median skewness = $\frac{3(mean-median)}{std dev}$\\
+\begin{align}
+skewness = \left\{ \begin{array}{cc} 
+approx\_symmetric, & \hspace{5mm} -0.5 <= x <=0.5 \\
+moderately\_skewed, & \hspace{5mm} 0.5< |x| <1 \\
+highly\_skewed, & \hspace{5mm} |x|>1 \\
+\end{array} \right.
+\end{align}
+\textbf{kurtosis}: same mean or sd but diff peakedness\\
+higher peaked $=>$ higher kurtosis \\	
+
+\end{frame}
+
+\begin{frame}\frametitle{Moments}
+\textbf{I moment}: $\frac{\sum x}{n} =>$ \textbf{mean} $=>$ considered as values from 0\\
+second moment: $\frac{\sum x^2}{n} => $values further from 0 will be higher, \\so instead we take centralized \\
+second (centralized) moment: $\frac{\sum (x-\mu)^2}{n} =>$ variance\\
+third (centralized) moment: $\frac{1}{n} \frac{\sum (x-\mu)^3}{\sigma ^3} ->$ skew\\
+but since we don't have population mean, we have sample mean, we adjust the above value with degrees of freedom\\
+\textbf{II (centralized) moment}: $\frac{\sum (x-\bar{x})^2}{n-1} =>$ \textbf{variance}\\
+\textbf{III (centralized) moment}: $\frac{n}{(n-1)(n-2)} \frac{\sum (x-\bar{x})^3}{s^3} =>$ \textbf{skew}\\
+\textbf{IV moment}: $\frac{n(n+1)}{(n-1)(n-2)(n-3)} \frac{\sum (x-\bar{x})^4}{s^4}-\frac{3(n-1)^2}{(n-2)(n-3)} =>$ \textbf{kurtosis}\\
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experimental Design}
 
@@ -567,104 +647,6 @@ t-distribution is bell curved, defined by it's DF (degrees of freedom)\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{EDA}
-\begin{frame}
-	Univariate and Multivariate Analysis
-\end{frame}
-
-
-\section{Regression, Classification, Clustering}
-\begin{frame}\frametitle{Regression, Classification, Clustering}
-\begin{columns}
-	\begin{column}{0.3\textwidth}
-		\textbf{Regression}
-		\begin{enumerate}
-			\item Linear
-			\item KNN
-			\item SVM
-			\item Random Forest
-		\end{enumerate}
-	\end{column}
-	\begin{column}{0.3\textwidth}
-		\textbf{Classification}
-		\begin{enumerate}
-			\item Logistic
-			\item KNN
-			\item SVM Classifier
-			\item Random Forest
-		\end{enumerate}
-	\end{column}
-	\begin{column}{0.3\textwidth}
-		\textbf{Clustering}
-		\begin{enumerate}
-			\item K-Means
-			\item Hierarchical
-			\item DBSCAN
-			\item HDBSCAN
-		\end{enumerate}
-	\end{column}
-\end{columns}
-\end{frame}
-
-
-
-\subsection{Regression}
-\begin{frame}
-	Regression analysis is a statistical technique to assess the relationship between an predictor variable and one or more response factors.
-\end{frame}
-
-
-
-\begin{frame}[plain]%\frametitle{}
-\begin{table}[h]
-	\centering
-	\begin{tabular}{cccc}
-	\textbf{Outcome} & \textbf{GLM Family} & \textbf{Link} & \textbf{Mean to} \\
-	\textbf{Variable} & & & \textbf{Variance} \\ 
-	\hline %\pause 
-	Continuous, & Normal or & \\ unbounded & Standard Gaussian & Identity &  \\  
-	\hline
-	Continuous, & Gamma or & \\ non-negative & inverse Gamma &  &  \\ \hline
-	
-	
-	Discrete/ & Poisson & Log & Identity \\
-	counts/ & Quassi-poisson or &  & If not \\
-	rate & negative binomial & & Identity \\
-	
-	
-	\hline
-	
-	Count & Gamma &  & Over dispersion \\ \hline
-	Counts with & Zero inflated poisson & \\ multiple zero & may be checked 
-	for fitting & & \\ \hline
-	Binary & Binomial or & \\  & Logistic regression & & \\ \hline
-	Nominal  & Multinomial regression & \\
-	\hline
-	\end{tabular} 
-\caption{Regression Model Selection Criteria}
-\end{table}
-\end{frame}
-
-
-
-\subsection{Classification}
-\begin{frame}
-	Three methods to classifier
-	\begin{enumerate}
-		\item model a classification rule - knn, decision tree, perceptron, svm
-		\item model the probability of class membership given input data - perceptron with cross-entropy cost
-		\item make a probabilistic model of data within each class - naive bayes
-		1 \& 2 are discriminative classifications
-		3 is generative classification
-		2 \& 3 probabilistic classification
-	\end{enumerate}
-\end{frame}
-
-\subsection{Clustering}
-\begin{frame}
-	content...
-\end{frame}
 
 
 \section{Bayesian Statistics}

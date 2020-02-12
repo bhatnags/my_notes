@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  9 FEB 2020 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  11 FEB 2020 16:19
 entering extended mode
 **./Stats.tex
 (Stats.tex
@@ -902,14 +902,10 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 [1{C:/Users/bijno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-(Stats.toc)
-Overfull \vbox (13.02222pt too high) detected at line 21
- []
-
-[2
+(Stats.toc) [2
 
 ]
-<Data.png, id=311, 792.71156pt x 426.09187pt>
+<Data.png, id=286, 792.71156pt x 426.09187pt>
 File: Data.png Graphic file (type png)
 <use Data.png>
 Package pdftex.def Info: Data.png  used on input line 31.
@@ -939,31 +935,31 @@ mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<QuantitativeQualitative.png, id=374, 797.22844pt x 458.46281pt>
+<QuantitativeQualitative.png, id=348, 797.22844pt x 458.46281pt>
 File: QuantitativeQualitative.png Graphic file (type png)
 <use QuantitativeQualitative.png>
 Package pdftex.def Info: QuantitativeQualitative.png  used on input line 43.
 (pdftex.def)             Requested size: 239.17038pt x 137.5399pt.
 
-Overfull \vbox (13.29272pt too high) detected at line 43
+Overfull \vbox (8.45581pt too high) detected at line 43
  []
 
 [4
 
  <./QuantitativeQualitative.png>]
-<DescriptiveInferential.png, id=438, 899.61093pt x 471.26062pt>
+<DescriptiveInferential.png, id=411, 899.61093pt x 471.26062pt>
 File: DescriptiveInferential.png Graphic file (type png)
 <use DescriptiveInferential.png>
 Package pdftex.def Info: DescriptiveInferential.png  used on input line 57.
 (pdftex.def)             Requested size: 260.88048pt x 136.66208pt.
 
-Overfull \vbox (12.0884pt too high) detected at line 57
+Overfull \vbox (7.25148pt too high) detected at line 57
  []
 
 [5
 
  <./DescriptiveInferential.png>]
-<inferentialstats.png, id=500, 721.19438pt x 526.21594pt>
+<inferentialstats.png, id=472, 721.19438pt x 526.21594pt>
 File: inferentialstats.png Graphic file (type png)
 <use inferentialstats.png>
 Package pdftex.def Info: inferentialstats.png  used on input line 63.
@@ -975,40 +971,133 @@ Overfull \vbox (4.58632pt too high) detected at line 63
 [6
 
  <./inferentialstats.png>]
-<JointMarginalConditional.png, id=506, 550.30594pt x 374.14781pt>
+<JointMarginalConditional.png, id=478, 550.30594pt x 374.14781pt>
 File: JointMarginalConditional.png Graphic file (type png)
 <use JointMarginalConditional.png>
 Package pdftex.def Info: JointMarginalConditional.png  used on input line 71.
 (pdftex.def)             Requested size: 275.1523pt x 187.07344pt.
 
-Overfull \vbox (7.42624pt too high) detected at line 71
+Overfull \vbox (2.58932pt too high) detected at line 71
  []
 
 [7
 
- <./JointMarginalConditional.png>] [8
+ <./JointMarginalConditional.png>]
+<CdfPdfPmf.png, id=540, 371.88937pt x 172.39406pt>
+File: CdfPdfPmf.png Graphic file (type png)
+<use CdfPdfPmf.png>
+Package pdftex.def Info: CdfPdfPmf.png  used on input line 96.
+(pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
 
-] [9
+Overfull \hbox (9.7995pt too wide) in paragraph at lines 96--96
+[]  
+ []
 
-]
-Overfull \vbox (2.94402pt too high) detected at line 132
+<PmfCdfContinuous.png, id=541, 508.14844pt x 327.47343pt>
+File: PmfCdfContinuous.png Graphic file (type png)
+<use PmfCdfContinuous.png>
+Package pdftex.def Info: PmfCdfContinuous.png  used on input line 96.
+(pdftex.def)             Requested size: 152.4457pt x 98.24278pt.
+<pdfcdfDiscrete.png, id=542, 529.98pt x 363.60844pt>
+File: pdfcdfDiscrete.png Graphic file (type png)
+<use pdfcdfDiscrete.png>
+Package pdftex.def Info: pdfcdfDiscrete.png  used on input line 96.
+(pdftex.def)             Requested size: 132.49466pt x 90.90189pt.
+
+Overfull \hbox (10.18192pt too wide) in paragraph at lines 96--96
+[][] 
+ []
+
+
+Overfull \vbox (50.69482pt too high) detected at line 96
+ []
+
+[8
+
+ <./CdfPdfPmf.png> <./PmfCdfContinuous.png> <./pdfcdfDiscrete.png>]
+File: CdfPdfPmf.png Graphic file (type png)
+<use CdfPdfPmf.png>
+Package pdftex.def Info: CdfPdfPmf.png  used on input line 96.
+(pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
+
+Overfull \hbox (9.7995pt too wide) in paragraph at lines 96--96
+[]  
+ []
+
+<cdfpdfrfhf.png, id=607, 511.15968pt x 402.75468pt>
+File: cdfpdfrfhf.png Graphic file (type png)
+<use cdfpdfrfhf.png>
+Package pdftex.def Info: cdfpdfrfhf.png  used on input line 96.
+(pdftex.def)             Requested size: 163.57443pt x 128.88412pt.
+
+Overfull \hbox (21.31065pt too wide) in paragraph at lines 96--96
+[] 
+ []
+
+
+Overfull \vbox (50.69482pt too high) detected at line 96
+ []
+
+[9
+
+ <./cdfpdfrfhf.png>]
+<Distributions.png, id=668, 644.4075pt x 460.72125pt>
+File: Distributions.png Graphic file (type png)
+<use Distributions.png>
+Package pdftex.def Info: Distributions.png  used on input line 142.
+(pdftex.def)             Requested size: 257.75844pt x 184.28523pt.
+
+Overfull \hbox (6.46275pt too wide) in paragraph at lines 142--142
+ [] 
+ []
+
+
+Overfull \vbox (8.39096pt too high) detected at line 142
  []
 
 [10
 
-]
-Overfull \vbox (8.07884pt too high) detected at line 155
+ <./Distributions.png>]
+<distributionChoice.png, id=729, 644.1666pt x 313.17pt>
+File: distributionChoice.png Graphic file (type png)
+<use distributionChoice.png>
+Package pdftex.def Info: distributionChoice.png  used on input line 153.
+(pdftex.def)             Requested size: 364.19536pt x 177.05605pt.
+ [11
+
+ <./distributionChoice.png>]
+<DiscreteDistribution.png, id=790, 743.02594pt x 490.08093pt>
+File: DiscreteDistribution.png Graphic file (type png)
+<use DiscreteDistribution.png>
+Package pdftex.def Info: DiscreteDistribution.png  used on input line 158.
+(pdftex.def)             Requested size: 364.19536pt x 240.21654pt.
+ [12
+
+ <./DiscreteDistribution.png>]
+<ContinuousDistribution.png, id=795, 749.04843pt x 497.60907pt>
+File: ContinuousDistribution.png Graphic file (type png)
+<use ContinuousDistribution.png>
+Package pdftex.def Info: ContinuousDistribution.png  used on input line 165.
+(pdftex.def)             Requested size: 364.19536pt x 241.94754pt.
+
+Overfull \vbox (41.73425pt too high) detected at line 165
  []
 
-[11
+[13
 
-] [12
+ <./ContinuousDistribution.png>]
+<UnivariateProbabDist.png, id=857, 947.03813pt x 499.8675pt>
+File: UnivariateProbabDist.png Graphic file (type png)
+<use UnivariateProbabDist.png>
+Package pdftex.def Info: UnivariateProbabDist.png  used on input line 172.
+(pdftex.def)             Requested size: 364.19536pt x 192.22456pt.
+ [14
 
-] [13
+ <./UnivariateProbabDist.png>]
+Overfull \vbox (3.44829pt too high) detected at line 200
+ []
 
-] [14
-
-] [15
+[15
 
 ] [16
 
@@ -1016,228 +1105,132 @@ Overfull \vbox (8.07884pt too high) detected at line 155
 
 ] [18
 
-]
-<CdfPdfPmf.png, id=1249, 371.88937pt x 172.39406pt>
-File: CdfPdfPmf.png Graphic file (type png)
-<use CdfPdfPmf.png>
-Package pdftex.def Info: CdfPdfPmf.png  used on input line 266.
-(pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
+] [19
 
-Overfull \hbox (9.7995pt too wide) in paragraph at lines 266--266
-[]  
- []
-
-<PmfCdfContinuous.png, id=1250, 508.14844pt x 327.47343pt>
-File: PmfCdfContinuous.png Graphic file (type png)
-<use PmfCdfContinuous.png>
-Package pdftex.def Info: PmfCdfContinuous.png  used on input line 266.
-(pdftex.def)             Requested size: 152.4457pt x 98.24278pt.
-<pdfcdfDiscrete.png, id=1251, 529.98pt x 363.60844pt>
-File: pdfcdfDiscrete.png Graphic file (type png)
-<use pdfcdfDiscrete.png>
-Package pdftex.def Info: pdfcdfDiscrete.png  used on input line 266.
-(pdftex.def)             Requested size: 132.49466pt x 90.90189pt.
-
-Overfull \hbox (10.18192pt too wide) in paragraph at lines 266--266
-[][] 
- []
-
-
-Overfull \vbox (32.65823pt too high) detected at line 266
- []
-
-[19
-
- <./CdfPdfPmf.png> <./PmfCdfContinuous.png> <./pdfcdfDiscrete.png>]
-File: CdfPdfPmf.png Graphic file (type png)
-<use CdfPdfPmf.png>
-Package pdftex.def Info: CdfPdfPmf.png  used on input line 266.
-(pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
-
-Overfull \hbox (9.7995pt too wide) in paragraph at lines 266--266
-[]  
- []
-
-<cdfpdfrfhf.png, id=1316, 511.15968pt x 402.75468pt>
-File: cdfpdfrfhf.png Graphic file (type png)
-<use cdfpdfrfhf.png>
-Package pdftex.def Info: cdfpdfrfhf.png  used on input line 266.
-(pdftex.def)             Requested size: 163.57443pt x 128.88412pt.
-
-Overfull \hbox (21.31065pt too wide) in paragraph at lines 266--266
-[] 
- []
-
-
-Overfull \vbox (32.65823pt too high) detected at line 266
- []
-
-[20
-
- <./cdfpdfrfhf.png>]
-<Distributions.png, id=1378, 408.02437pt x 285.31593pt>
-File: Distributions.png Graphic file (type png)
-<use Distributions.png>
-Package pdftex.def Info: Distributions.png  used on input line 274.
-(pdftex.def)             Requested size: 285.61511pt x 199.71979pt.
-
-Overfull \vbox (4.34341pt too high) detected at line 274
- []
-
-[21
-
- <./Distributions.png>]
-<distributionChoice.png, id=1440, 644.1666pt x 313.17pt>
-File: distributionChoice.png Graphic file (type png)
-<use distributionChoice.png>
-Package pdftex.def Info: distributionChoice.png  used on input line 280.
-(pdftex.def)             Requested size: 364.19536pt x 177.05605pt.
- [22
-
- <./distributionChoice.png>]
-<DiscreteDistribution.png, id=1502, 743.02594pt x 490.08093pt>
-File: DiscreteDistribution.png Graphic file (type png)
-<use DiscreteDistribution.png>
-Package pdftex.def Info: DiscreteDistribution.png  used on input line 285.
-(pdftex.def)             Requested size: 364.19536pt x 240.21654pt.
- [23
-
- <./DiscreteDistribution.png>]
-<ContinuousDistribution.png, id=1507, 749.04843pt x 497.60907pt>
-File: ContinuousDistribution.png Graphic file (type png)
-<use ContinuousDistribution.png>
-Package pdftex.def Info: ContinuousDistribution.png  used on input line 292.
-(pdftex.def)             Requested size: 364.19536pt x 241.94754pt.
-
-Overfull \vbox (46.57117pt too high) detected at line 292
- []
-
-[24
-
- <./ContinuousDistribution.png>]
-<UnivariateProbabDist.png, id=1569, 947.03813pt x 499.8675pt>
-File: UnivariateProbabDist.png Graphic file (type png)
-<use UnivariateProbabDist.png>
-Package pdftex.def Info: UnivariateProbabDist.png  used on input line 299.
-(pdftex.def)             Requested size: 364.19536pt x 192.22456pt.
- [25
-
- <./UnivariateProbabDist.png>] [26
+] [20
 
 ]
+<chisq.png, id=1281, 517.18219pt x 176.91093pt>
+File: chisq.png Graphic file (type png)
+<use chisq.png>
+Package pdftex.def Info: chisq.png  used on input line 307.
+(pdftex.def)             Requested size: 258.59045pt x 88.45525pt.
+ [21
+
+ <./chisq.png>] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+]
+<exponential.png, id=1638, 326.72063pt x 192.72pt>
+File: exponential.png Graphic file (type png)
+<use exponential.png>
+Package pdftex.def Info: exponential.png  used on input line 410.
+(pdftex.def)             Requested size: 163.35991pt x 96.35976pt.
+
+Overfull \hbox (9.71498pt too wide) in paragraph at lines 410--410
+ [] 
+ []
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 410.
+
 [27
 
-] [28
+ <./exponential.png>] [28
 
 ] [29
 
 ] [30
 
-] [31
+]
+Overfull \vbox (3.24193pt too high) detected at line 495
+ []
+
+[31
 
 ] [32
 
-]
-<exponential.png, id=2055, 326.72063pt x 192.72pt>
-File: exponential.png Graphic file (type png)
-<use exponential.png>
-Package pdftex.def Info: exponential.png  used on input line 421.
-(pdftex.def)             Requested size: 163.35991pt x 96.35976pt.
+] [33
 
-Overfull \hbox (9.71498pt too wide) in paragraph at lines 421--421
- [] 
- []
+] [34
 
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 421.
-
-[33
-
- <./exponential.png>] [34
-
-]
-Overfull \vbox (141.41858pt too high) detected at line 461
- []
-
-[35
+] [35
 
 ] [36
 
 ] [37
 
+] [38
+
 ]
-<statisticaltest.png, id=2359, 341.77687pt x 467.49657pt>
+<statisticaltest.png, id=2348, 341.77687pt x 467.49657pt>
 File: statisticaltest.png Graphic file (type png)
 <use statisticaltest.png>
-Package pdftex.def Info: statisticaltest.png  used on input line 521.
+Package pdftex.def Info: statisticaltest.png  used on input line 588.
 (pdftex.def)             Requested size: 184.55675pt x 252.44438pt.
 
-Overfull \vbox (4.45741pt too high) detected at line 521
+Overfull \vbox (4.45741pt too high) detected at line 588
  []
 
-[38
+[39
 
  <./statisticaltest.png>]
-<confusionmatrix.png, id=2365, 947.03813pt x 459.21562pt>
+<confusionmatrix.png, id=2354, 947.03813pt x 459.21562pt>
 File: confusionmatrix.png Graphic file (type png)
 <use confusionmatrix.png>
-Package pdftex.def Info: confusionmatrix.png  used on input line 536.
+Package pdftex.def Info: confusionmatrix.png  used on input line 603.
 (pdftex.def)             Requested size: 364.19536pt x 176.59184pt.
- [39
+ [40
 
  <./confusionmatrix.png>]
-<TypesTests.png, id=2371, 1028.34187pt x 578.16pt>
+<TypesTests.png, id=2360, 1028.34187pt x 578.16pt>
 File: TypesTests.png Graphic file (type png)
 <use TypesTests.png>
-Package pdftex.def Info: TypesTests.png  used on input line 547.
+Package pdftex.def Info: TypesTests.png  used on input line 614.
 (pdftex.def)             Requested size: 287.93376pt x 161.8837pt.
 
-Overfull \vbox (18.92528pt too high) detected at line 547
+Overfull \vbox (14.08836pt too high) detected at line 614
  []
 
-[40
+[41
 
  <./TypesTests.png>]
-<teststats.png, id=2432, 1476.9579pt x 642.9621pt>
+<teststats.png, id=2420, 1476.9579pt x 642.9621pt>
 File: teststats.png Graphic file (type png)
 <use teststats.png>
-Package pdftex.def Info: teststats.png  used on input line 553.
+Package pdftex.def Info: teststats.png  used on input line 620.
 (pdftex.def)             Requested size: 364.19536pt x 158.54251pt.
- [41
+ [42
 
- <./teststats.png (PNG copy)>] [42
-
-] [43
+ <./teststats.png (PNG copy)>] [43
 
 ] [44
 
-]
-[45
-
-] [46
+] [45
 
 ]
-Overfull \hbox (24.48273pt too wide) in paragraph at lines 647--647
- [] 
- []
+[46
 
-[47
+] [47
 
 ] [48
 
-] [49
+]
+Overfull \vbox (319.92444pt too high) detected at line 724
+ []
+
+[49
 
 ] [50
 
-]
-Overfull \vbox (324.76135pt too high) detected at line 745
- []
-
-[51
-
-] [52
-
-] [53
+] [51
 
 ]
 \tf@nav=\write6
@@ -1249,78 +1242,50 @@ Overfull \vbox (324.76135pt too high) detected at line 745
 \tf@snm=\write8
 \openout8 = `Stats.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 737.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 737.
  (Stats.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
-
-
-Package rerunfilecheck Warning: File `Stats.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Stats.out':
-(rerunfilecheck)             Before: C2FF2B9E6917AD15651D18F0CB6A69F1;915
-(rerunfilecheck)             After:  E6CE325A02A1F19A847C15BDE995741D;915.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 737.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 737.
+Package rerunfilecheck Info: File `Stats.out' has not changed.
+(rerunfilecheck)             Checksum: 7996E1591CF62AAC4E4E3BC59EC9795F;584.
  ) 
 Here is how much of TeX's memory you used:
- 17203 strings out of 492973
- 332386 string characters out of 3126693
- 462244 words of memory out of 3000000
- 20556 multiletter control sequences out of 15000+200000
+ 17179 strings out of 492973
+ 332089 string characters out of 3126693
+ 459532 words of memory out of 3000000
+ 20546 multiletter control sequences out of 15000+200000
  14589 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,57p,814b,769s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.5.1.49} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.3.48} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.2.47} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.45} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.1.36} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.4.25} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.3.17} has been referenced but does not e
-xist, replaced by a fixed one
-
-<C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cmextra/cmex8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/bijno/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bijno/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Use
-rs/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8
+<C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmex10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cmextra/cmex8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/bijno/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bijno/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/U
+sers/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmss10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/bijno/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/bijno/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/
+bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10
 .pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmss10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/bijno/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/bijno/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/bi
-jno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.p
+nts/cm/cmssi10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmssi8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/bijno/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bijno/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
+/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmssi10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmssi8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/bijno/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bijno/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/b
-ijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msam10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Stats.pdf (53 pages, 4108991 bytes).
+s/cm/cmsy9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/symbols/msam10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Stats.pdf (51 pages, 4293639 bytes).
 PDF statistics:
- 3202 PDF objects out of 3580 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3048 PDF objects out of 3580 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 
