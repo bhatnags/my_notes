@@ -2,8 +2,9 @@
 \beamer@sectionintoc {2}{Regression}{4}{0}{2}
 \beamer@sectionintoc {3}{Classification}{6}{0}{3}
 \beamer@sectionintoc {4}{Clustering}{7}{0}{4}
-\beamer@subsectionintoc {4}{1}{Monothetic vs pulythetic}{7}{0}{4}
-\beamer@subsectionintoc {4}{2}{K means}{8}{0}{4}
-\beamer@subsectionintoc {4}{3}{hierarchical}{8}{0}{4}
-\beamer@subsectionintoc {4}{4}{dbscan}{8}{0}{4}
-\beamer@subsectionintoc {4}{5}{Analysis}{8}{0}{4}
+\beamer@subsectionintoc {4}{1}{Clustering Types}{7}{0}{4}
+\beamer@subsectionintoc {4}{2}{Density Models}{10}{0}{4}
+\beamer@subsectionintoc {4}{3}{Distribution Models}{15}{0}{4}
+\beamer@subsectionintoc {4}{4}{Centroidal models}{18}{0}{4}
+\beamer@subsectionintoc {4}{5}{Connectivity Models}{21}{0}{4}
+\beamer@sectionintoc {5}{Analysis}{23}{0}{5}
