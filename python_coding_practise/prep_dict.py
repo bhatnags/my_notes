@@ -1,3 +1,33 @@
+'''
+Problem:
+    You live in a remote settlement where bread sellers come through periodically at irregular
+    intervals. Whenever you buy fresh bread, it lasts for 30 days until it becomes too stale to eat.
+    Your family eats one loaf of bread per day.
+    You are given a calendar of when the bread sellers will be visiting over the coming days and the
+    price each bread seller will charge per loaf. You currently have 10 fresh loaves, and at the end
+    of the calendar you'll get a bunch of free bread, so you won't need to have any left on hand.
+    Write a function that tells you how much bread to buy from each of the sellers
+
+Input:
+    total_days, an integer, the number of days in the calendar until the free bread arrives
+    sellers, a list of pairs of integers (day, price). Each pair represents one bread seller
+    The day is how many days from the start until the seller arrives
+    The price is the price to buy each loaf of bread from this seller, in pennies
+Output:
+    purchases, a list of integers of the same length as sellers. Each integer is how many
+    loaves you should buy from each seller
+    Or None, if there is no solution that does not force your family to eat stale bread at some point
+
+You should output the purchase plan that minimizes the total cost. In case of ties, output the
+plan that requires buying from the fewest number of different sellers, and within those choose
+the plan that buys more bread earlier
+
+'''
+
+
+
+
+
 a = { "a" : 1, "b" : 2 }
 b = { "c" : 3, "d" : 4 }
 c = {**a, **b}

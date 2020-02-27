@@ -9,6 +9,8 @@
 \graphicspath{{figs/}}
 \usepackage{multirow}
 
+\usepackage{tikz}
+
 \let\Tiny\tiny
 \usepackage{graphicx}
 \usepackage{xmpmulti}
@@ -28,84 +30,199 @@
 \titlepage
 \end{frame}
 
-\begin{frame}\frametitle{Table of contents}\tableofcontents
+\begin{frame}[allowframebreaks]\frametitle{Table of contents}\tableofcontents
 \end{frame} 
 
 
 
 
 
-\section{Regression, Classification, Clustering}
-\begin{frame}\frametitle{Regression, Classification, Clustering}
-\begin{columns}
-	\begin{column}{0.3\textwidth}
-		\textbf{Regression}
-		\begin{enumerate}
-			\item Linear
-			\item KNN
-			\item SVM
-			\item Random Forest
-		\end{enumerate}
-	\end{column}
-	\begin{column}{0.3\textwidth}
-		\textbf{Classification}
-		\begin{enumerate}
-			\item Logistic
-			\item KNN
-			\item SVM Classifier
-			\item Random Forest
-		\end{enumerate}
-	\end{column}
-	\begin{column}{0.3\textwidth}
-		\textbf{Clustering}
-		\begin{enumerate}
-			\item K-Means
-			\item Hierarchical
-			\item DBSCAN
-			\item HDBSCAN
-		\end{enumerate}
-	\end{column}
-\end{columns}
+\section{General}
+\begin{frame}
+	\begin{tikzpicture}[sibling distance=10em,
+	every node/.style = {shape=rectangle, rounded corners,
+		draw, align=center,
+		top color=white, bottom color=blue!20}]]
+	\node {Predictive Modeling}
+	child { node {abrakadabra} }
+	child { node {Regression}
+		child { node {uses}
+			child { node {strength of predictors} }
+			child { node {forecasting} }
+			%child { node {center} } 
+		}
+		child { node {first left,\\centered,\\last right} } };
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}[plain]%\frametitle{ML}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\includegraphics[scale=0.2]{mlinit}\\
+			\includegraphics[scale=0.2]{mlmethods}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\includegraphics[scale=0.2]{mlmethods}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+\hspace*{-3pt}\makebox[\linewidth][c]{
+
+	\includegraphics[scale=0.82]{mltypes}
+}
+\end{frame}
+
+\subsection{ANN}
+\begin{frame}
+	content...
 \end{frame}
 
 
+\subsection{RNN}
+\begin{frame}
+content...
+\end{frame}
+
+\subsection{CNN}
+\begin{frame}
+content...
+\end{frame}
+
+\section{EDA}
+\begin{frame}\frametitle{Univariate and Multivariate Analysis}
+\end{frame}
+
+\begin{frame}\frametitle{Dimensionality Reduction}
+\end{frame}
+
+\begin{frame}\frametitle{Under and Over Sampling}
+\end{frame}
+
+
+\begin{frame}\frametitle{Class Imbalance}
+\end{frame}
 
 \section{Regression}
-\begin{frame}
-	Regression analysis is a statistical technique to assess the relationship between an predictor variable and one or more response factors.
+
+
+\subsection{Types}
+
+\begin{frame}\frametitle{what is regression?}
+	Regression analysis is a statistical technique to assess the relationship between an predictor variable and one or more response factors.\\
+	http://www.statisticshowto.com/probability-and-statistics/regression-analysis/
+	(go to definitions)
 \end{frame}
 
 
+\begin{frame}\frametitle{Linear vs Logistic}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\includegraphics[scale=0.45]{regression/linearlogistic}
+		\end{column}
+		\begin{column}{0.2\textwidth}
+			Data is modelled using a straight line vs using a sigmoid function\\
+			maps continuous x to cont y, vs maps cont x to binary y 
+		\end{column}
+	\end{columns}
+
+\end{frame}
 
 \begin{frame}[plain]%\frametitle{}
 \begin{table}[h]
 	\centering
 	\begin{tabular}{cccc}
-	\textbf{Outcome} & \textbf{GLM Family} & \textbf{Link} & \textbf{Mean to} \\
-	\textbf{Variable} & & & \textbf{Variance} \\ 
-	\hline %\pause 
-	Continuous, & Normal or & \\ unbounded & Standard Gaussian & Identity &  \\  
-	\hline
-	Continuous, & Gamma or & \\ non-negative & inverse Gamma &  &  \\ \hline
-	
-	
-	Discrete/ & Poisson & Log & Identity \\
-	counts/ & Quassi-poisson or &  & If not \\
-	rate & negative binomial & & Identity \\
-	
-	
-	\hline
-	
-	Count & Gamma &  & Over dispersion \\ \hline
-	Counts with & Zero inflated poisson & \\ multiple zero & may be checked 
-	for fitting & & \\ \hline
-	Binary & Binomial or & \\  & Logistic regression & & \\ \hline
-	Nominal  & Multinomial regression & \\
-	\hline
+		\textbf{Outcome} & \textbf{GLM Family} & \textbf{Link} & \textbf{Mean to} \\
+		\textbf{Variable} & & & \textbf{Variance} \\ 
+		\hline %\pause 
+		Continuous, & Normal or & \\ unbounded & Standard Gaussian & Identity &  \\  
+		\hline
+		Continuous, & Gamma or & \\ non-negative & inverse Gamma &  &  \\ \hline
+		
+		
+		Discrete/ & Poisson & Log & Identity \\
+		counts/ & Quassi-poisson or &  & If not \\
+		rate & negative binomial & & Identity \\
+		
+		
+		\hline
+		
+		Count & Gamma &  & Over dispersion \\ \hline
+		Counts with & Zero inflated poisson & \\ multiple zero & may be checked 
+		for fitting & & \\ \hline
+		Binary & Binomial or & \\  & Logistic regression & & \\ \hline
+		Nominal  & Multinomial regression & \\
+		\hline
 	\end{tabular} 
-\caption{Regression Model Selection Criteria}
+	\caption{Regression Model Selection Criteria}
 \end{table}
 \end{frame}
+
+
+\subsection{Linear regression}
+\begin{frame}\frametitle{Linear Regression using Least Squares}
+	\begin{enumerate}
+		\item \textbf{fitting a line to the data}: as shown below\\
+		\item Find best fit using \textbf{Least Squares}\\
+		sum of squared residuals = $\sum (y-\hat{y})^2$
+		\item Find goodness of fit using \textbf{R squared} method\\
+		R squared (aka coefficient of determination) is a statistical measure of how well the data fits line\\
+		low R squared doesn't always mean bad 
+	\end{enumerate}
+	\includegraphics[scale=0.15]{regression/linear}
+	\includegraphics[scale=0.15]{regression/linear2}
+	\includegraphics[scale=0.15]{regression/linear3}\\	
+\end{frame}
+
+
+\begin{frame}%\frametitle{manual calculation}
+	\includegraphics[scale=0.27]{regression/linearmanual}
+	\includegraphics[scale=0.27]{regression/linearmanualrsq}
+\end{frame}
+
+\begin{frame}\frametitle{characteristics of Linear Regression}
+	outliers have big bad impact\\
+	Computational complexity O(n)\\
+	comprehensible and transparent
+\end{frame}
+
+\begin{frame}\frametitle{Linear vs Multiple Regression}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\textbf{Linear}\\
+			fit line\\
+			Calculate R$^2$\\
+			$R^2 = \frac{SS(mean_y)-SS(fit)}{SS(mean_y)}$\\
+			cal F-score and p-val\\
+			$F = \frac{\frac{SS(mean)-SS(fit)}{p_{fit}-p_{mean}}}{\frac{SS(fit)}{n-p_{fit}}}$
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\textbf{Multiple}\\
+			fit plane or higher dimensional\\
+			Cal R$^2$\\
+			Adjust R$^2$ to compensate for additional parameters\\
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Multiple Regression}
+	\textbf{Fit plane of higher dimensional obj to the data}\\
+	
+\end{frame}
+
+\subsection{Logistic}
+\begin{frame}\frametitle{Logistic Regression}
+content...
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+
+
 
 
 
@@ -419,8 +536,8 @@ Maybe, use \textbf{average linkage} which defines the distance between two clust
 
 
 
-\section{Analysis}
-\subsection{Customer Analysis}
+\section{Customer Analysis}
+\subsection{Churn and LTV}
 
 \begin{frame}\frametitle{Churn or Retention Analysis}
 Customer Retention Rate: The percentage of customers who repurchase in a given time period compared to an equal and preceding time period\\
@@ -517,25 +634,58 @@ DR=Discount Rate to adjusts for mix churn (Annual Renewals, Constant, Declining 
 	\includegraphics[scale=0.4]{churnltv}
 \end{frame}
 
-\begin{frame}\frametitle{Survival Analysis}
+\subsection{Survival Analysis}
+\begin{frame}\frametitle{Types}
 content...
 \end{frame}
 
-\begin{frame}\frametitle{Sentiment Analysis}
+\begin{frame}\frametitle{The Kaplan-Meier curve}
 content...
 \end{frame}
 
-\begin{frame}\frametitle{Propensity of Cross-sell}
+\begin{frame}\frametitle{The log-rank test}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Cox proportional hazards regression}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Parametric models}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Frailty models}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Competing risk models}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Discrete Time Model using logistic regression}
 content...
 \end{frame}
 
 
-\subsection{Trend Analysis}
+
+\subsection{Social Network Analysis}
+\begin{frame}\frametitle{Social Network Analysis}
+	content...
+\end{frame}
+
+\section{Time Series Analysis}
+\begin{frame}\frametitle{Trend Analysis}
+	content...
+\end{frame}	
 
 
 \subsection{Other Analysis}
 \begin{frame}\frametitle{Whale Curve Analysis}
+	Technique to visualize the data\\
+	Sort the data before plotting\\
 	\textbf{Pareto Principle}: for many events, roughly 80\% of the effects come from 20\% of the causes\\
+	\includegraphics[scale=0.3]{other/whalecurve}
 	
 \end{frame}
 
@@ -544,6 +694,16 @@ content...
 "Loss Leader” Model, where you introduce new customers at a high cost in the hope of building a customer base or securing future revenue? 
 
 \end{frame}
+
+\begin{frame}\frametitle{Market Basket Analysis}
+	content...
+\end{frame}
+
+%\subsection{}
+\begin{frame}\frametitle{Propensity of Cross-sell}
+content...
+\end{frame}
+
 
 \begin{frame}
 	Thank You!

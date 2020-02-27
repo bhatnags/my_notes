@@ -1,14 +1,23 @@
-\beamer@sectionintoc {1}{Regression, Classification, Clustering}{3}{0}{1}
-\beamer@sectionintoc {2}{Regression}{4}{0}{2}
-\beamer@sectionintoc {3}{Classification}{6}{0}{3}
-\beamer@subsectionintoc {3}{1}{Decision Tree and Random Forest}{7}{0}{3}
-\beamer@sectionintoc {4}{Clustering}{9}{0}{4}
-\beamer@subsectionintoc {4}{1}{Clustering Types}{9}{0}{4}
-\beamer@subsectionintoc {4}{2}{Density Models}{12}{0}{4}
-\beamer@subsectionintoc {4}{3}{Distribution Models}{17}{0}{4}
-\beamer@subsectionintoc {4}{4}{Centroidal models}{20}{0}{4}
-\beamer@subsectionintoc {4}{5}{Connectivity Models}{23}{0}{4}
-\beamer@sectionintoc {5}{Analysis}{25}{0}{5}
-\beamer@subsectionintoc {5}{1}{Customer Analysis}{25}{0}{5}
-\beamer@subsectionintoc {5}{2}{Trend Analysis}{33}{0}{5}
-\beamer@subsectionintoc {5}{3}{Other Analysis}{33}{0}{5}
+\beamer@sectionintoc {1}{General}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{ANN}{7}{0}{1}
+\beamer@subsectionintoc {1}{2}{RNN}{8}{0}{1}
+\beamer@subsectionintoc {1}{3}{CNN}{9}{0}{1}
+\beamer@sectionintoc {2}{EDA}{10}{0}{2}
+\beamer@sectionintoc {3}{Regression}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Types}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Linear regression}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Logistic}{22}{0}{3}
+\beamer@sectionintoc {4}{Classification}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Decision Tree and Random Forest}{24}{0}{4}
+\beamer@sectionintoc {5}{Clustering}{26}{0}{5}
+\beamer@subsectionintoc {5}{1}{Clustering Types}{26}{0}{5}
+\beamer@subsectionintoc {5}{2}{Density Models}{29}{0}{5}
+\beamer@subsectionintoc {5}{3}{Distribution Models}{34}{0}{5}
+\beamer@subsectionintoc {5}{4}{Centroidal models}{37}{0}{5}
+\beamer@subsectionintoc {5}{5}{Connectivity Models}{40}{0}{5}
+\beamer@sectionintoc {6}{Customer Analysis}{42}{0}{6}
+\beamer@subsectionintoc {6}{1}{Churn and LTV}{42}{0}{6}
+\beamer@subsectionintoc {6}{2}{Survival Analysis}{47}{0}{6}
+\beamer@subsectionintoc {6}{3}{Social Network Analysis}{55}{0}{6}
+\beamer@sectionintoc {7}{Time Series Analysis}{56}{0}{7}
+\beamer@subsectionintoc {7}{1}{Other Analysis}{57}{0}{7}

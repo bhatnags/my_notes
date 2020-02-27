@@ -21,8 +21,433 @@
 \end{frame} 
 
 
-\section{Glossary}
-\subsection{Initial Terminologies} 
+\section{Statistical Tests}
+
+
+\subsection{Tests}
+
+\begin{frame}[plain]
+\begin{columns}
+\begin{column}{0.72\textwidth}
+\begin{figure}
+\includegraphics[scale=0.54]{statisticaltest}
+\end{figure}
+\end{column}
+\begin{column}{0.3\textwidth}
+\begin{enumerate}
+\item $H_0: \mu=100$; $H_1: \mu \ne 100$
+\item if $H_0$ is true, how extreme is our sample?
+\item 
+\item 
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}\frametitle{Precision Recall tradeoff}
+content...
+\end{frame}
+
+
+
+{%<--- Start local changes
+\setbeamertemplate{navigation symbols}{}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{confusionmatrix}}
+\begin{frame}[plain]
+\vspace{2.5in}
+\textbf{Type I Error}: Reject $H_0$ when $H_0$ is true. $H_0$: usko bimari nahi hai \\
+Prob of Type I Error = level of significance = $\alpha$ = 5\% (generally)\\
+\textbf{Type II error}: Not reject $H_0$ when $H_0$ is false \\
+Prob of Type II Error = $\beta$ and power of hypothesis test = 1-$\beta$ \\
+1-$\beta$ = prob of rejecting a $H_0$ when $H_0$ is false\\
+%actual pos $=> H_1 is true$ test outcome is neg $=>$
+
+\end{frame}
+}%<---- Finish local changes
+
+
+
+
+\begin{frame}\frametitle{test statistics}%[plain]
+\begin{figure}
+\includegraphics[scale=0.28]{TypesTests} 
+\caption{t-test, anova, chi-square, correlation test}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Type of tests}%[plain]
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{teststats}}
+\end{frame}
+
+
+
+
+
+\section{Distributions}
+\subsection{Distributions} 
+
+\begin{frame}\frametitle{PMF, CMF, PDF, CDF}
+\begin{columns}
+	\begin{column}{5cm}
+		\begin{itemize}
+			\item<1> A PMF, “f” returns the probability of an outcome: $f(x)=P(X=x)$ 
+			\includegraphics[scale=0.35]{CdfPdfPmf} 
+			\newline
+			\item<2> Reliability function \& Hazard Function
+		\end{itemize}
+		\vspace{3cm} 
+	\end{column}
+	\begin{column}{5cm}
+		\begin{overprint}		
+			\includegraphics<1>[scale=0.3]{PmfCdfContinuous}
+			\includegraphics<1>[scale=0.25]{pdfcdfDiscrete}
+			\includegraphics<2>[scale=0.32]{cdfpdfrfhf}
+		\end{overprint}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{columns}
+\begin{column}{0.69\paperwidth}
+	\begin{figure}
+		\includegraphics[scale=.4]{Distributions}
+	\end{figure}
+\end{column}
+\begin{column}{0.3\paperwidth}
+	\textbf{Discrete}
+	\begin{enumerate}
+		\item Uniform Discrete or Rectangular
+		\setlength{\itemsep}{0.mm}
+		\item Binomial
+		\setlength{\itemsep}{0.mm}
+		\item Hypergeometric
+		\setlength{\itemsep}{0.mm}
+		\item Poisson
+		\setlength{\itemsep}{0.mm}
+		\item Geometric
+	\end{enumerate}
+	\textbf{Continuous}
+	\begin{enumerate}
+		\item Uniform 
+		\setlength{\itemsep}{0.mm}
+		\item Normal/Gaussian
+		\setlength{\itemsep}{0.mm}
+		\item Student’s T
+		\setlength{\itemsep}{0.mm}
+		\item chi-squared
+		\item Exponential
+		\setlength{\itemsep}{0.mm}
+		\item Beta
+		\setlength{\itemsep}{0.mm}
+		\item Triangular
+		\setlength{\itemsep}{0.mm}
+		\item Gamma
+		
+	\end{enumerate}
+	
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\begin{figure}
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{distributionChoice}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{}
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{DiscreteDistribution}}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{ContinuousDistribution}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+\makebox[\linewidth]{\includegraphics[width=\paperwidth]{UnivariateProbabDist}}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}\frametitle{relation btw various dist}
+\textbf{Bernoulli and Binomial}: Bernoulli Distribution is a special case of Binomial Distribution with a single trial.
+
+\textbf{Poisson and Binomial}: Poisson Distribution is a limiting case of binomial distribution under the following conditions:
+
+The number of trials is indefinitely large or $\displaystyle{\lim_{x \to \infty}}$.
+The probability of success for each trial is same and indefinitely small or $\displaystyle{\lim_{x \to 0}}$.
+np = $\lambda$, is finite.
+
+\textbf{Normal and Binomial}: Normal distribution is another limiting form of binomial distribution under the following conditions:
+
+The number of trials is indefinitely large, $\displaystyle{\lim_{n \to \infty}}$.
+Both p and q are not indefinitely small.
+\textbf{Normal and Poisson Distribution}:
+The normal distribution is also a limiting case of Poisson distribution with the parameter $\displaystyle{\lim_{\lambda \to \infty}}$.
+
+
+
+\end{frame}
+
+\begin{frame}\frametitle{\hypertarget{betabino}{Beta and Binomial}}
+\textbf{Prior and Posterior}
+\begin{enumerate}
+\item 	Conjugate prior for binomial
+$ x|p \sim Bin(n,p); p \sim Beta(a,b) [prior]$\\
+$ f(p|X=k) = f(X=k | p) f(p) / f(X=k)$ [use bayes]\\
+replace with beta and bin \\
+to learn more\\
+$  $ \\
+
+$ p|X \sim Beta(a+X, b+n-x) $
+
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}%\frametitle{Poisson va exponential}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\textbf{Poisson}
+event per unit time
+\\how many calls do you get in a day
+\\The number of printing errors at each page of the book
+\\Num of metro arrivals in t time
+\\The number of arrivals reported in an area on a day.
+\\ The number of soldiers killed by horse-kick per year
+\\ Air conditioners in a lifetime
+\end{column}
+\begin{column}{0.45\textwidth}
+\textbf{exponential}
+time per event
+\\What about the interval of time btw the calls
+\\Num of pages before until x num of printing errors
+\\ Length of time btw metro arrivals,
+\\ Length of time between arrivals at a gas station
+\\Num of years btw horse-kick deaths in the army
+\\ The life of an Air Conditioner
+
+\end{column}
+
+\end{columns}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Types of Dist}
+\begin{frame}\frametitle{Standard Uniform Density}
+parameters a = 0 and b = 1, so the PDF for standard uniform density is given by:
+
+\begin{align}
+f(x) = \left\{ \begin{array}{cc} 
+1, & \hspace{5mm} 0 <= x <=1 \\
+0, & \hspace{5mm} otherwise \\
+%T( \lfloor \frac{n}{2} \rfloor) + T(\lceil \frac{n}{2} \rceil)+ 2 & \hspace{5mm} n > 2 \\	
+\end{array} \right.
+\end{align}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Normal Distribution}
+\textbf{Standard Normal Distribution} $\mu$ = 0 ; $\sigma$ = 1 \\
+\textbf{The 68-95-99.7 rule}: Given a normally distributed random variable:
+$P(\mu-\sigma \leq X \leq \mu+\sigma) \approx .68 =>$68\% of samples fall within 1 SD of the mean \\
+$P(\mu-2\sigma \leq X \leq \mu+2\sigma) \approx .95$ \\
+$P(\mu-3\sigma \leq X \leq \mu+3\sigma) \approx .997$ \\
+
+characteristics of Normal distribution:
+\begin{enumerate}
+\item Mean = median = mode
+\item The distribution curve is bell-shaped and symmetrical about the line x=$\mu$.
+\item The total AUC = 1.
+\item Exactly half of the values are to the left of the center and the other half to the right.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}\frametitle{Student's t distribution}
+characteristics\\
+\begin{enumerate}
+\item Underlying dist is Normal
+\item Pop dist is unknown
+\item sample size is too small for CLT to apply
+\end{enumerate}
+$z \sim \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} \longleftrightarrow$
+$t_{n-1} \sim \frac{\bar{x}-\mu}{s/\sqrt{n}} $	
+\textbf{t test measures}
+\begin{enumerate}
+\item to test hypothesized population mean $\frac{\bar{x}-\mu}{s/\sqrt{n}}$
+\item regression $\frac{b-\beta}{SE(b)}$ (uses Std error, as pop std dev is known)
+\item 2 sampled t-test: assessing the diff btw 2 pop 
+$\frac{(\bar{x_1}-\mu_1)-(\bar{x_2}-\mu_2)}
+{\sqrt{\frac{s_1^2}{\sqrt{n_1}}+\frac{s_1^2}{\sqrt{n_1}}}}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Chi-squared dist}
+comes directly from a normal dist (square of selection from standard Normal Distribution) so sample size should be large enough ($>$5) s.t. CLT applies\\
+for k degrees of freedom: $\chi_k^2 = \sum_{i=1}^{k}Z_i^2$\\
+$\chi = \sum\frac{(obs-exp)^2}{exp}$ with
+DF = (row-1)(col-1)\\
+\begin{figure}
+\includegraphics[scale=0.5]{chisq}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Binomial, bernoulli, hyper-geometric}
+Repeat Bernoulli n times and it's Binomial.\\
+Hypergeometric is Binomial without replacement\\
+
+the properties of a Binomial Distribution are
+\begin{enumerate}
+\item Each trial is independent.
+\item There are only two possible outcomes per trial.
+\item A total number of n identical trials are conducted.
+\item The probability of success and failure is same for all trials. (Trials are identical.)
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Hypergeometric}
+\begin{enumerate}
+\item Discrete
+\item equivalent to Binomial, without replacement
+\item N = total population\\ m=total items of interest in population\\n=sample size
+\item region bounded by 0 and m
+\end{enumerate}
+Characteristics of Poisson distribution:
+\begin{enumerate}
+\item Event are not Independent.
+\item 
+\end{enumerate}	
+
+\end{frame}
+
+\begin{frame}\frametitle{Poisson}
+\begin{enumerate}
+\item Discrete
+\item events in fixed region of opportunity (or time interval, t)
+\item region bounded by 0 and $\infty$
+\end{enumerate}
+Characteristics of Poisson distribution:
+\begin{enumerate}
+\item Independent event.
+\item The probability of success over a short interval must equal the probability of success over a longer interval.
+\item The probability of success in an interval approaches zero as the interval becomes smaller.
+\item The rate at which event occurs is constant ($\lambda$)
+\end{enumerate}	
+
+Poisson RV, $X$ = number of events in t.\\
+mean number of events in t, $\mu$ = $\lambda$*t\\
+The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
+\end{frame}
+
+
+\begin{frame}\frametitle{Exponential Dist}
+inverse of Poisson: rate parameter or mean for poisson = $\lambda$ and mean for expo = $\beta=1/\lambda$ \\
+Exponential distribution is widely used for survival analysis.\\
+Memoryless-ness:\\
+events must occur at constant rate\\
+events must be independent of each other\\
+probab of event occurring in first min = probab of the event occuring in (t+1)min\\
+probab of first visitor on website in first min = p\\
+probab of first visitor on website in second min = (1-p)p\\
+probab of first visitor on website within third min = (1-p)$^2$p\\
+Each minute graph dropping $\rightarrow$ exponential decay
+
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Memorylessness}
+Memoryless property: $P(X>=s+t | X>=s) = P(X>=t) $ \\
+$P(X>=s) = 1-CDF = 1-P(X<=s) = e^{-\lambda s}$ \\
+$P(X>=s+t | X>=s) = \frac{P(X>=s+t, X>=s)}{P(X>=s)}$ \\
+$P(X>=s+t | X>=s) = \frac{P(X>=s+t)}{P(X>=s)}$ \\
+$P(X>=s+t | X>=s) = \frac{e^{-\lambda (s+t)}}{ e^{-\lambda s}}$ \\
+$P(X>=s+t | X>=s) = e^{-\lambda t}$ \\
+Memoryless property: \\
+$E(X|X>a) = a+E(X-a|X>a)$ \\
+$E(X|X>a) = a+ 1/\lambda$ \\
+
+\end{frame}
+
+
+\begin{frame}%\frametitle{Poisson}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+failure rate of any device at time t, given that it has survived up to t; $\lambda = \frac{1}{\beta} > 0 $
+\\ 
+\textbf{area under the density curve}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.5]{exponential}
+\end{figure}
+\end{column}
+\end{columns}
+to the left of x
+$P\{X \leq x\} = 1 – e^{-\lambda x}$
+\\ to the right of x $P\{X > x\} = e^{-\lambda x}$
+\\
+$P\{x1 < X \leq x2\} = e^{-\lambda x1} - e^{-\lambda x2}$
+
+\end{frame}
+
+
+\begin{frame}\frametitle{to read}
+https://www.quora.com/What-is-the-relation-between-standard-normal-and-gamma-distribution
+
+https://stats.stackexchange.com/questions/37461/the-relationship-between-the-gamma-distribution-and-the-normal-distribution
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Max-Likelihood of Distributions}
+\begin{frame}\frametitle{Max Likelihood}
+	\includegraphics[scale=0.15]{figs/likelihoodmean}	\includegraphics[scale=0.15]{figs/likelihoodmean2}\\
+	\includegraphics[scale=0.15]{figs/likelihoodsd}	\includegraphics[scale=0.15]{figs/likelihoodsd2}	\includegraphics[scale=0.15]{figs/likelihoodsd3}\\
+\end{frame}
+
+\section{Descriptive Stats}
+\subsection{Stats Flow} 
 \begin{frame}
 \begin{figure}
 	\includegraphics[scale=0.4]{Data} 
@@ -78,369 +503,18 @@ Law of large num \\ law of averages\\
 \end{frame}
 
 
-\subsection{Types of Distributions} 
 
-\begin{frame}\frametitle{PMF, CMF, PDF, CDF}
-\begin{columns}
-	\begin{column}{5cm}
-		\begin{itemize}
-			\item<1> A PMF, “f” returns the probability of an outcome: $f(x)=P(X=x)$ 
-			 \includegraphics[scale=0.35]{CdfPdfPmf} 
-			 \newline
-			\item<2> Reliability function \& Hazard Function
-		\end{itemize}
-		\vspace{3cm} 
-	\end{column}
-	\begin{column}{5cm}
-		\begin{overprint}		
-			\includegraphics<1>[scale=0.3]{PmfCdfContinuous}
-			\includegraphics<1>[scale=0.25]{pdfcdfDiscrete}
-			\includegraphics<2>[scale=0.32]{cdfpdfrfhf}
-		\end{overprint}
-	\end{column}
-\end{columns}
-\end{frame}
+\subsection{Initial Terminologies}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\begin{columns}
-		\begin{column}{0.69\paperwidth}
-			\begin{figure}
-				\includegraphics[scale=.4]{Distributions}
-			\end{figure}
-		\end{column}
-		\begin{column}{0.3\paperwidth}
-				\textbf{Discrete}
-				\begin{enumerate}
-					\item Uniform Discrete or Rectangular
-					\setlength{\itemsep}{0.mm}
-					\item Binomial
-					\setlength{\itemsep}{0.mm}
-					\item Hypergeometric
-					\setlength{\itemsep}{0.mm}
-					\item Poisson
-					\setlength{\itemsep}{0.mm}
-					\item Geometric
-				\end{enumerate}
-				\textbf{Continuous}
-				\begin{enumerate}
-					\item Uniform 
-					\setlength{\itemsep}{0.mm}
-					\item Normal/Gaussian
-					\setlength{\itemsep}{0.mm}
-					\item Student’s T
-					\setlength{\itemsep}{0.mm}
-					\item chi-squared
-					\item Exponential
-					\setlength{\itemsep}{0.mm}
-					\item Beta
-					\setlength{\itemsep}{0.mm}
-					\item Triangular
-					\setlength{\itemsep}{0.mm}
-					\item Gamma
-
-				\end{enumerate}
-		
-		\end{column}
-	\end{columns}
-
-\end{frame}
-
-
-
-
-
-
-\begin{frame}
-\begin{figure}
-	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{distributionChoice}}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}[plain]\frametitle{}
-	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{DiscreteDistribution}}
-\end{frame}
-
-
-\begin{frame}
-\begin{figure}
-	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{ContinuousDistribution}}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}
-\begin{figure}
-	\makebox[\linewidth]{\includegraphics[width=\paperwidth]{UnivariateProbabDist}}
-\end{figure}
-\end{frame}
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}\frametitle{relation btw various dist}
-\textbf{Bernoulli and Binomial}: Bernoulli Distribution is a special case of Binomial Distribution with a single trial.
-
-\textbf{Poisson and Binomial}: Poisson Distribution is a limiting case of binomial distribution under the following conditions:
-
-The number of trials is indefinitely large or $\displaystyle{\lim_{x \to \infty}}$.
-The probability of success for each trial is same and indefinitely small or $\displaystyle{\lim_{x \to 0}}$.
-np = $\lambda$, is finite.
-
-\textbf{Normal and Binomial}: Normal distribution is another limiting form of binomial distribution under the following conditions:
-
-The number of trials is indefinitely large, $\displaystyle{\lim_{n \to \infty}}$.
-Both p and q are not indefinitely small.
-\textbf{Normal and Poisson Distribution}:
-The normal distribution is also a limiting case of Poisson distribution with the parameter $\displaystyle{\lim_{\lambda \to \infty}}$.
-
-
-
-\end{frame}
-
-\begin{frame}{Beta and Binomial}
-\textbf{Prior and Posterior}
-\begin{enumerate}
-\item 	Conjugate prior for binomial
-$ x|p ~ Bin(n,p); p~Beta(a,b) [prior]$\\
-$ f(p|X=k) = use bayes$ \\
-$ replace with beta abd bin $ \\
-$ p|X ~ Beta(a+X, b+n-x) $
-
-\end{enumerate}
-\end{frame}
-
-
-\begin{frame}%\frametitle{Poisson va exponential}
-\begin{columns}
-\begin{column}{0.45\textwidth}
-\textbf{Poisson}
-event per unit time
-\\how many calls do you get in a day
-\\The number of printing errors at each page of the book
-\\Num of metro arrivals in t time
-\\The number of arrivals reported in an area on a day.
-\\ The number of soldiers killed by horse-kick per year
-\\ Air conditioners in a lifetime
-\end{column}
-\begin{column}{0.45\textwidth}
-\textbf{exponential}
-time per event
-\\What about the interval of time btw the calls
-\\Num of pages before until x num of printing errors
-\\ Length of time btw metro arrivals,
-\\ Length of time between arrivals at a gas station
-\\Num of years btw horse-kick deaths in the army
-\\ The life of an Air Conditioner
-
-\end{column}
-
-\end{columns}
-\end{frame}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\subsection{Distributions}
-\begin{frame}\frametitle{Standard Uniform Density}
-	parameters a = 0 and b = 1, so the PDF for standard uniform density is given by:
-	
-	\begin{align}
-		f(x) = \left\{ \begin{array}{cc} 
-		1, & \hspace{5mm} 0 <= x <=1 \\
-		0, & \hspace{5mm} otherwise \\
-		%T( \lfloor \frac{n}{2} \rfloor) + T(\lceil \frac{n}{2} \rceil)+ 2 & \hspace{5mm} n > 2 \\	
-		\end{array} \right.
-	\end{align}
-	
-\end{frame}
-
-
-\begin{frame}\frametitle{Normal Distribution}
-\textbf{Standard Normal Distribution} $\mu$ = 0 ; $\sigma$ = 1 \\
-\textbf{The 68-95-99.7 rule}: Given a normally distributed random variable:
-$P(\mu-\sigma \leq X \leq \mu+\sigma) \approx .68 =>$68\% of samples fall within 1 SD of the mean \\
-$P(\mu-2\sigma \leq X \leq \mu+2\sigma) \approx .95$ \\
-$P(\mu-3\sigma \leq X \leq \mu+3\sigma) \approx .997$ \\
-
-characteristics of Normal distribution:
-	\begin{enumerate}
-		\item Mean = median = mode
-		\item The distribution curve is bell-shaped and symmetrical about the line x=$\mu$.
-		\item The total AUC = 1.
-		\item Exactly half of the values are to the left of the center and the other half to the right.
-	\end{enumerate}
-	
-\end{frame}
-
-\begin{frame}\frametitle{Student's t distribution}
-	characteristics\\
-	\begin{enumerate}
-		\item Underlying dist is Normal
-		\item Pop dist is unknown
-		\item sample size is too small for CLT to apply
-	\end{enumerate}
-	$z \sim \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} \longleftrightarrow$
-	$t_{n-1} \sim \frac{\bar{x}-\mu}{s/\sqrt{n}} $	
-	\textbf{t test measures}
-	\begin{enumerate}
-		\item to test hypothesized population mean $\frac{\bar{x}-\mu}{s/\sqrt{n}}$
-		\item regression $\frac{b-\beta}{SE(b)}$ (uses Std error, as pop std dev is known)
-		\item 2 sampled t-test: assessing the diff btw 2 pop 
-		$\frac{(\bar{x_1}-\mu_1)-(\bar{x_2}-\mu_2)}
-		{\sqrt{\frac{s_1^2}{\sqrt{n_1}}+\frac{s_1^2}{\sqrt{n_1}}}}$
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{Chi-squared dist}
-	comes directly from a normal dist (square of selection from standard Normal Distribution) so sample size should be large enough ($>$5) s.t. CLT applies\\
-	for k degrees of freedom: $\chi_k^2 = \sum_{i=1}^{k}Z_i^2$\\
-	$\chi = \sum\frac{(obs-exp)^2}{exp}$ with
-	DF = (row-1)(col-1)\\
-	\begin{figure}
-		\includegraphics[scale=0.5]{chisq}
-	\end{figure}
-\end{frame}
-
-
-
-\begin{frame}\frametitle{Binomial, bernoulli, hyper-geometric}
-	Repeat Bernoulli n times and it's Binomial.\\
-	Hypergeometric is Binomial without replacement\\
-
-	the properties of a Binomial Distribution are
-	\begin{enumerate}
-		\item Each trial is independent.
-		\item There are only two possible outcomes per trial.
-		\item A total number of n identical trials are conducted.
-		\item The probability of success and failure is same for all trials. (Trials are identical.)
-	\end{enumerate}
-
-\end{frame}
-
-
-\begin{frame}\frametitle{Hypergeometric}
-\begin{enumerate}
-	\item Discrete
-	\item equivalent to Binomial, without replacement
-	\item N = total population\\ m=total items of interest in population\\n=sample size
-	\item region bounded by 0 and m
-\end{enumerate}
-Characteristics of Poisson distribution:
-\begin{enumerate}
-	\item Event are not Independent.
-	\item 
-\end{enumerate}	
-
-\end{frame}
-
-\begin{frame}\frametitle{Poisson}
-	\begin{enumerate}
-		\item Discrete
-		\item events in fixed region of opportunity (or time interval, t)
-		\item region bounded by 0 and $\infty$
-	\end{enumerate}
-	Characteristics of Poisson distribution:
-	\begin{enumerate}
-		\item Independent event.
-		\item The probability of success over a short interval must equal the probability of success over a longer interval.
-		\item The probability of success in an interval approaches zero as the interval becomes smaller.
-		\item The rate at which event occurs is constant ($\lambda$)
-	\end{enumerate}	
-
-	Poisson RV, $X$ = number of events in t.\\
-	mean number of events in t, $\mu$ = $\lambda$*t\\
-	The PMF of X: 	$P(X=x)=e^{-\mu}*\frac{\mu^x}{x!}$
-\end{frame}
-
-
-\begin{frame}\frametitle{Exponential Dist}
-	inverse of Poisson: rate parameter or mean for poisson = $\lambda$ and mean for expo = $\beta=1/\lambda$ \\
-	Exponential distribution is widely used for survival analysis.\\
-	Memoryless-ness:\\
-	events must occur at constant rate\\
-	events must be independent of each other\\
-	probab of event occurring in first min = probab of the event occuring in (t+1)min\\
-	probab of first visitor on website in first min = p\\
-	probab of first visitor on website in second min = (1-p)p\\
-	probab of first visitor on website within third min = (1-p)$^2$p\\
-	Each minute graph dropping $\rightarrow$ exponential decay
-	
-
-\end{frame}
-
-
-\begin{frame}\frametitle{Memorylessness}
-		Memoryless property: $P(X>=s+t | X>=s) = P(X>=t) $ \\
-	$P(X>=s) = 1-CDF = 1-P(X<=s) = e^{-\lambda s}$ \\
-	$P(X>=s+t | X>=s) = \frac{P(X>=s+t, X>=s)}{P(X>=s)}$ \\
-	$P(X>=s+t | X>=s) = \frac{P(X>=s+t)}{P(X>=s)}$ \\
-	$P(X>=s+t | X>=s) = \frac{e^{-\lambda (s+t)}}{ e^{-\lambda s}}$ \\
-	$P(X>=s+t | X>=s) = e^{-\lambda t}$ \\
-	Memoryless property: \\
-	$E(X|X>a) = a+E(X-a|X>a)$ \\
-	$E(X|X>a) = a+ 1/\lambda$ \\
-	
-\end{frame}
-
-
-\begin{frame}%\frametitle{Poisson}
-	\begin{columns}
-		\begin{column}{0.45\textwidth}
-			failure rate of any device at time t, given that it has survived up to t; $\lambda = \frac{1}{\beta} > 0 $
-			\\ 
-			\textbf{area under the density curve}
-		\end{column}
-		\begin{column}{0.5\textwidth}
-			\begin{figure}
-				\includegraphics[scale=0.5]{exponential}
-			\end{figure}
-		\end{column}
-	\end{columns}
-			to the left of x
-			 $P\{X \leq x\} = 1 – e^{-\lambda x}$
-			\\ to the right of x $P\{X > x\} = e^{-\lambda x}$
-			\\
-			$P\{x1 < X \leq x2\} = e^{-\lambda x1} - e^{-\lambda x2}$
-
-\end{frame}
-
-
-
-\section{EDA}
-\begin{frame}\frametitle{Univariate and Multivariate Analysis}
-\end{frame}
-
-\begin{frame}\frametitle{Dimensionality Reduction}
-\end{frame}
-
-\begin{frame}\frametitle{Under and Over Sampling}
-\end{frame}
-
-
-\section{Descriptive Statistics}
-
-
-
-\begin{frame}%\frametitle{Variance, Standard Deviation} 
+\begin{frame}\frametitle{Variance, Standard Deviation} 
 \begin{itemize}
 	\item Variable and Random Variable (RV)
 	\item Parameter and Hyper-parameter
 	\item \hyperlink{meanlabel}{\beamerbutton{Mean}}, Median, Mode
 	\item mode sucks for small samples
 	\item Range, IQR
-	\item Standard Deviation ($\sigma$): Measure of the how spread out data is from its mean.
-	\item Variance ($\sigma^2$): It describes how much a random variable differs from its expected value. It entails computing squares of deviations.The average of the squared differences from the Mean.\\
+	\item Standard Deviation ($\sigma$): Measure of how spread out the data is from its mean.
+	\item Variance ($\sigma^2$): It describes how much a random variable differs from its expected value. It entails computing squares of deviations. The average of the squared differences from the Mean.\\
 	\begin{enumerate}
 		\item Deviation is the difference bw each element from the mean.\\
 		\item Population Variance = avg of squared deviations\\
@@ -522,12 +596,18 @@ The standard deviation, ($\sigma = \sqrt{V}$), gives the radius of gyration abou
 \end{frame}
 
 \begin{frame}\frametitle{Std error vs std deviation}
-std error = 
+std error = std dev of the means\\
+std dev quantifies the variation within a set of measurements\\
+std error quantifies variation in the means from multiple sets of measurements\\
+take a sample and get the mean and std dev\\
+take multiple sets of samples and get their means and std dev\\
+plot the means of the various samples\\
+std dev of this plot of means is std error
 \end{frame}
 
 
 \begin{frame}\frametitle{coeff of variation}
-$CV = \frac{sd}{\bar{x}}, where  \bar{x}=sample mean$ \\
+$CV = \frac{sd}{\bar{x}}, where  \bar{x}=$sample mean \\
 $x = [1,2,3] => \bar{x}=2$ and $S_x=1 => CV(x)=1/2 $\\
 $y = [101,102,103] => \bar{y}=102$ and $S_y=1 => CV(y)=1/102 $\\
 Higher the CV means higher fluctuations in the dataset\\
@@ -536,10 +616,11 @@ Higher the CV means higher fluctuations in the dataset\\
 
 
 \begin{frame}\frametitle{skewness and kurtosis}
+https://www.thoughtco.com/what-is-kurtosis-3126241\\
 \textbf{skewness}\\
 mode skewness = $\frac{mean-mode}{std dev}$\\
-in skewed data: mode = 3(median) - 2(mean) \\
 for small dataset, use below:\\
+in skewed data: mode = 3(median) - 2(mean) \\
 median skewness = $\frac{3(mean-median)}{std dev}$\\
 \begin{align}
 skewness = \left\{ \begin{array}{cc} 
@@ -568,152 +649,310 @@ but since we don't have population mean, we have sample mean, we adjust the abov
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experimental Design}
 
-\subsection{Hypothesis testing}
+\section{Inferential Stats}
 
-\begin{frame}\frametitle{p\_value}
-p-value is the probab of getting a sample as extreme as ours, given $H_0$ is true\\
-when population std dev is known then we use z-statistics, if unknown then we use t-statistics\\
-t-statistics assumes that underlying distribution is normal\\
-t-distribution is bell curved, defined by it's DF (degrees of freedom)\\
 
+\subsection{AB Testing}
+
+\begin{frame}\frametitle{Real vs Empirical Conversion}
+	1/2 =? 10/20 =? 100/200 =? 1000/2000\\
+	same empirical conversion rate but different real conv rate because of uncertainty\\
+	A = Control group; B = Test group\\
 \end{frame}
 
 
-\begin{frame}[plain]
-\begin{columns}
-	\begin{column}{0.72\textwidth}
-		\begin{figure}
-			\includegraphics[scale=0.54]{statisticaltest}
-		\end{figure}
-	\end{column}
-	\begin{column}{0.3\textwidth}
-		\begin{enumerate}
-			\item $H_0: \mu=100$; $H_1: \mu \ne 100$
-			\item if $H_0$ is true, how extreme is our sample?
-			\item Measure of extremeness, z=$\frac{\bar{x}-\mu}{\sigma/\sqrt{n}}$
-			\item $\uparrow$ z value, more likely to reject $H_0$
-			\item either reject $H_0$ or do not reject $H_0$ because there's less evidence to reject it (given $\alpha$ level of significance)
-		\end{enumerate}
-	\end{column}
-\end{columns}
+\begin{frame}[allowframebreaks]\frametitle{Types of AB Testing}
+\textbf{Split Testing}: divide the traffic to the two new versions\\
+\textbf{A/A testing} (dummy experiment): 
+split traffic to same version, still if difference, that would imply the way users are assigned is impacting the results\\
+\textbf{Hypothesis testing - Frequentist Approach}:
+Uses $\chi^2$ test?\\
+\begin{itemize}
+	\item p-value
+	\item confidence intervals
+	\item needs a fixed sample size in advance
+	\begin{enumerate}
+		\item statistical power (how often will you recognize a successful effect): typically 80\%
+		\item significance level (how often will you observe positive result, however, there's none): typically 5\%
+	\end{enumerate}
+\end{itemize}
+\textbf{Bayesian AB testing}\\
+\includegraphics[scale=0.5]{figs/hypothesisBayesian}
 \end{frame}
 
-
-{%<--- Start local changes
-	\setbeamertemplate{navigation symbols}{}
-	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{confusionmatrix}}
-	\begin{frame}[plain]
-	\vspace{2.5in}
-	\textbf{Type I Error}: Reject $H_0$ when $H_0$ is true \\
-	Prob of Type I Error = level of significance = $\alpha$  5\% (generally)\\
-	\textbf{Type II error}: Not reject $H_0$ when $H_0$ is false \\
-	Prob of Type II Error = $\beta$ and power of hypothesis test = 1-$\beta$ \\
-	1-$\beta$ = prob of rejecting a $H_0$ when $H_0$ is false\\
-	%actual pos $=> H_1 is true$ test outcome is neg $=>$
-	
-	\end{frame}
-}%<---- Finish local changes
-
-
-
-
-\begin{frame}%[plain]
-\begin{figure}\frametitle{test statistics}
-\includegraphics[scale=0.28]{TypesTests} 
-\caption{t-test, anova, chi-square, correlation test}
-\end{figure}
-\end{frame}
-
-
-
-\begin{frame}[plain]
-\makebox[\linewidth]{\includegraphics[width=\paperwidth]{teststats}}
-\end{frame}
 
 \begin{frame}\frametitle{When can AB test fail}
+\begin{enumerate}
+	\item in the case of a \textbf{referral program}, The referrer and Referee could be split across test and control groups causing spillover on the control or variant group
+	\item Novelty effects: Prompts and CTA tend to exhibit novelty effects, if not measuring their performance over the long term using a holdout a wrong attribution and/or customer fatigue can happen.
+	\item What-if scenarios: If you are looking to understand the impact of \textbf{not having launched a product}, for instance a subscription offering on a website. A/B test wouldn’t be the right fit.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}\frametitle{How long to run the experiment}
+A p-value measures the probability of observing a difference between the two variants at least as extreme as what we actually observed, given that there is no difference between the variants. Once the p-value achieves statistical significance or we’ve seen enough data, the experiment is over.
+\end{frame}
+
+
+
+\begin{frame}
+	Assumptions in Frequentist Approach for AB tests:
+	\begin{itemize}
+		\item after obtaining infinite samples, empirical conversion approaches real conversion
+		\item data is iid (independent and identically distributed)
+		\item difference btw empirical conv rates for A and B is due to randomness (H0: A and B are same)
+		\item conv of both versions come from the same distributions (same parameters)
+	\end{itemize}
+	
+\end{frame}
+
+
+
+\begin{frame}{When can Frequentist approach fail}
 	\begin{enumerate}
-		\item in the case of a \textbf{referral program}, The referrer and Referee could be split across test and control groups causing spillover on the control or variant group
-		\item Novelty effects: Prompts and CTA tend to exhibit novelty effects, if not measuring their performance over the long term using a holdout a wrong attribution and/or customer fatigue can happen.
-		\item What-if scenarios: If you are looking to understand the impact of \textbf{not having launched a product}, for instance a subscription offering on a website. A/B test wouldn’t be the right fit.
+		\item We need to know how much of the data we need to collect for the test before starting the test.
+		\item We can’t evaluate the result in real-time as we go, instead we need to wait to make any decision until we collect a full of the planned data size.
+		\item The test result is not intuitively understandable especially for those without a statistical background. (What is P-value again?)
+		\item The test result can be read as black and white, either it is statistically significant or not. This makes it hard to figure out what to do especially when not statistically significant
 	\end{enumerate}
 \end{frame}
 
 
-\begin{frame}
-	Class Imbalance
+\begin{frame}[allowframebreaks]\frametitle{In case of small improvements of variants}
+	\begin{itemize}
+		\item  there are scenarios where we want to stick with the null hypothesis when the treatment variant is marginally better than the control. If the treatment requires a lot of engineering maintenance or causes a disruption to the user experience, the costs of implementing the new variant might outweigh the small benefits
+		\item In scenarios similar to the one of the slightly better model, Bayesian methodology is appealing because it is more willing to accept variants that provide small improvements. Over the next few years, as we perform hundreds of experiments on the same handful of key business metrics, these marginal gains will accumulate on top of each other. Crucially, since we conclude an experiment once we are confident it will provide at least a small improvement, we can iterate more quickly and run more experiments over all.
+		\item By accepting variants that offer a small improvement, Bayesian A/B testing asserts that the false positive rate — the proportion of times we accept the treatment when the treatment is not actually better — is not very important. While this may be shocking to some statisticians, we agree with this sentiment because not all false positives are created equal. Choosing variant B when its conversion rate is 10\% and the conversion rate for variant A is 10.1\% is a very different mistake than choosing variant B when the conversion rates are 10\% for B and 15\% for A. Yet, under frequentist methodology, these would both count as a single false positive.
+		\item Instead, Bayesian A/B testing focuses on the average magnitude of wrong decisions over the course of many experiments. It limits the average amount by which your decisions actually make the product worse, thereby providing guarantees about the long run improvement of a metric. We believe that these types of guarantees are much more relevant to Convoy’s use case than the false positive guarantees made by frequentist procedures.
+	\end{itemize}
+
+	\begin{block}{Bayesian} % change spacing
+		{\tiny In experiments where the improvement of the new variant is small, Bayesian methodology is more willing to accept the new variant. By using Bayesian A/B testing over the course of many experiments, we can accumulate the gains from many incremental improvements. Bayesian A/B testing accomplishes this without sacrificing reliability by controlling the magnitude of our bad decisions instead of the false positive rate.}
+	\end{block}
+
+\end{frame}
+
+\subsection{Hypothesis testing}
+
+\begin{frame}\frametitle{Type I (false positive)  and Type II (false negative) Errors}
+	\begin{enumerate}
+		\item FP (REJECT a TRUE hypothesis): the sample population and AB test results $\rightarrow$ the challenger will increase conversion rates (so you reject the null hypothesis of both rates)\\
+		In reality (for the whole population of visitors), the challenger will NOT increase conversion rates for the overall population
+		\item FN(\textbf{NOT} REJECT a FALSE hypo): the sample population and AB test results $\rightarrow$ the challenger will not increase conversion rates (so you do not have enough evidence to reject the null hypothesis about the equality of both rates)\\
+		In reality, the challenger will increase conversion rates.
+	\end{enumerate}
+Construct the test:
+Avoid FP: Assume significance level @0.05
+Avoid FN: The more sample, the more probability of rejecting of the false hypothesis (more power).
+\end{frame}
+
+\begin{frame}\frametitle{p\_value}
+probab of data given hypothesis\\
+p-value is the probab of getting a sample as extreme as ours, given $H_0$ is true\\
+if H0 is true, how extreme is our sample?\\
+either reject $H_0$ or do not reject $H_0$ because there's less evidence to reject it (given $\alpha$ level of significance)\\
+\textbf{Hypothesis in AB testing: H0 = B is better}\\
+Better performance of B is statistically significant: B is better\\
+Better performance of B is \textbf{not} statistically significant: Need more data\\
+
+importance of results?\\
+calculate confidence intervals to capture uncertainty of experiment\\
+	
+http://www.statisticshowto.com/what-is-statistical-significance/
+
+
+\end{frame}
+
+\begin{frame}\frametitle{confidence interval}
+	\begin{columns}
+		\begin{column}{0.33\textwidth}
+			\includegraphics[scale=0.2]{figs/conf1}\\
+			\includegraphics[scale=0.2]{figs/conf2}
+		\end{column}
+		\begin{column}{0.33\textwidth}
+			nvjfvjnfvnkevnkervnmkd cdm cjdncjdnkcned\\
+			\includegraphics[scale=0.2]{figs/conf4}
+		\end{column}
+		\begin{column}{0.33\textwidth}
+			\includegraphics[scale=0.2]{figs/conf5}\\
+			\includegraphics[scale=0.2]{figs/conf6}
+		\end{column}
+	\end{columns}
+	
+\end{frame}
+
+\begin{frame}\frametitle{Statistical power vs Significance level}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Define sample size in advance to avoid FN}
+	content...
+\end{frame}
+
+\begin{frame}\frametitle{Problem with significance based testing}
+	\begin{itemize}
+		\item not intuitive
+		\item $\uparrow$ sample size $\rightarrow$ experiment run time
+		\item p-value reaches significance very early on due to novelty effect
+		\item statistical significance is not valid stopping criteria
+		\item depends on arbitrary parameters (95\% conf, 0.05 p-val)
+		\item confidence interval: contains true parameter with 95\% probability\\
+		not 95\% probability the true parameter falls within the interval\\
+		%conversion of A and B = 30\% and 20\% respectively, with p\_val = 0.6 ($>$0.05) $\rightrightarrows$ at 95\% conf intervals, the diff btw A and B is not statistically significant\\
+		%can't reject H0\\
+		
+	\end{itemize}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Multiple Null Hypothesis test}
+	1-(1-0.05)$^n$
+\end{frame}
 
+\begin{frame}\frametitle{t-statistics vs z-statistics}
 
-\section{Bayesian Statistics}
+when population std dev is known then we use z-statistics, if unknown then we use t-statistics\\
+t-statistics assumes that underlying distribution is normal\\
+t-distribution is bell curved, defined by it's DF (degrees of freedom)\\
+Measure of extremeness, z=$\frac{\bar{x}-\mu}{\sigma/\sqrt{n}}$\\
+$\uparrow$ z value, more likely to reject $H_0$
 
-\subsection{blocs}
-\begin{frame}\frametitle{blocs}
-
-\begin{block}{title of the bloc}
-bloc text
-\end{block}
-
-\begin{exampleblock}{title of the bloc}
-bloc text
-\end{exampleblock}
-
-
-\begin{alertblock}{title of the bloc}
-bloc text
-\end{alertblock}
 \end{frame}
 
 
 
+
+
+\section{Bayesian Stats}
+
+\subsection{Bayesian Reasoning}
+
+\begin{frame}[allowframebreaks]\frametitle{Frequentist vs Bayesian}
+
+	\begin{table}
+	\begin{tabular}{l|l}
+		\multicolumn{2}{c}{different concept of probabilities}
+		\\ \hline
+		
+		\textbf{Frequentist Approach} & \textbf{Bayesian Approach}
+		\\ \hline
+		treats random events probabilistically and doesn’t quantify the uncertainty in fixed but unknown values (such as the uncertainty in the true values of parameters)
+		& defines probability distributions over possible values of a parameter which can then be used for other purposes
+		\\ \hline
+		usually used for AB Testing when no uncertainty involved such as fair Coin Toss, dice toss
+		& Better than Freq approach in case of uncertainty, such as human behavior for AB Testing
+		\\ \hline
+		Option B is better than A with p-value of 0.03
+		& Option B has 97\% probab of being better than A
+		\\ \hline
+		otherwise need more data
+		& A is better with 3\% probab
+		\\ \hline
+		assumes iid
+		& assumes iid
+		\\ \hline
+		wait till data has been collected
+		& iterative; start test form Day 1
+		\\ \hline
+		using only data from your current experiment
+		& use your prior knowledge from the previous experiments
+		\\ \hline
+		frequentist methods assume that you repeat your experiment many, many times & 
+		\\ \hline
+		\multicolumn{2}{c}{we are interested in discovering the average height of American citizens nowadays}\\
+		take a sample, measure and average their height to produce a point estimate, calculate the estimate of your error. The point is that the frequentist looks at the average height as a single unknown number
+		& look at the average height of an American citizen not as a fixed number, but instead as an unknown distribution (you might imagine here a “bell” shaped normal distribution).
+		\\ \hline
+	\end{tabular}
+	\end{table}
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Going Bayesian}
+	Update prior beliefs with new beliefs\\
+	\begin{exampleblock}{Bayes Theorem}
+	$P(H|E) = \frac{P(E|H) * P(H)}{P(E)}$\\
+	Posterior $\propto$ likelihood x Prior\\
+	where\\
+	Posterior probab of hypothesis given the evidence = $P(H|E)$\\ 
+	Likelihood of evidence if hypothesis is true = $P(E|H)$\\
+	Prior Probab of Hypothesis  = P(H) \\
+	Prior Probab that Evidence is True = P(E)
+	\end{exampleblock}
+	
+\end{frame}
+
+\begin{frame}[allowframebreaks]\frametitle{Bayesian AB Testing}
+	Given data:\\
+	From sample: $CVR_A$ and $CVR_B$\\
+	From prior population: $CVR_A$ (historical data)\\
+	strong prior distribution\\
+
+	\begin{exampleblock}{Non-overlapping populations}
+		$P(CVR_A,CVR_B | data) = P(CVR_A|data) * P(CVR_B|data)$\\
+		$P(CVR_A,CVR_B | data) = \frac{P(data|CVR_A)P(A) * P(data|CVR_B)P(B)}{P(data){P(data)}}$
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Success/failure output, Likelihood  follows Binomial Dist}
+		$P(views, clicks | CVR) = {views \choose clicks} CVR^{clicks} (1-CVR)^{views-clicks}$
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Prior probab follows Beta Dist}
+		$P(CVR_A) = \frac{(1-CVR_A)^{b-1} CVR_A^{a-1}}{B(a,b)}$
+	\end{exampleblock}
+	
+	\begin{exampleblock}{\hyperlink{betabino}{Binomial Likelihood implies \beamerbutton{conjugate} Beta}}
+		$\rightarrow$ Beta Posterior $\rightarrow$Prior and Posterior are of same family\\
+		$P(CVR|views, clicks) = \frac{P(views, clicks|CVR) P(CVR)}{P(views, clicks)}$
+	\end{exampleblock}
+
+	where, CVR = Conversion Rate
+	
+\end{frame}
+
+\begin{frame}{Bayesian AB Testing.. contd...}
+	\begin{block}{Posterior Probab}
+		$Beta(CVR_A, a+clicks_A, b+views_A-clicks_A)$
+	\end{block}
+
+	\begin{alertblock}{Choosing a, b for Beta dist}
+		\textbf{Uninformative prior}: Randomly choose a and b\\
+		\textbf{Informative prior}: Decide a and b after running the experiment multiple times and already analyzed CVR
+	\end{alertblock}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]\frametitle{get average height bayesian example}
+	\begin{enumerate}
+		\item 	Initially, the Bayesian statistician has some basic prior knowledge which is being assumed: for example, that the average height is somewhere between 50cm and 250cm.
+		\item Then, the Bayesian begins to measure heights of specific citizens, and with each measurement updates the distribution to become a bit more “bell-shaped” around the average height measured so far. As more data is collected, the “bell” becomes sharper and more concentrated around the measured average height.
+		\item For Bayesians, probabilities are fundamentally related to their knowledge about an event. This means, for example, that in a Bayesian view, we can meaningfully talk about the probability that the true conversion rate lies in a given range, and that probability codifies our knowledge of the value based on prior information and/or available data.
+	\end{enumerate}
+\begin{tabular}{c|c}
+	
+\includegraphics[scale=0.2]{figs/abtestbayes} \includegraphics[scale=0.3]{figs/abtestbayesengine}
+& Highest Posterior Density Region (HPDR): give me the conversion rate boundaries (interval) in which the true conversion rate falls with (say) 95\% probability
+\end{tabular}
+
+
+\end{frame}
+
+\section{Monte Carlo}
+
+
 \begin{frame}
-	MACHINE LEARNING
-	
-	chi square
-	
-	big O notation
-	
-	
-	book - kevin murphy
-	
-	Precision Recall tradeoff
 	How to choose the method of predictive modelling.
 	algorithms
-	Bayesian Modelling (Topic Modelling), NLP, Bayesian Nonparametric Techniques, Social Network Analysis, Sentiment Analysis
-	- https://www.springboard.com/blog/machine-learning-interview-questions/
-	- https://www.quora.com/What-is-the-difference-between-supervised-and-unsupervised-learning-algorithms
+
+	https://www.quora.com/What-is-the-difference-between-supervised-and-unsupervised-learning-algorithms
 	
 	https://blog.udacity.com/2016/04/5-skills-you-need-to-become-a-machine-learning-engineer.html
 	https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c
-	
-	http://www.smdi.com/evolution-machine-learning
-	https://vinodsblog.com/2018/03/11/the-exciting-evolution-of-machine-learning/
-	
-	
-	https://software.intel.com/en-us/articles/an-introduction-to-neural-networks-with-an-application-to-games
-	
-	https://towardsdatascience.com/introduction-to-neural-networks-advantages-and-applications-96851bd1a207
-	
-	What are type 1 error and type 2 error? what is p-value 
-	
-	ML
+		
 	https://www.youtube.com/watch?v=qv6UVOQ0F44
-	
-	https://www.quora.com/What-is-the-relation-between-standard-normal-and-gamma-distribution
-	
-	
-	https://stats.stackexchange.com/questions/37461/the-relationship-between-the-gamma-distribution-and-the-normal-distribution
-	
-	http://www.statisticshowto.com/probability-and-statistics/regression-analysis/
-	(go to definitions)
-	
-	https://www.thoughtco.com/what-is-kurtosis-3126241
-	
-	http://www.statisticshowto.com/what-is-statistical-significance/
 	
 	https://en.wikipedia.org/wiki/F-test
 	

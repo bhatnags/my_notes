@@ -1,10 +1,15 @@
-\beamer@sectionintoc {1}{Glossary}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Initial Terminologies}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Types of Distributions}{8}{0}{1}
-\beamer@subsectionintoc {1}{3}{Distributions}{18}{0}{1}
-\beamer@sectionintoc {2}{Descriptive Statistics}{28}{0}{2}
-\beamer@sectionintoc {3}{Experimental Design}{38}{0}{3}
-\beamer@subsectionintoc {3}{1}{Hypothesis testing}{38}{0}{3}
-\beamer@sectionintoc {4}{EDA}{45}{0}{4}
-\beamer@sectionintoc {5}{Bayesian Statistics}{48}{0}{5}
-\beamer@subsectionintoc {5}{1}{blocs}{48}{0}{5}
+\beamer@sectionintoc {1}{Statistical Tests}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Tests}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Distributions}{8}{0}{1}
+\beamer@sectionintoc {2}{Distributions}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Types of Dist}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Max-Likelihood of Distributions}{29}{0}{2}
+\beamer@sectionintoc {3}{Descriptive Stats}{30}{0}{3}
+\beamer@subsectionintoc {3}{1}{Stats Flow}{30}{0}{3}
+\beamer@subsectionintoc {3}{2}{Initial Terminologies}{36}{0}{3}
+\beamer@sectionintoc {4}{Inferential Stats}{45}{0}{4}
+\beamer@subsectionintoc {4}{1}{AB Testing}{45}{0}{4}
+\beamer@subsectionintoc {4}{2}{Hypothesis testing}{56}{0}{4}
+\beamer@sectionintoc {5}{Bayesian Stats}{64}{0}{5}
+\beamer@subsectionintoc {5}{1}{Bayesian Reasoning}{64}{0}{5}
+\beamer@sectionintoc {6}{Monte Carlo}{71}{0}{6}
