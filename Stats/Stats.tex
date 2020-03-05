@@ -8,7 +8,7 @@
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
 \begin{document}
-	\title{Stats for Data Science}  
+	\title{Statistical Data Modeling}  
 	\author{Saumya Bhatnagar}
 	\date{\today} 
 	
@@ -446,7 +446,25 @@ https://stats.stackexchange.com/questions/37461/the-relationship-between-the-gam
 	\includegraphics[scale=0.15]{figs/likelihoodsd}	\includegraphics[scale=0.15]{figs/likelihoodsd2}	\includegraphics[scale=0.15]{figs/likelihoodsd3}\\
 \end{frame}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Descriptive Stats}
+
 \subsection{Stats Flow} 
 \begin{frame}
 \begin{figure}
@@ -499,12 +517,16 @@ https://stats.stackexchange.com/questions/37461/the-relationship-between-the-gam
 
 \begin{frame}\frametitle{Central Limit Theorem(CLT)}
 \textbf{CLT}: as n $\uparrow$, the distribution of sample mean or sum approaches a Normal Dist\\
-Law of large num \\ law of averages\\
+Law of large num: as a sample size grows, its mean gets closer to the average of the whole population.\\
+(LLN) is a theorem that describes the result of performing the same experiment a large number of times\\
+In a financial context, the law of large numbers indicates that a large entity which is growing rapidly cannot maintain that growth pace forever.\\
+law of averages: the supposed principle that future events are likely to turn out so that they balance any past deviation from a presumed average.\\
+The law of averages is a lay term used to express a belief that outcomes of a random event will “even out” within a small sample
 \end{frame}
 
 
 
-\subsection{Initial Terminologies}
+\subsection{Descriptive Stats}
 
 \begin{frame}\frametitle{Variance, Standard Deviation} 
 \begin{itemize}
@@ -647,6 +669,28 @@ but since we don't have population mean, we have sample mean, we adjust the abov
 \end{frame}
 
 
+\subsection{Some more Terminologies}
+
+\begin{frame}\frametitle{confounding variables}
+	$\uparrow$ variance, can introduce bias\\
+	\textbf{control variable vs control group}\\
+	control group $\rightarrow$ if difficult to identify or control all potential confounding variables\\
+	positive confounding: overestimate the effect\\
+	negative confounding: 
+	\begin{itemize}
+		\item underestimate the effect
+		\item observed association is biased towards NULL
+	\end{itemize}
+	To reduce impact of confounding variables, bias can be eliminated with random samples
+\end{frame}
+
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -768,16 +812,16 @@ http://www.statisticshowto.com/what-is-statistical-significance/
 \begin{frame}\frametitle{confidence interval}
 	\begin{columns}
 		\begin{column}{0.33\textwidth}
-			\includegraphics[scale=0.2]{figs/conf1}\\
-			\includegraphics[scale=0.2]{figs/conf2}
+			\fbox{\includegraphics[scale=0.2]{figs/conf1}}\\
+			\fbox{\includegraphics[scale=0.2]{figs/conf2}}
 		\end{column}
 		\begin{column}{0.33\textwidth}
-			nvjfvjnfvnkevnkervnmkd cdm cjdncjdnkcned\\
-			\includegraphics[scale=0.2]{figs/conf4}
+			\fbox{nvjfvjnfvnkevnkervnmkd cdm cjdncjdnkcned}\\
+			\fbox{\includegraphics[scale=0.2]{figs/conf4}}
 		\end{column}
 		\begin{column}{0.33\textwidth}
-			\includegraphics[scale=0.2]{figs/conf5}\\
-			\includegraphics[scale=0.2]{figs/conf6}
+			\fbox{\includegraphics[scale=0.2]{figs/conf5}}\\
+			\fbox{\includegraphics[scale=0.2]{figs/conf6}}
 		\end{column}
 	\end{columns}
 	
@@ -941,6 +985,22 @@ $\uparrow$ z value, more likely to reject $H_0$
 \end{frame}
 
 \section{Monte Carlo}
+
+\begin{frame}\frametitle{Deterministic vs Stochastic}
+	content...
+\end{frame}
+
+\begin{frame}\frametitle{Random Walks}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Monte Carlo}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Gibbs Sampler}
+content...
+\end{frame}
 
 
 \begin{frame}

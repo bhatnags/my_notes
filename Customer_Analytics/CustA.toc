@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Customer Analysis}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Churn and LTV}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Survival Analysis}{8}{0}{1}
+\beamer@subsectionintoc {1}{3}{Social Network Analysis}{16}{0}{1}
+\beamer@subsectionintoc {1}{4}{Other Analysis}{17}{0}{1}

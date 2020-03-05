@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Components of NLP}{3}{0}{1}
+\beamer@sectionintoc {2}{Topic Modeling/Document clustering}{7}{0}{2}
+\beamer@sectionintoc {3}{Sentiment Analysis}{8}{0}{3}
+\beamer@sectionintoc {4}{Information Retrieval}{9}{0}{4}

@@ -33,7 +33,7 @@
 %\usetheme{CambridgeUS}
 %\usetheme{Copenhagen}
 %\usetheme{Darmstadt}
-%\usetheme{Dresden}
+\usetheme{Dresden}
 %\usetheme{Frankfurt}
 %\usetheme{Goettingen}
 %\usetheme{Hannover}
@@ -443,6 +443,77 @@ Clustering columns can be defined in WHERE clauses if ALLOW FILTERING is also us
 \end{itemize}
 \end{frame}
 
+
+
+
+
+%------------------------------------------------
+
+\section{APIs}
+\begin{frame}\frametitle{SOAP vs REST}
+	Client (Machine Devices - Mobile, desktop) $\rightarrow$ API Binding $\rightarrow$ Server\\
+
+	SOAP:\\
+	\begin{itemize}
+		\item Stateless
+		\item Slow
+		\item XML
+	\end{itemize}
+	REST:\\
+	\begin{itemize}
+		\item Public
+		\item Fast
+		\item Multiple formats
+	\end{itemize}
+\textbf{REST}:\\
+NODE.js\\
+MongoDB (native js code) - JS based\\
+json format\\
+MongoDB: 2 collection joins, aggregation in mongoDB\\instead js for loop can be used\\
+
+
+\end{frame}
+
+\begin{frame}\frametitle{REST vs Bulk}
+	Bulk is built on top of REST\\
+	Bulk:\\
+	\begin{itemize}
+		\item async
+		\item batches
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Email API}
+	Email uses SMTP and Port number\\
+	Tight coupling\\
+	IOC (Inversion of Control):\\
+	Inject email in customer:
+	1. Property in class
+	2. Parameter
+\end{frame}
+
+\begin{frame}\frametitle{CQRS}
+	command\\
+	...\\
+	read\\
+	...
+\end{frame}
+
+\begin{frame}\frametitle{API gateway}
+	Swagger\\
+	APIGEE:\\
+	\begin{itemize}
+		\item authentication control
+		\item traffic control
+	\end{itemize}
+	Server info... API gateway provides URL
+\end{frame}
+
+
+
+%------------------------------------------------
+
+
 %------------------------------------------------
 
 \section{Microservices}
@@ -451,8 +522,55 @@ Clustering columns can be defined in WHERE clauses if ALLOW FILTERING is also us
 	\frametitle{Microservices}
 	Microservices architecture runs on top of STORM/JMS/KAFKA \newline
 	Storm (handles clustering/distribution) \newline
-	Kafka (messaging between the grids) \newline \\
+	Kafka (messaging between the grids) \newline
+	Kafka or Rabbit NQ are message broker URIs\\
+	for cache use Redis. Redis is a cache DB\\
+	JWT (Json Web token): network calls to DB should be least $\rightarrow$ Resource Management\\
+	YAML $\rightarrow$ dependent on other services. has details such as name, port, URL, env variables, etc.
 \end{frame}
+
+
+\begin{frame}\frametitle{Docker - Container}
+	Docker is OS\\
+	Containers are VM ware\\
+	Cluster has nodes. Nodes has pods. e.g. Pod1, Pod2, Pod3, Pod4 are 4 containers. Pod1 may act as Inst of Service\\
+	Dockerfile is image of service and is "Built, deployed and ran" by DevOps\\
+\end{frame}
+
+\begin{frame}\frametitle{Domain Driven Design}
+	Service bus\\
+	Rabbit MQ\\
+	%\vspace{10}
+	Order Service \& Domain Service
+
+	DDD: Command (message) $\rightarrow$ Event [Eventual Consistency]\\
+	
+	Service bus... message sent to exchange queue via routing key
+\end{frame}
+
+\begin{frame}\frametitle{Pub/Sub Design Pattern}
+content...
+\end{frame}
+
+
+\begin{frame}\frametitle{title}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Microservices on Docker}
+	content...
+\end{frame}
+
+\begin{frame}\frametitle{Microservices on Kubernetes}
+content...
+\end{frame}
+
+\begin{frame}\frametitle{Serverless}
+content...
+\end{frame}
+
+
+
 
 \begin{frame}
 \Huge{\centerline{Thank You!}}

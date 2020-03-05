@@ -3,7 +3,20 @@
 \setbeamertemplate{caption}{\insertcaption}
 
 \usetheme{Dresden}
-\usecolortheme{crane}
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
 
 \usepackage{amsmath}
 \graphicspath{{figs/}}
@@ -21,7 +34,7 @@
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
 \begin{document}
-	\title{Stats for Data Science}  
+	\title{Machine Learning}  
 	\author{Saumya Bhatnagar}
 	\date{\today} 
 	
@@ -36,68 +49,43 @@
 
 
 
-
-\section{General}
-\begin{frame}
-	\begin{tikzpicture}[sibling distance=10em,
-	every node/.style = {shape=rectangle, rounded corners,
-		draw, align=center,
-		top color=white, bottom color=blue!20}]]
-	\node {Predictive Modeling}
-	child { node {abrakadabra} }
-	child { node {Regression}
-		child { node {uses}
-			child { node {strength of predictors} }
-			child { node {forecasting} }
-			%child { node {center} } 
-		}
-		child { node {first left,\\centered,\\last right} } };
-	\end{tikzpicture}
-\end{frame}
-
-\begin{frame}[plain]%\frametitle{ML}
-	\begin{columns}
-		\begin{column}{0.7\textwidth}
-			\includegraphics[scale=0.2]{mlinit}\\
-			\includegraphics[scale=0.2]{mlmethods}
-		\end{column}
-		\begin{column}{0.3\textwidth}
-			\includegraphics[scale=0.2]{mlmethods}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[plain]
-\hspace*{-3pt}\makebox[\linewidth][c]{
-
-	\includegraphics[scale=0.82]{mltypes}
-}
-\end{frame}
-
-\subsection{ANN}
-\begin{frame}
-	content...
-\end{frame}
-
-
-\subsection{RNN}
-\begin{frame}
-content...
-\end{frame}
-
-\subsection{CNN}
-\begin{frame}
-content...
-\end{frame}
-
 \section{EDA}
-\begin{frame}\frametitle{Univariate and Multivariate Analysis}
+
+\subsection{General}
+\begin{frame}\frametitle{Box cox transformation}
+	convert data to a normal distribution
+\end{frame}
+
+\begin{frame}\frametitle{CRISP-DM}
+Cross-industry standard process for data mining
 \end{frame}
 
 \begin{frame}\frametitle{Dimensionality Reduction}
+\begin{itemize}
+	\item PCA: is a linear method
+	\item \hyperlink{rf}{Random Forest}
+\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Cross-Validation Techniques}
+	\textbf{why cross-validation?}\\
+	\begin{enumerate}
+		\item LOOCV (leave one out cv): $\downarrow$ bias, $\uparrow$variability\\n MSEs
+		\item k-fold: $\uparrow$k =$\Rightarrow$ $\downarrow$Variance; $\downarrow$bias; (generally k=10 with 10 MSEs)
+		\item stratified CV: $\downarrow$Variance \& $\downarrow$bias\\
+		uses stratified sampling for each fold
+		\item forward chaining or rolling origin
+	\end{enumerate}
+\end{frame}
+
+
+
+\subsection{General2}
+
 \begin{frame}\frametitle{Under and Over Sampling}
+\end{frame}
+
+\begin{frame}\frametitle{Univariate and Multivariate Analysis}
 \end{frame}
 
 
@@ -158,6 +146,52 @@ content...
 	\caption{Regression Model Selection Criteria}
 \end{table}
 \end{frame}
+
+\begin{frame}\frametitle{bias vs variance}
+	Linear model: $\theta_0 + x \theta_1 \rightarrow$ increased bias, underfit\\
+	Polynomial model: $\theta_0 + \sum {x \theta_n} \rightarrow$ increased variance, overfit\\
+
+	So, \textbf{optimization on training data}, using\\
+	\begin{enumerate}
+		\item OLS
+		\item gradient descent, 
+		\item max likelihood estimation (mle)
+	\end{enumerate}
+	
+	Types of Bias:
+	\begin{enumerate}
+		\item selection bias
+		\item survivorship bias (air plane)
+		\item under coverage bias
+	\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{When overfit use Regularization Techniques}
+	restrict freedom $\Rightarrow$ regularization\\
+	model selection algo\\
+	overfit $\Rightarrow$ fail to generalize to new examples\\
+	num datapoints > num features or num parameters\\
+	reduce magnitude of features by penalization\\
+	\begin{tabular}{c|c}
+			\textbf{L1 Regularization} & \textbf{L2 Regularization}\\ 
+			lasso regression & Ridge regression\\ \hline
+				
+			Sum of sq residual + $\lambda$ $|$slope$|$
+			& Sum of likelihoods + $\lambda$ slope$^2$
+			\\ \hline
+			can shrink slope to exact 0
+			& asymptotically 0
+			\\ \hline
+			LAR = Least absolute regression 
+			& \\
+			multiple solution
+			& \\ \hline
+	\end{tabular}
+
+\end{frame}
+
 
 
 \subsection{Linear regression}
@@ -532,181 +566,176 @@ Maybe, use \textbf{average linkage} which defines the distance between two clust
 
 
 
+\section{ML Techniques}
 
 
+\subsection{SVM}
 
-
-\section{Customer Analysis}
-\subsection{Churn and LTV}
-
-\begin{frame}\frametitle{Churn or Retention Analysis}
-Customer Retention Rate: The percentage of customers who repurchase in a given time period compared to an equal and preceding time period\\
-Churn Rate: The inverse of Customer Retention Rate, or the percent of users who did not repurchase or whom you lost\\
-
-\includegraphics[scale=0.5]{churn}\\
-\textbf{proactive churns}: losing customers due to cancellations\\ \textbf{passive churn}: failures to renew\\
+\begin{frame}\frametitle{Support Vector Machines}
+	what are support vectors?\\
+	which kernel (linear, radial, polynomial,sigmoid/logistic, gaussian/RBF - radial basis func)\\
+	can handle categorical/numerical data?\\
+	In a N-dimensional Euclidean space, plot a hyper-plane $\Rightarrow$ (n-1) dim subset of n-dimensional Euclidean space dividing it into 2\\
+	\begin{alertblock}{sklearn code}
+		clf = sklearn.svm.SVC(kernel='linear')\\
+		clf.fit(X,y)\\
+		clf.predict([])
+	\end{alertblock}
+	C: smooth decision boundary (C$\downarrow$) \& classified training points (C$\uparrow$)\\
+	Gamma: $\uparrow \gamma \Rightarrow$ points closer to hyperplance will have more wt
 \end{frame}
 
 
-\begin{frame}\frametitle{Cohort Analysis and Life Time Value (LTV)}
-	\textbf{LTV}: The expected amount of profit/revenue from a user\\
-	CLV = NPV (net present value) of the sum of all future revenues from a customer, minus all costs associated with that customer\\
-	\textbf{Why LTV}:
-	- Tracking your LTV to Customer Acquisition Cost (CAC) ratio: Companies typically use the 3:1 CAC ratio or Cost Per Acquisition (CPA)\\
-	- Evaluating your most valuable marketing channels\\
-	- Focus on retaining your most valuable customers\\
-	\textbf{Historic CLV}: sum of the gross profit from all historic purchases for an individual customer
+\subsection{Ensemble}
 
-	
-\end{frame}
-
-\begingroup
-\small
-
-\begin{frame}
-
-	\begin{table}
-		\begin{tabular}{llll}
-			%\hline
-			\multicolumn{2}{c}{Avg Order Value, AOV = $\frac{Revenue}{Orders}$};
-			& \multicolumn{2}{c}{Avg Purchase Rate = $\frac{Orders}{NumCustomers}$} 
-			\\ \hline
-			\multicolumn{3}{c}{Avg Customer Value = $\frac{Avg Purchase Val}{Avg Purchase Rate}$}
-			& \multirow{2}{*}{gives LTV}
-			\\ %\hline
-			\multicolumn{3}{c}{Avg Customer Lifespan = $\frac{Sum Customer Lifespans}{Num Customers}$}
-			& \\ \hline
-			\multirow{5}{*}{LTV = }
-			& \multicolumn{3}{l}{Avg Customer Value X Avg Customer Lifespan}
-			\\ 
-			& \multicolumn{3}{l}{ARPU X $\sum_{n=0}^{N}(1-CR)^t$ .... [N=num months to examine]}
-			\\
-			& \multicolumn{3}{l}{ARPU/$CR_n$ ...[ARPU=Avg rev per User, for n months]}
-			\\
-			& \multicolumn{3}{l}{ARPU/$CR_n$ x DR ......... [for variable churn \& n months]}
-			\\
-			& \multicolumn{3}{l}{ASP/CR + m(1-CR)/$CR^2$ ... [for account expansion]}
-			\\ \hline
-			\multirow{3}{*}{CLV = }
-			& \multicolumn{3}{l}{AGM x $\sum_{0}^{numTransactions} Transaction$ [AGM=Avg Gross Margin]}
-			\\
-			& \multicolumn{3}{l}{(($T_{avg}xAOV$)AGM)ALT =GML(gross margin per user lifespan)}
-			\\
-			& \multicolumn{3}{l}{GML(R/(1+D-R)); [account expansion]}
-			\\
-			\hline
-		\end{tabular}
-	\end{table}
-
-
-CR=Churn rate; ASP=Avg Selling Price; m=$\uparrow$ARPU/user/month;\\
-T\_avg = avg monthly transactions; ALT=avg User Lifespan (in months)\\
-D=monthly discount rate; R=monthly retention rate; 
-DR=Discount Rate to adjusts for mix churn (Annual Renewals, Constant, Declining and Cliff patterns)
-
-\end{frame}
-
-\endgroup
-
-\begin{frame}
-	Steps to LTV:
+\begin{frame}[allowframebreaks]%[plain]
+	\begin{tikzpicture}[
+		sibling distance=2em,
+		every node/.style = {
+			shape=rectangle, rounded corners,
+			draw, align=center,
+			top color=white, bottom color=blue!20}]]
+		\node {all the data}
+			child { node {1}
+					child { node {a} }
+					child { node {b} }
+					child { node {c} }
+					child { node {d} }
+			}
+			child { node {2}
+				child { node {Prediction Scores} }
+				child { node {b} }
+				child { node {c} }
+				child { node {d} }
+			}
+			;
+	\end{tikzpicture}\\
+	DT = Low bias high variance\\
+	Uses:\\
 	\begin{itemize}
-		\item Normalizing to Acquisition Date: Bin users into buckets like Day 0, Day 1, Day 2 or Week 0, Week 1, Week 2, and so on.
-		\item Normalized to a Closed Time Limit: Broader questions  “What is my total CLTV,” should be replaced with “What is our 3-year or 5-year LTV?” \& should be based on:
-		\begin{enumerate}
-			\item Average Customer Lifespan
-			\item Customer Retention Rate
-			\item Churn Rate: The inverse of Customer Retention Rate.
-			\item Time to General Profitability Against Acquisition Costs: If your business is a “Loss Leader” Model this time may be a longer length than businesses with lower acquisition costs and lower profitability.
-			\item Rate of Discount		
-		\end{enumerate}
+		\item D$^3$ algo
+		\item Entropy ($-p \log_2 p - q \log_2 q$)
+		\item Information Gain
+	\end{itemize}
+Gini impurity or entropy? The truth is, most of the time it does not make a big difference: they lead to similar trees. Gini impurity is slightly faster to compute, so it is a good default. However, when they differ, Gini impurity tends to isolate the most frequent class in its own branch of the tree, while entropy tends to produce slightly more balanced trees.\\
+\textbf{Linear Model vs decision trees}:\\
+linear models make assumptions... dec trees may over-fit
+LM $\Rightarrow$ parametric (predetermined number of parameters $\Rightarrow$ limited degree of freedom $\Rightarrow$ reducing the risk of overfitting (but increasing the risk of underfitting)
+DT $\Rightarrow$ non-parametric (number of parameters is not determined prior to training) $\Rightarrow$ over-fitting\\
+Standard statistical tests, such as the $\chi^2$ test, are used to estimate the probability that the improvement is purely the result of chance (H$_0$). If this probability, called the pvalue, is higher than a given threshold (typically 5\%, controlled by a hyperparameter), then the node is considered unnecessary and its children are deleted. The \textbf{pruning} continues until all unnecessary nodes have been pruned\\
+cons of decision tree: orthogonal boundaries, not a good model; sensitive to small variations;\\
+Voting classifiers: hard voting (majority-vote classifier) \& soft voting\\
+even if each classifier is a weak learner (meaning it does only slightly better than random guessing), the ensemble can still be a strong learner (achieving high accuracy), provided there are a sufficient number of weak learners and they are sufficiently diverse.\\
+this is only true if all classifiers are perfectly independent, making uncorrelated errors, which is clearly not the case since they are trained on the same data. They are likely to make the same types of errors, so there will be many majority votes for the wrong class, reducing the ensemble’s accuracy.\\
+Ensemble methods work best when the predictors are as independent from one another as possible. One way to get diverse classifiers is to train them using very different algorithms. This increases the chance that they will make very different types of errors, improving the ensemble’s accuracy.
+\end{frame}
 
+
+\begin{frame}\frametitle{Sequential - Boosting}
+	\begin{itemize}
+		\item adaptive Boosting:\\
+		start with equal wt to decision stump, then misclassified gets higher weights for the next decision stump
+		\item Gradient Boosting:\\
+		optimize loss funct of prev learner\\
+		additive model regularize the loss function
+		\item XG Boosting: extreme gradient\\
+		computational speed and model efficiency\\
+		distributed ML: create decision tree $\parallel$-ly\\
+		out of core computing\\
+		cache optimization\\
+		$\uparrow$ bias, $\downarrow$ variance\\
+		uses DT upto some depth
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Types of churn and LTV}
-	\begin{itemize}
-		\item Annual Renewals: larger churn at each contract renewal.
-		\item Cliff churn: majority of the churn within the first month, and then a small constant churn thereafter.
-		\item Constant: steady, constant churn rate (shown as 3.5\%).
-		\item Declining: churn rate starts at zero, increases each month.
-	\end{itemize}
-	\includegraphics[scale=0.4]{churnltv}
+\begin{frame}\frametitle{\hypertarget{rf}{Parallel - Bagging - Random Forest}}
+	DT = $\downarrow$ bias, $\uparrow$ variance\\
+	RF = DT1 + DT2 + ...\\
+	   = $\downarrow$ bias, $\downarrow$ variance\\
+	classification = votes\\
+	regression = average
 \end{frame}
 
-\subsection{Survival Analysis}
-\begin{frame}\frametitle{Types}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{The Kaplan-Meier curve}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{The log-rank test}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{Cox proportional hazards regression}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{Parametric models}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{Frailty models}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{Competing risk models}
-content...
-\end{frame}
-
-\begin{frame}\frametitle{Discrete Time Model using logistic regression}
-content...
-\end{frame}
-
-
-
-\subsection{Social Network Analysis}
-\begin{frame}\frametitle{Social Network Analysis}
+\begin{frame}\frametitle{Stacking}
 	content...
 \end{frame}
 
-\section{Time Series Analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Python Libraries}
+\subsection{scikit-learn}
+
+\begin{frame}\frametitle{Training-stochastic}
+training algorithm used by Scikit-Learn : stochastic; may
+get very different models even on the same training data (unless you set the random\_state hyperparameter).
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Time Series}
 \begin{frame}\frametitle{Trend Analysis}
 	content...
 \end{frame}	
 
-
-\subsection{Other Analysis}
-\begin{frame}\frametitle{Whale Curve Analysis}
-	Technique to visualize the data\\
-	Sort the data before plotting\\
-	\textbf{Pareto Principle}: for many events, roughly 80\% of the effects come from 20\% of the causes\\
-	\includegraphics[scale=0.3]{other/whalecurve}
+\begin{frame}[allowframebreaks]\frametitle{ARIMA Modeling}
+	Auto-regressive Integrated Moving Average\\
+	\begin{enumerate}
+		\item AR Model (p)\\
+		\item MA Model (q)\\
+		\item ARMA Model (p,q)\\
+		\item \textbf{ARIMA(p,d,q)}\\	
+		\item \textbf{SARIMA(p,d,q)(P,D,Q)$_m$}
+		\begin{enumerate}
+			\item S [(P,D,Q)$_m$]: Seasonality; m = Seasonality; (P,D,Q) are analogous of (p,d,q) except for seasonal components\\
+			\textbf{what is Seasonality?} Repeating patterns within a year (/weekly/monthly). Remove Seasonality:\\
+			\begin{alertblock}{Math alert}
+				$Z_t = S_{t-365}-S_t$ \\
+			\end{alertblock}
 	
-\end{frame}
+			\textbf{What is Cycle?}: 
+			\begin{itemize}
+				\item repeating patterns over years
+				\item not as predictable, I cycle might take 2 years, II might take 3 years, III might take 2.5 years
+			\end{itemize}
+			\item AR [p]: predict for today based on previous value
+			\item I [d]: TS has forwards or backwards trends, so use differencing to make it stationary\\
+			\begin{alertblock}{Math alert}
+				$Z_t = S_{t-1}-S_t = \phi Z_{t-1} + \theta \epsilon_{t-1} + \epsilon_t $\\
+				To Recover, $S_k = Z_{k-1}+S_{k-1} = \sum_{i=1}^{l}Z_{k-i} + S_l$\\				
+			\end{alertblock}
+			\item MA [q]: error from prev period t make prediction about today
+			\begin{alertblock}{Math alert}
+				Actual, $X_t = \mu + \phi_1\epsilon_{t-1} + \phi_2\epsilon_{t-2} + ... + \phi_q\epsilon_{t-q} + \epsilon_t $\\
+				Pred, $\hat{X}_t = \mu + \phi_1\epsilon_{t-1} + \phi_2\epsilon_{t-2} + ... + \phi_q\epsilon_{t-q} $ (won't account for error)\\
+				where,\\
+				$\epsilon_{t-q}$ and $\epsilon_t$ : error from q time periods ago and current time period\\
+				$S_t, S_{t-1}, S_{t-2}$: avg value @t, t-1, t-2\\
+				\textbf{ACF}: Auto-correlation factor = Corr($S_{t-2}, S_t$)\\
+			\end{alertblock}
+			Pearson's r correlation: measures the strength relation btw	2 variables\\
+		\end{enumerate}
+		AR $\Rightarrow$ regression $\Rightarrow$ auto regression (predict something based on past values of same "something") (PACF)\\
+		MA $\Rightarrow$ (ACF)\\
+	\end{enumerate}	
+\end{frame}	
 
-\begin{frame}\frametitle{"Loss Leader” Model}
-
-"Loss Leader” Model, where you introduce new customers at a high cost in the hope of building a customer base or securing future revenue? 
-
-\end{frame}
-
-\begin{frame}\frametitle{Market Basket Analysis}
-	content...
-\end{frame}
-
-%\subsection{}
-\begin{frame}\frametitle{Propensity of Cross-sell}
+\begin{frame}\frametitle{Trend Analysis}
 content...
-\end{frame}
+\end{frame}	
 
+\begin{frame}\frametitle{Trend Analysis}
+content...
+\end{frame}	
+
+\begin{frame}\frametitle{Trend Analysis}
+content...
+\end{frame}	
 
 \begin{frame}
-	Thank You!
+Thank You!
 \end{frame}
+
 
 \end{document}
