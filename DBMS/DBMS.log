@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  5 MAR 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  10 MAR 2020 18:41
 entering extended mode
 **./DBMS.tex
 (DBMS.tex
@@ -1050,6 +1050,29 @@ ank[]
 
 ] [30
 
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+]
+[36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
 ]
 \tf@nav=\write6
 \openout6 = `DBMS.nav'.
@@ -1060,17 +1083,24 @@ ank[]
 \tf@snm=\write8
 \openout8 = `DBMS.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
  (DBMS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 581.
-Package rerunfilecheck Info: File `DBMS.out' has not changed.
-(rerunfilecheck)             Checksum: B3B7B2766D1D789B264ED38CEF82258B;818.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
+
+
+Package rerunfilecheck Warning: File `DBMS.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DBMS.out':
+(rerunfilecheck)             Before: B3B7B2766D1D789B264ED38CEF82258B;818
+(rerunfilecheck)             After:  577111F40B919BE3DC0E4111BEBAA7A7;1107.
  ) 
 Here is how much of TeX's memory you used:
- 17064 strings out of 492973
- 330034 string characters out of 3126693
+ 17091 strings out of 492973
+ 330313 string characters out of 3126693
  411419 words of memory out of 3000000
  20468 multiletter control sequences out of 15000+200000
  11465 words of font info for 42 fonts, out of 3000000 for 9000
@@ -1085,9 +1115,9 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/b
 ijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on DBMS.pdf (30 pages, 737300 bytes).
+Output written on DBMS.pdf (41 pages, 798099 bytes).
 PDF statistics:
- 940 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
+ 1239 PDF objects out of 1440 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
  217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

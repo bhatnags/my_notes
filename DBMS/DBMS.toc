@@ -11,4 +11,9 @@
 \beamer@subsectionintoc {5}{1}{Cassandra with solr}{13}{0}{5}
 \beamer@subsectionintoc {5}{2}{No one single point of failure}{13}{0}{5}
 \beamer@sectionintoc {6}{APIs}{17}{0}{6}
-\beamer@sectionintoc {7}{Microservices}{22}{0}{7}
+\beamer@sectionintoc {7}{AWS}{22}{0}{7}
+\beamer@subsectionintoc {7}{1}{Fundamentals}{22}{0}{7}
+\beamer@subsectionintoc {7}{2}{Developer Tools}{28}{0}{7}
+\beamer@subsectionintoc {7}{3}{CICD}{31}{0}{7}
+\beamer@subsectionintoc {7}{4}{Serverless}{33}{0}{7}
+\beamer@sectionintoc {8}{Microservices}{33}{0}{8}
