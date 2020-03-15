@@ -11,9 +11,13 @@
 \BOOKMARK [3][]{Outline0.5.1.13}{Cassandra with solr}{Outline0.5}% 11
 \BOOKMARK [3][]{Outline0.5.2.13}{No one single point of failure}{Outline0.5}% 12
 \BOOKMARK [2][]{Outline0.6}{APIs}{}% 13
-\BOOKMARK [2][]{Outline0.7}{AWS}{}% 14
-\BOOKMARK [3][]{Outline0.7.1.22}{Fundamentals}{Outline0.7}% 15
-\BOOKMARK [3][]{Outline0.7.2.28}{Developer Tools}{Outline0.7}% 16
-\BOOKMARK [3][]{Outline0.7.3.31}{CICD}{Outline0.7}% 17
-\BOOKMARK [3][]{Outline0.7.4.33}{Serverless}{Outline0.7}% 18
-\BOOKMARK [2][]{Outline0.8}{Microservices}{}% 19
+\BOOKMARK [2][]{Outline0.7}{ELK}{}% 14
+\BOOKMARK [3][]{Outline0.7.1.22}{Elasticsearch}{Outline0.7}% 15
+\BOOKMARK [3][]{Outline0.7.2.23}{Logstash}{Outline0.7}% 16
+\BOOKMARK [3][]{Outline0.7.3.24}{Kibana}{Outline0.7}% 17
+\BOOKMARK [2][]{Outline0.8}{AWS}{}% 18
+\BOOKMARK [3][]{Outline0.8.1.26}{Fundamentals}{Outline0.8}% 19
+\BOOKMARK [3][]{Outline0.8.2.32}{Developer Tools}{Outline0.8}% 20
+\BOOKMARK [3][]{Outline0.8.3.35}{CICD}{Outline0.8}% 21
+\BOOKMARK [3][]{Outline0.8.4.37}{Serverless}{Outline0.8}% 22
+\BOOKMARK [2][]{Outline0.9}{Microservices}{}% 23
