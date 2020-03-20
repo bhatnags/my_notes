@@ -102,6 +102,50 @@
 %------------------------------------------------
 
 
+
+\section{which rating is better?}
+
+\begin{frame}\frametitle{Laplace's rule of succession}
+	Just another answer\\
+	add one positive and one negative review to N reviews\\ 
+	n/N $\rightarrow$ (n+1)/(N+2)\\
+	\begin{itemize}
+		\item 10 out of 10 $\rightarrow$ 11/12 = 92\%
+		\item 48 out of 50 $\rightarrow$ 49/52 = 94\%
+		\item 186 out of 200 $\rightarrow$ 187/202 = 93\%
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]\frametitle{Bayesian Reviews}
+	\begin{enumerate}
+		\item \textbf{Set-up the model - Binomial dist}\\
+		what to optimize? what's the model?\\
+		P(+ve rev) = success rate = we don't know; e.g. take the review rating of 10/10, underline success rate could be 0.95 (assumption), choose a random num between 0 and 1, if <0.95 record positive rev else negative review. select 10 random numbers, there's a possibility to get 10/10 in some simulations\\
+		WE DON'T KNOW P(+ve rev)\\
+		Long run frequency???\\
+		
+		P(data$|$success rate) = to get this run simulations multiple times, assuming success rate; the resulting distribution will be Binomial from which you could get the \%age\\
+		\includegraphics[scale=0.2]{reviews}\\
+		
+
+		\item \textbf{Bayesian updating - PDF}\\
+		P(success rate$|$data) = P(data$|$success rate) * P(success rate)
+	
+		\item 	Analyse Model - Beta dist		
+	\end{enumerate}
+	
+\end{frame}
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------
+
+
 \section{Customer Analysis}
 \subsection{Churn and LTV}
 
