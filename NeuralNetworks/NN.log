@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  5 MAR 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  21 MAR 2020 00:05
 entering extended mode
 **./NN.tex
 (NN.tex
@@ -1012,7 +1012,7 @@ Missing character: There is no ] in font nullfont!
  [3
 
 ]
-<figs/mlinit.png, id=223, 1117.17375pt x 587.19376pt>
+<figs/mlinit.png, id=260, 1117.17375pt x 587.19376pt>
 File: figs/mlinit.png Graphic file (type png)
 <use figs/mlinit.png>
 Package pdftex.def Info: figs/mlinit.png  used on input line 67.
@@ -1022,7 +1022,7 @@ Overfull \hbox (8.32883pt too wide) in paragraph at lines 67--67
 [][]  
  []
 
-<figs/mlmethods.jpeg, id=224, 1260.71pt x 746.79pt>
+<figs/mlmethods.jpeg, id=261, 1260.71pt x 746.79pt>
 File: figs/mlmethods.jpeg Graphic file (type jpg)
 <use figs/mlmethods.jpeg>
 Package pdftex.def Info: figs/mlmethods.jpeg  used on input line 67.
@@ -1060,7 +1060,7 @@ Overfull \hbox (159.94963pt too wide) in paragraph at lines 67--67
 [4
 
  <./figs/mlinit.png> <./figs/mlmethods.jpeg>]
-<figs/mltypes.png, id=230, 438.8897pt x 280.79906pt>
+<figs/mltypes.png, id=267, 438.8897pt x 280.79906pt>
 File: figs/mltypes.png Graphic file (type png)
 <use figs/mltypes.png>
 Package pdftex.def Info: figs/mltypes.png  used on input line 74.
@@ -1073,12 +1073,12 @@ Package pdftex.def Info: figs/mltypes.png  used on input line 74.
 ] [7
 
 ]
-<figs/DNN/activationf.png, id=307, 621.82312pt x 459.21562pt>
+<figs/DNN/activationf.png, id=354, 621.82312pt x 459.21562pt>
 File: figs/DNN/activationf.png Graphic file (type png)
 <use figs/DNN/activationf.png>
 Package pdftex.def Info: figs/DNN/activationf.png  used on input line 165.
 (pdftex.def)             Requested size: 164.78233pt x 121.69156pt.
-<figs/DNN/activationfuses.png, id=308, 621.82312pt x 579.66562pt>
+<figs/DNN/activationfuses.png, id=355, 621.82312pt x 579.66562pt>
 File: figs/DNN/activationfuses.png Graphic file (type png)
 <use figs/DNN/activationfuses.png>
 Package pdftex.def Info: figs/DNN/activationfuses.png  used on input line 165.
@@ -1113,35 +1113,56 @@ Overfull \vbox (0.96228pt too high) detected at line 180
 
 ] [17
 
+] [18
+
 ]
-<figs/CNN/structure.png, id=679, 833.36343pt x 285.31593pt>
+<figs/CNN/structure.png, id=817, 833.36343pt x 285.31593pt>
 File: figs/CNN/structure.png Graphic file (type png)
 <use figs/CNN/structure.png>
-Package pdftex.def Info: figs/CNN/structure.png  used on input line 253.
+Package pdftex.def Info: figs/CNN/structure.png  used on input line 258.
 (pdftex.def)             Requested size: 333.33946pt x 114.12434pt.
 
-Overfull \hbox (26.04959pt too wide) in paragraph at lines 253--253
+Overfull \hbox (26.04959pt too wide) in paragraph at lines 258--258
 [][]  
  []
 
-[18
+[19
 
-] [19
+] [20
 
 
- <./figs/CNN/structure.png>] [20
-
-] [21
+ <./figs/CNN/structure.png>] [21
 
 ] [22
 
-] [23
+]
+<figs/cv/cnntypes.png, id=985, 347.79938pt x 144.54pt>
+File: figs/cv/cnntypes.png Graphic file (type png)
+<use figs/cv/cnntypes.png>
+Package pdftex.def Info: figs/cv/cnntypes.png  used on input line 295.
+(pdftex.def)             Requested size: 139.11728pt x 57.81496pt.
+ [23
 
-] [24
+ <./figs/cv/cnntypes.png>]
+[24
 
 ] [25
 
 ] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
 
 ]
 \tf@nav=\write6
@@ -1153,19 +1174,19 @@ Overfull \hbox (26.04959pt too wide) in paragraph at lines 253--253
 \tf@snm=\write8
 \openout8 = `NN.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 371.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 371.
  (NN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 371.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 371.
 Package rerunfilecheck Info: File `NN.out' has not changed.
-(rerunfilecheck)             Checksum: B1F8C05263BDF9CBD94219CF4CC3B217;486.
+(rerunfilecheck)             Checksum: 40C95C51C49AA9206A89C6B4B2731FBC;645.
  ) 
 Here is how much of TeX's memory you used:
- 20013 strings out of 492973
- 399872 string characters out of 3126693
- 499774 words of memory out of 3000000
- 23380 multiletter control sequences out of 15000+200000
+ 20054 strings out of 492973
+ 400339 string characters out of 3126693
+ 508061 words of memory out of 3000000
+ 23402 multiletter control sequences out of 15000+200000
  10384 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,69p,811b,1264s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1182,9 +1203,9 @@ ublic/amsfonts/cm/cmssi8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bijno/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/bijno/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on NN.pdf (26 pages, 1029638 bytes).
+Output written on NN.pdf (33 pages, 1141511 bytes).
 PDF statistics:
- 1054 PDF objects out of 1200 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1494 PDF objects out of 1728 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
