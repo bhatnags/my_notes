@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  5 MAR 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  24 MAR 2020 15:33
 entering extended mode
 **./ml.tex
 (ml.tex
@@ -1043,78 +1043,80 @@ thkerncmss.
 
 ] [11
 
-]
-<figs/regression/linearlogistic.png, id=989, 497.60907pt x 350.05782pt>
-File: figs/regression/linearlogistic.png Graphic file (type png)
-<use figs/regression/linearlogistic.png>
-Package pdftex.def Info: figs/regression/linearlogistic.png  used on input line
- 118.
-(pdftex.def)             Requested size: 223.92201pt x 157.52455pt.
+] [12
 
-Overfull \hbox (39.54622pt too wide) in paragraph at lines 118--118
-[][]  
- []
 
-[12
+] [13
 
- <./figs/regression/linearlogistic.png>]
-Overfull \hbox (24.48273pt too wide) in paragraph at lines 148--148
- [] 
- []
-
-[13
 
 ] [14
 
 ]
-Overfull \hbox (4.59402pt too wide) in paragraph at lines 193--193
+<figs/regression/linearlogistic.png, id=1392, 497.60907pt x 350.05782pt>
+File: figs/regression/linearlogistic.png Graphic file (type png)
+<use figs/regression/linearlogistic.png>
+Package pdftex.def Info: figs/regression/linearlogistic.png  used on input line
+ 175.
+(pdftex.def)             Requested size: 223.92201pt x 157.52455pt.
+
+Overfull \hbox (39.54622pt too wide) in paragraph at lines 175--175
 [][]  
  []
 
 [15
 
+ <./figs/regression/linearlogistic.png>]
+Overfull \hbox (24.48273pt too wide) in paragraph at lines 205--205
+ [] 
+ []
+
+[16
+
+] [17
+
 ]
-<figs/regression/linear.png, id=1205, 464.4853pt x 392.96812pt>
+Overfull \hbox (4.59402pt too wide) in paragraph at lines 250--250
+[][]  
+ []
+
+[18
+
+]
+<figs/regression/linear.png, id=1643, 464.4853pt x 392.96812pt>
 File: figs/regression/linear.png Graphic file (type png)
 <use figs/regression/linear.png>
-Package pdftex.def Info: figs/regression/linear.png  used on input line 210.
+Package pdftex.def Info: figs/regression/linear.png  used on input line 267.
 (pdftex.def)             Requested size: 69.66978pt x 58.94267pt.
-<figs/regression/linear2.png, id=1206, 583.42969pt x 351.56343pt>
+<figs/regression/linear2.png, id=1644, 583.42969pt x 351.56343pt>
 File: figs/regression/linear2.png Graphic file (type png)
 <use figs/regression/linear2.png>
-Package pdftex.def Info: figs/regression/linear2.png  used on input line 210.
+Package pdftex.def Info: figs/regression/linear2.png  used on input line 267.
 (pdftex.def)             Requested size: 87.51067pt x 52.73222pt.
-<figs/regression/linear3.png, id=1207, 529.98pt x 365.11406pt>
+<figs/regression/linear3.png, id=1645, 529.98pt x 365.11406pt>
 File: figs/regression/linear3.png Graphic file (type png)
 <use figs/regression/linear3.png>
-Package pdftex.def Info: figs/regression/linear3.png  used on input line 210.
+Package pdftex.def Info: figs/regression/linear3.png  used on input line 267.
 (pdftex.def)             Requested size: 79.49356pt x 54.76474pt.
- [16
+ [19
 
  <./figs/regression/linear.png> <./figs/regression/linear2.png> <./figs/regress
 ion/linear3.png>]
-<figs/regression/linearmanual.png, id=1280, 785.93625pt x 351.56343pt>
+<figs/regression/linearmanual.png, id=1730, 785.93625pt x 351.56343pt>
 File: figs/regression/linearmanual.png Graphic file (type png)
 <use figs/regression/linearmanual.png>
 Package pdftex.def Info: figs/regression/linearmanual.png  used on input line 2
-16.
+73.
 (pdftex.def)             Requested size: 212.20561pt x 94.92339pt.
-<figs/regression/linearmanualrsq.png, id=1281, 816.04875pt x 326.72063pt>
+<figs/regression/linearmanualrsq.png, id=1731, 816.04875pt x 326.72063pt>
 File: figs/regression/linearmanualrsq.png Graphic file (type png)
 <use figs/regression/linearmanualrsq.png>
 Package pdftex.def Info: figs/regression/linearmanualrsq.png  used on input lin
-e 216.
+e 273.
 (pdftex.def)             Requested size: 220.3361pt x 88.21574pt.
- [17
+ [20
 
  <./figs/regression/linearmanual.png> <./figs/regression/linearmanualrsq.png>] 
-[18
-
-] [19
-
-] [20
-
-] [21
+[21
 
 ] [22
 
@@ -1124,184 +1126,205 @@ e 216.
 
 ] [25
 
+] [26
+
+] [27
+
+
+] [28
+
+
+] [29
+
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 348--348
+[30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+]
+Underfull \hbox (badness 1721) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 iterative clus-ter-ing al-go-rithms in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 isolates var-i-ous dif-fer-ent
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 348--348
+Underfull \hbox (badness 1033) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 mean-shift, DB-SCAN and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 Approaches: 1) Top-
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 348--348
+Underfull \hbox (badness 1668) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 These mod-els of-ten suf-fer
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 348--348
+Underfull \hbox (badness 4819) in paragraph at lines 437--437
 \OT1/cmss/m/n/6 from over-fitting. Prior
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 348--348
+Underfull \hbox (badness 3281) in paragraph at lines 437--437
 \OT1/cmss/m/n/6 knowl-edge to de-fine num
  []
 
 
-Underfull \hbox (badness 3646) in paragraph at lines 348--348
+Underfull \hbox (badness 3646) in paragraph at lines 437--437
 \OT1/cmss/m/n/6 clus-ter co-vari-ance due to
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 348--348
+Underfull \hbox (badness 4108) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 elliptical shape (since we
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 348--348
+Underfull \hbox (badness 2582) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 DBSCAN: can find ar-bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 []\OT1/cmss/m/n/6 DBSCAN: draw-back in
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 348--348
+Underfull \hbox (badness 3189) in paragraph at lines 437--437
 \OT1/cmss/m/n/6 the dis-tance thresh-old $\OML/cmm/m/it/6 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 \OT1/cmss/m/n/6 be-comes chal-leng-ing to
  []
 
-[26
+[35
 
 ]
-<figs/clustering.png, id=1971, 2107.875pt x 1254.6875pt>
+<figs/clustering.png, id=3020, 2107.875pt x 1254.6875pt>
 File: figs/clustering.png Graphic file (type png)
 <use figs/clustering.png>
-Package pdftex.def Info: figs/clustering.png  used on input line 355.
+Package pdftex.def Info: figs/clustering.png  used on input line 444.
 (pdftex.def)             Requested size: 316.1676pt x 188.195pt.
 
-Overfull \hbox (8.87773pt too wide) in paragraph at lines 355--355
+Overfull \hbox (8.87773pt too wide) in paragraph at lines 444--444
 [][]  
  []
 
-[27
+[36
 
- <./figs/clustering.png (PNG copy)>] [28
+ <./figs/clustering.png (PNG copy)>] [37
 
 ]
-<figs/meanshift/meanshift-3.png, id=2109, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-3.png, id=3182, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-3.png Graphic file (type png)
 <use figs/meanshift/meanshift-3.png>
-Package pdftex.def Info: figs/meanshift/meanshift-3.png  used on input line 397
+Package pdftex.def Info: figs/meanshift/meanshift-3.png  used on input line 486
 .
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-4.png, id=2110, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-4.png, id=3183, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-4.png Graphic file (type png)
 <use figs/meanshift/meanshift-4.png>
-Package pdftex.def Info: figs/meanshift/meanshift-4.png  used on input line 397
+Package pdftex.def Info: figs/meanshift/meanshift-4.png  used on input line 486
 .
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-6.png, id=2111, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-6.png, id=3184, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-6.png Graphic file (type png)
 <use figs/meanshift/meanshift-6.png>
-Package pdftex.def Info: figs/meanshift/meanshift-6.png  used on input line 397
+Package pdftex.def Info: figs/meanshift/meanshift-6.png  used on input line 486
 .
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-8.png, id=2112, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-8.png, id=3185, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-8.png Graphic file (type png)
 <use figs/meanshift/meanshift-8.png>
-Package pdftex.def Info: figs/meanshift/meanshift-8.png  used on input line 397
+Package pdftex.def Info: figs/meanshift/meanshift-8.png  used on input line 486
 .
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-10.png, id=2113, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-10.png, id=3186, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-10.png Graphic file (type png)
 <use figs/meanshift/meanshift-10.png>
-Package pdftex.def Info: figs/meanshift/meanshift-10.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-10.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-12.png, id=2114, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-12.png, id=3187, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-12.png Graphic file (type png)
 <use figs/meanshift/meanshift-12.png>
-Package pdftex.def Info: figs/meanshift/meanshift-12.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-12.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-14.png, id=2115, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-14.png, id=3188, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-14.png Graphic file (type png)
 <use figs/meanshift/meanshift-14.png>
-Package pdftex.def Info: figs/meanshift/meanshift-14.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-14.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-16.png, id=2116, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-16.png, id=3189, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-16.png Graphic file (type png)
 <use figs/meanshift/meanshift-16.png>
-Package pdftex.def Info: figs/meanshift/meanshift-16.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-16.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-18.png, id=2117, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-18.png, id=3190, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-18.png Graphic file (type png)
 <use figs/meanshift/meanshift-18.png>
-Package pdftex.def Info: figs/meanshift/meanshift-18.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-18.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-20.png, id=2118, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-20.png, id=3191, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-20.png Graphic file (type png)
 <use figs/meanshift/meanshift-20.png>
-Package pdftex.def Info: figs/meanshift/meanshift-20.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-20.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-22.png, id=2119, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-22.png, id=3192, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-22.png Graphic file (type png)
 <use figs/meanshift/meanshift-22.png>
-Package pdftex.def Info: figs/meanshift/meanshift-22.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-22.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-36.png, id=2120, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-36.png, id=3193, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-36.png Graphic file (type png)
 <use figs/meanshift/meanshift-36.png>
-Package pdftex.def Info: figs/meanshift/meanshift-36.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-36.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-38.png, id=2121, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-38.png, id=3194, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-38.png Graphic file (type png)
 <use figs/meanshift/meanshift-38.png>
-Package pdftex.def Info: figs/meanshift/meanshift-38.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-38.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-40.png, id=2122, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-40.png, id=3195, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-40.png Graphic file (type png)
 <use figs/meanshift/meanshift-40.png>
-Package pdftex.def Info: figs/meanshift/meanshift-40.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-40.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
-<figs/meanshift/meanshift-43.png, id=2123, 433.62pt x 433.62pt>
+<figs/meanshift/meanshift-43.png, id=3196, 433.62pt x 433.62pt>
 File: figs/meanshift/meanshift-43.png Graphic file (type png)
 <use figs/meanshift/meanshift-43.png>
-Package pdftex.def Info: figs/meanshift/meanshift-43.png  used on input line 39
-7.
+Package pdftex.def Info: figs/meanshift/meanshift-43.png  used on input line 48
+6.
 (pdftex.def)             Requested size: 65.04019pt x 65.04019pt.
 
-Overfull \vbox (4.82121pt too high) detected at line 397
+Overfull \vbox (4.82121pt too high) detected at line 486
  []
 
-[29
+[38
 
  <./figs/meanshift/meanshift-3.png> <./figs/meanshift/meanshift-4.png> <./figs/
 meanshift/meanshift-6.png> <./figs/meanshift/meanshift-8.png> <./figs/meanshift
@@ -1309,158 +1332,158 @@ meanshift/meanshift-6.png> <./figs/meanshift/meanshift-8.png> <./figs/meanshift
 ift-14.png> <./figs/meanshift/meanshift-16.png> <./figs/meanshift/meanshift-18.
 png> <./figs/meanshift/meanshift-20.png> <./figs/meanshift/meanshift-22.png> <.
 /figs/meanshift/meanshift-36.png> <./figs/meanshift/meanshift-38.png> <./figs/m
-eanshift/meanshift-40.png> <./figs/meanshift/meanshift-43.png>] [30
+eanshift/meanshift-40.png> <./figs/meanshift/meanshift-43.png>] [39
 
 ]
-<figs/dbscan/1.jpg, id=2275, 508.14844pt x 319.1925pt>
+<figs/dbscan/1.jpg, id=3372, 508.14844pt x 319.1925pt>
 File: figs/dbscan/1.jpg Graphic file (type jpg)
 <use figs/dbscan/1.jpg>
-Package pdftex.def Info: figs/dbscan/1.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/1.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/11.jpg, id=2276, 508.14844pt x 319.1925pt>
+<figs/dbscan/11.jpg, id=3373, 508.14844pt x 319.1925pt>
 File: figs/dbscan/11.jpg Graphic file (type jpg)
 <use figs/dbscan/11.jpg>
-Package pdftex.def Info: figs/dbscan/11.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/11.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/2.jpg, id=2277, 508.14844pt x 319.1925pt>
+<figs/dbscan/2.jpg, id=3374, 508.14844pt x 319.1925pt>
 File: figs/dbscan/2.jpg Graphic file (type jpg)
 <use figs/dbscan/2.jpg>
-Package pdftex.def Info: figs/dbscan/2.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/2.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/3.jpg, id=2278, 508.14844pt x 319.1925pt>
+<figs/dbscan/3.jpg, id=3375, 508.14844pt x 319.1925pt>
 File: figs/dbscan/3.jpg Graphic file (type jpg)
 <use figs/dbscan/3.jpg>
-Package pdftex.def Info: figs/dbscan/3.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/3.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/31.jpg, id=2279, 508.14844pt x 319.1925pt>
+<figs/dbscan/31.jpg, id=3376, 508.14844pt x 319.1925pt>
 File: figs/dbscan/31.jpg Graphic file (type jpg)
 <use figs/dbscan/31.jpg>
-Package pdftex.def Info: figs/dbscan/31.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/31.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/4.jpg, id=2280, 508.14844pt x 319.1925pt>
+<figs/dbscan/4.jpg, id=3377, 508.14844pt x 319.1925pt>
 File: figs/dbscan/4.jpg Graphic file (type jpg)
 <use figs/dbscan/4.jpg>
-Package pdftex.def Info: figs/dbscan/4.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/4.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/5.jpg, id=2281, 508.14844pt x 319.1925pt>
+<figs/dbscan/5.jpg, id=3378, 508.14844pt x 319.1925pt>
 File: figs/dbscan/5.jpg Graphic file (type jpg)
 <use figs/dbscan/5.jpg>
-Package pdftex.def Info: figs/dbscan/5.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/5.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/6.jpg, id=2282, 508.14844pt x 319.1925pt>
+<figs/dbscan/6.jpg, id=3379, 508.14844pt x 319.1925pt>
 File: figs/dbscan/6.jpg Graphic file (type jpg)
 <use figs/dbscan/6.jpg>
-Package pdftex.def Info: figs/dbscan/6.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/6.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/7.jpg, id=2283, 508.14844pt x 319.1925pt>
+<figs/dbscan/7.jpg, id=3380, 508.14844pt x 319.1925pt>
 File: figs/dbscan/7.jpg Graphic file (type jpg)
 <use figs/dbscan/7.jpg>
-Package pdftex.def Info: figs/dbscan/7.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/7.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/8.jpg, id=2284, 508.14844pt x 319.1925pt>
+<figs/dbscan/8.jpg, id=3381, 508.14844pt x 319.1925pt>
 File: figs/dbscan/8.jpg Graphic file (type jpg)
 <use figs/dbscan/8.jpg>
-Package pdftex.def Info: figs/dbscan/8.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/8.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/9.jpg, id=2285, 508.14844pt x 319.1925pt>
+<figs/dbscan/9.jpg, id=3382, 508.14844pt x 319.1925pt>
 File: figs/dbscan/9.jpg Graphic file (type jpg)
 <use figs/dbscan/9.jpg>
-Package pdftex.def Info: figs/dbscan/9.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/9.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
-<figs/dbscan/10.jpg, id=2286, 508.14844pt x 319.1925pt>
+<figs/dbscan/10.jpg, id=3383, 508.14844pt x 319.1925pt>
 File: figs/dbscan/10.jpg Graphic file (type jpg)
 <use figs/dbscan/10.jpg>
-Package pdftex.def Info: figs/dbscan/10.jpg  used on input line 431.
+Package pdftex.def Info: figs/dbscan/10.jpg  used on input line 520.
 (pdftex.def)             Requested size: 76.21896pt x 47.8768pt.
 
-[31
+[40
 
  <./figs/dbscan/1.jpg> <./figs/dbscan/11.jpg> <./figs/dbscan/2.jpg> <./figs/dbs
 can/3.jpg> <./figs/dbscan/31.jpg> <./figs/dbscan/4.jpg> <./figs/dbscan/5.jpg> <
 ./figs/dbscan/6.jpg> <./figs/dbscan/7.jpg> <./figs/dbscan/8.jpg> <./figs/dbscan
-/9.jpg> <./figs/dbscan/10.jpg>] [32
+/9.jpg> <./figs/dbscan/10.jpg>] [41
 
-] [33
+] [42
 
-] [34
+] [43
 
 ]
-<figs/em/frame_00_delay-0.png, id=2561, 271.0125pt x 232.61906pt>
+<figs/em/frame_00_delay-0.png, id=3705, 271.0125pt x 232.61906pt>
 File: figs/em/frame_00_delay-0.png Graphic file (type png)
 <use figs/em/frame_00_delay-0.png>
-Package pdftex.def Info: figs/em/frame_00_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_00_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_01_delay-0.png, id=2562, 271.0125pt x 232.61906pt>
+<figs/em/frame_01_delay-0.png, id=3706, 271.0125pt x 232.61906pt>
 File: figs/em/frame_01_delay-0.png Graphic file (type png)
 <use figs/em/frame_01_delay-0.png>
-Package pdftex.def Info: figs/em/frame_01_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_01_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_02_delay-0.png, id=2563, 271.0125pt x 232.61906pt>
+<figs/em/frame_02_delay-0.png, id=3707, 271.0125pt x 232.61906pt>
 File: figs/em/frame_02_delay-0.png Graphic file (type png)
 <use figs/em/frame_02_delay-0.png>
-Package pdftex.def Info: figs/em/frame_02_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_02_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_03_delay-0.png, id=2564, 271.0125pt x 232.61906pt>
+<figs/em/frame_03_delay-0.png, id=3708, 271.0125pt x 232.61906pt>
 File: figs/em/frame_03_delay-0.png Graphic file (type png)
 <use figs/em/frame_03_delay-0.png>
-Package pdftex.def Info: figs/em/frame_03_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_03_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_04_delay-0.png, id=2565, 271.0125pt x 232.61906pt>
+<figs/em/frame_04_delay-0.png, id=3709, 271.0125pt x 232.61906pt>
 File: figs/em/frame_04_delay-0.png Graphic file (type png)
 <use figs/em/frame_04_delay-0.png>
-Package pdftex.def Info: figs/em/frame_04_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_04_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_05_delay-0.png, id=2566, 271.0125pt x 232.61906pt>
+<figs/em/frame_05_delay-0.png, id=3710, 271.0125pt x 232.61906pt>
 File: figs/em/frame_05_delay-0.png Graphic file (type png)
 <use figs/em/frame_05_delay-0.png>
-Package pdftex.def Info: figs/em/frame_05_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_05_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_06_delay-0.png, id=2567, 271.0125pt x 232.61906pt>
+<figs/em/frame_06_delay-0.png, id=3711, 271.0125pt x 232.61906pt>
 File: figs/em/frame_06_delay-0.png Graphic file (type png)
 <use figs/em/frame_06_delay-0.png>
-Package pdftex.def Info: figs/em/frame_06_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_06_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_07_delay-0.png, id=2568, 271.0125pt x 232.61906pt>
+<figs/em/frame_07_delay-0.png, id=3712, 271.0125pt x 232.61906pt>
 File: figs/em/frame_07_delay-0.png Graphic file (type png)
 <use figs/em/frame_07_delay-0.png>
-Package pdftex.def Info: figs/em/frame_07_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_07_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_08_delay-0.png, id=2569, 271.0125pt x 232.61906pt>
+<figs/em/frame_08_delay-0.png, id=3713, 271.0125pt x 232.61906pt>
 File: figs/em/frame_08_delay-0.png Graphic file (type png)
 <use figs/em/frame_08_delay-0.png>
-Package pdftex.def Info: figs/em/frame_08_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_08_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_09_delay-0.png, id=2570, 271.0125pt x 232.61906pt>
+<figs/em/frame_09_delay-0.png, id=3714, 271.0125pt x 232.61906pt>
 File: figs/em/frame_09_delay-0.png Graphic file (type png)
 <use figs/em/frame_09_delay-0.png>
-Package pdftex.def Info: figs/em/frame_09_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_09_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_10_delay-0.png, id=2571, 271.0125pt x 232.61906pt>
+<figs/em/frame_10_delay-0.png, id=3715, 271.0125pt x 232.61906pt>
 File: figs/em/frame_10_delay-0.png Graphic file (type png)
 <use figs/em/frame_10_delay-0.png>
-Package pdftex.def Info: figs/em/frame_10_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_10_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_11_delay-0.png, id=2572, 271.0125pt x 232.61906pt>
+<figs/em/frame_11_delay-0.png, id=3716, 271.0125pt x 232.61906pt>
 File: figs/em/frame_11_delay-0.png Graphic file (type png)
 <use figs/em/frame_11_delay-0.png>
-Package pdftex.def Info: figs/em/frame_11_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_11_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_12_delay-0.png, id=2573, 271.0125pt x 232.61906pt>
+<figs/em/frame_12_delay-0.png, id=3717, 271.0125pt x 232.61906pt>
 File: figs/em/frame_12_delay-0.png Graphic file (type png)
 <use figs/em/frame_12_delay-0.png>
-Package pdftex.def Info: figs/em/frame_12_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_12_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_13_delay-0.png, id=2574, 271.0125pt x 232.61906pt>
+<figs/em/frame_13_delay-0.png, id=3718, 271.0125pt x 232.61906pt>
 File: figs/em/frame_13_delay-0.png Graphic file (type png)
 <use figs/em/frame_13_delay-0.png>
-Package pdftex.def Info: figs/em/frame_13_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_13_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
-<figs/em/frame_14_delay-0.png, id=2575, 271.0125pt x 232.61906pt>
+<figs/em/frame_14_delay-0.png, id=3719, 271.0125pt x 232.61906pt>
 File: figs/em/frame_14_delay-0.png Graphic file (type png)
 <use figs/em/frame_14_delay-0.png>
-Package pdftex.def Info: figs/em/frame_14_delay-0.png  used on input line 476.
+Package pdftex.def Info: figs/em/frame_14_delay-0.png  used on input line 565.
 (pdftex.def)             Requested size: 54.20152pt x 46.52298pt.
- [35
+ [44
 
  <./figs/em/frame_00_delay-0.png> <./figs/em/frame_01_delay-0.png> <./figs/em/f
 rame_02_delay-0.png> <./figs/em/frame_03_delay-0.png> <./figs/em/frame_04_delay
@@ -1469,78 +1492,53 @@ gs/em/frame_07_delay-0.png> <./figs/em/frame_08_delay-0.png> <./figs/em/frame_0
 9_delay-0.png> <./figs/em/frame_10_delay-0.png> <./figs/em/frame_11_delay-0.png
 > <./figs/em/frame_12_delay-0.png> <./figs/em/frame_13_delay-0.png> <./figs/em/
 frame_14_delay-0.png>]
-<figs/kmeans_1.jpg, id=2644, 206.27063pt x 152.82094pt>
+<figs/kmeans_1.jpg, id=3800, 206.27063pt x 152.82094pt>
 File: figs/kmeans_1.jpg Graphic file (type jpg)
 <use figs/kmeans_1.jpg>
-Package pdftex.def Info: figs/kmeans_1.jpg  used on input line 495.
+Package pdftex.def Info: figs/kmeans_1.jpg  used on input line 584.
 (pdftex.def)             Requested size: 103.13506pt x 76.41026pt.
-<figs/kmeans_2.png, id=2645, 509.65407pt x 422.32782pt>
+<figs/kmeans_2.png, id=3801, 509.65407pt x 422.32782pt>
 File: figs/kmeans_2.png Graphic file (type png)
 <use figs/kmeans_2.png>
-Package pdftex.def Info: figs/kmeans_2.png  used on input line 495.
+Package pdftex.def Info: figs/kmeans_2.png  used on input line 584.
 (pdftex.def)             Requested size: 101.929pt x 84.46407pt.
 
-[36
+[45
 
- <./figs/kmeans_1.jpg> <./figs/kmeans_2.png>] [37
+ <./figs/kmeans_1.jpg> <./figs/kmeans_2.png>] [46
 
 ]
-<figs/kmeans_fail.png, id=2784, 358.33875pt x 180.675pt>
+<figs/kmeans_fail.png, id=3962, 358.33875pt x 180.675pt>
 File: figs/kmeans_fail.png Graphic file (type png)
 <use figs/kmeans_fail.png>
-Package pdftex.def Info: figs/kmeans_fail.png  used on input line 509.
+Package pdftex.def Info: figs/kmeans_fail.png  used on input line 598.
 (pdftex.def)             Requested size: 179.16893pt x 90.33727pt.
- [38
+ [47
 
- <./figs/kmeans_fail.png (PNG copy)>] [39
+ <./figs/kmeans_fail.png (PNG copy)>] [48
 
 ]
-<figs/hierarchical.png, id=2922, 426.84468pt x 283.0575pt>
+<figs/hierarchical.png, id=4123, 426.84468pt x 283.0575pt>
 File: figs/hierarchical.png Graphic file (type png)
 <use figs/hierarchical.png>
-Package pdftex.def Info: figs/hierarchical.png  used on input line 550.
+Package pdftex.def Info: figs/hierarchical.png  used on input line 639.
 (pdftex.def)             Requested size: 106.7109pt x 70.76419pt.
 
-Overfull \hbox (14.52301pt too wide) in paragraph at lines 550--550
+Overfull \hbox (14.52301pt too wide) in paragraph at lines 639--639
 [][]  
  []
 
-[40
+[49
 
  <./figs/hierarchical.png>]
-Overfull \vbox (2.06319pt too high) detected at line 586
+Overfull \vbox (2.06319pt too high) detected at line 675
  []
 
-[41
+[50
 
 ]
 Missing character: There is no ] in font nullfont!
- [42
-
-] [43
-
-
-] [44
-
-
-] [45
-
-
-]
-Overfull \vbox (3.26329pt too high) detected at line 649
- []
-
-[46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-] [51
+ [51
 
 ] [52
 
@@ -1551,8 +1549,11 @@ Overfull \vbox (3.26329pt too high) detected at line 649
 ] [54
 
 
-] [55
+]
+Overfull \vbox (3.26329pt too high) detected at line 738
+ []
 
+[55
 
 ] [56
 
@@ -1561,6 +1562,33 @@ Overfull \vbox (3.26329pt too high) detected at line 649
 ] [58
 
 ] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+
+] [64
+
+
+] [65
+
+
+] [66
+
+
+] [67
+
+] [68
+
+] [69
+
+]
+[70
 
 ]
 \tf@nav=\write6
@@ -1572,89 +1600,43 @@ Overfull \vbox (3.26329pt too high) detected at line 649
 \tf@snm=\write8
 \openout8 = `ml.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 741.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 741.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 844.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 844.
  (ml.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 741.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 741.
-
-
-Package rerunfilecheck Warning: File `ml.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ml.out':
-(rerunfilecheck)             Before: A5EB62E92D58CC0D2479B30157EDFA50;1237
-(rerunfilecheck)             After:  78E1ADCD693D86584FB5713C3258BEE4;1237.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 844.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 844.
+Package rerunfilecheck Info: File `ml.out' has not changed.
+(rerunfilecheck)             Checksum: 1486B392450CDFEADAD617AA3310F002;1394.
  ) 
 Here is how much of TeX's memory you used:
- 20611 strings out of 492973
- 412807 string characters out of 3126693
- 556164 words of memory out of 3000000
- 23829 multiletter control sequences out of 15000+200000
+ 20661 strings out of 492973
+ 413402 string characters out of 3126693
+ 571380 words of memory out of 3000000
+ 23868 multiletter control sequences out of 15000+200000
  17026 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,65p,811b,1067s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.6.1.48} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.5.2.41} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.5.1.40} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.5.38} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.4.35} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.3.32} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.2.27} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.24} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.1.22} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.3.20} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.2.15} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.1.10} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.2.7} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/bijno/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/bijno/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/bijno
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:
-/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mss9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmssbx10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/bijno/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/bijno/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bijno
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:
-/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy7.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on ml.pdf (59 pages, 4008707 bytes).
+<C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmex10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/bijno/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/bijno/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/bij
+no/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><
+C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmss9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmssbx10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/bijno/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/bijno/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bij
+no/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ml.pdf (70 pages, 4319584 bytes).
 PDF statistics:
- 4375 PDF objects out of 5155 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 486 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5975 PDF objects out of 6186 (max. 8388607)
+ 165 named destinations out of 1000 (max. 500000)
+ 502 words of extra memory for PDF output out of 10000 (max. 10000000)
 

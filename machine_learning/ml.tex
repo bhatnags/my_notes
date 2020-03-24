@@ -92,6 +92,63 @@ Cross-industry standard process for data mining
 \begin{frame}\frametitle{Class Imbalance}
 \end{frame}
 
+
+\begin{frame}[allowframebreaks]\frametitle{Data Visualization}
+	\textbf{Tableau and Qlikview}\\
+	\begin{itemize}
+		\item compare distributions
+		\begin{itemize}
+			\item pie-chart and donut (gives space to tell the total number)
+			\item Nightingale rose's chart
+			\item tree (tree-boxes)
+			\item scatter plot
+			\item Lollipop chart (trends)
+			\item bubble chart (3d of scatter)
+		\end{itemize}
+		\item trends:
+		\begin{itemize}
+			\item comparison 2-vars: bar-chart
+			\item radial bar chart
+			\item comp multiple vars: line chart
+			\item bridge charts
+			\item stack char
+			\item area or density plot (as a pctg of whole)  
+		\end{itemize}
+		\item statistical trends:
+		\begin{itemize}
+			\item box and whisker plots
+			\item violin plots
+		\end{itemize}
+		\item correlations or classifications
+		\begin{itemize}
+			\item scatter plot
+			\item correlation plots
+			\item Likert scale	
+			\item population pyt=ramids
+		\end{itemize}
+		\item floe-map
+		\begin{itemize}
+			\item hierarchy-tree
+			\item pyramid and funnel
+			\item heat maps
+			\item network diagrams
+			\item timeline
+		\end{itemize}
+		\item sun-burst and radial column
+		\item Text Analytics - word cloud
+		\item Sankey charts - flows, intensity, relationships bw vars
+		\item waffle chart
+		\item radar chart
+		\item pictograms
+		\item Maps
+	\end{itemize}
+\end{frame}
+
+
+
+
+
+
 \section{Regression}
 
 
@@ -266,11 +323,43 @@ content...
 	\begin{enumerate}
 		\item model a classification rule - knn, decision tree, perceptron, svm
 		\item model the probability of class membership given input data - perceptron with cross-entropy cost
-		\item make a probabilistic model of data within each class - naive bayes
-		1 \& 2 are discriminative classifications
-		3 is generative classification
-		2 \& 3 probabilistic classification
+		\item make a probabilistic model of data within each class - naive bayes\\
 	\end{enumerate}
+1 \& 2 are discriminative classifications\\
+3 is generative classification\\
+2 \& 3 probabilistic classification
+
+\end{frame}
+
+\subsection{Accuracy, precision, recall, f1 score}
+\begin{frame}[allowframebreaks]
+	Accuracy: most used metric\\
+	Precision: out of those predicted positive, how many of them are actual positive\\
+	when the costs of False Positive is high\\
+	F1 Score: harmonic mean of precision and recall; is needed when you want to seek a balance between Precision and Recall\\
+	Precision is how sure you are of your true positives whilst recall is how sure you are that you are not missing any positives.\\
+	Choose Recall if the idea of false positives is far better than false negatives, in other words, if the occurrence of false negatives is unaccepted/intolerable, that you’d rather get some extra false positives(false alarms) over saving some false negatives, like in our diabetes example.\\
+	You’d rather get some healthy people labeled diabetic over leaving a diabetic person labeled healthy.
+	Choose precision if you want to be more confident of your true positives. for example, Spam emails. You’d rather have some spam emails in your inbox rather than some regular emails in your spam box. So, the email company wants to be extra sure that email Y is spam before they put it in the spam box and you never get to see it.\\
+	Choose Specificity if you want to cover all true negatives, meaning you don’t want any false alarms, you don’t want any false positives. for example, you’re running a drug test in which all people who test positive will immediately go to jail, you don’t want anyone drug-free going to jail. False positives here are intolerable.\\
+	\begin{itemize}
+		\item Accuracy value of 90\% means that 1 of every 10 labels is incorrect, and 9 is correct.
+		\item  Precision value of 80\% means that on average, 2 of every 10 diabetic labeled student by our program is healthy, and 8 is diabetic.
+		\item Recall value is 70\% means that 3 of every 10 diabetic people in reality are missed by our program and 7 labeled as diabetic.
+		\item Specificity value is 60\% means that 4 of every 10 healthy people in reality are miss-labeled as diabetic and 6 are correctly labeled as healthy.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+
+\end{frame}
+
+\begin{frame}
+
+\end{frame}
+
+\begin{frame}
+
 \end{frame}
 
 \subsection{Decision Tree and Random Forest}
@@ -660,6 +749,17 @@ Ensemble methods work best when the predictors are as independent from one anoth
 	content...
 \end{frame}
 
+
+
+
+
+
+
+\subsection{ML in Production}
+\begin{frame}\frametitle{title}
+	methods for putting machine learning models into production, and to determine which method is best for which use case\\
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Python Libraries}
@@ -670,6 +770,9 @@ training algorithm used by Scikit-Learn : stochastic; may
 get very different models even on the same training data (unless you set the random\_state hyperparameter).
 \end{frame}
 
+\begin{frame}\frametitle{numpy vs pandas vs scipy}
+	content...
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

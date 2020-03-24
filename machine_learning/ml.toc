@@ -1,21 +1,23 @@
 \beamer@sectionintoc {1}{EDA}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{General}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{General2}{8}{0}{1}
-\beamer@sectionintoc {2}{Regression}{11}{0}{2}
-\beamer@subsectionintoc {2}{1}{Types}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Linear regression}{16}{0}{2}
-\beamer@subsectionintoc {2}{3}{Logistic}{21}{0}{2}
-\beamer@sectionintoc {3}{Classification}{22}{0}{3}
-\beamer@subsectionintoc {3}{1}{Decision Tree and Random Forest}{23}{0}{3}
-\beamer@sectionintoc {4}{Clustering}{25}{0}{4}
-\beamer@subsectionintoc {4}{1}{Clustering Types}{25}{0}{4}
-\beamer@subsectionintoc {4}{2}{Density Models}{28}{0}{4}
-\beamer@subsectionintoc {4}{3}{Distribution Models}{33}{0}{4}
-\beamer@subsectionintoc {4}{4}{Centroidal models}{36}{0}{4}
-\beamer@subsectionintoc {4}{5}{Connectivity Models}{39}{0}{4}
-\beamer@sectionintoc {5}{ML Techniques}{41}{0}{5}
-\beamer@subsectionintoc {5}{1}{SVM}{41}{0}{5}
-\beamer@subsectionintoc {5}{2}{Ensemble}{42}{0}{5}
-\beamer@sectionintoc {6}{Python Libraries}{49}{0}{6}
-\beamer@subsectionintoc {6}{1}{scikit-learn}{49}{0}{6}
-\beamer@sectionintoc {7}{Time Series}{50}{0}{7}
+\beamer@sectionintoc {2}{Regression}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Types}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Linear regression}{19}{0}{2}
+\beamer@subsectionintoc {2}{3}{Logistic}{24}{0}{2}
+\beamer@sectionintoc {3}{Classification}{25}{0}{3}
+\beamer@subsectionintoc {3}{1}{Accuracy, precision, recall, f1 score}{26}{0}{3}
+\beamer@subsectionintoc {3}{2}{Decision Tree and Random Forest}{32}{0}{3}
+\beamer@sectionintoc {4}{Clustering}{34}{0}{4}
+\beamer@subsectionintoc {4}{1}{Clustering Types}{34}{0}{4}
+\beamer@subsectionintoc {4}{2}{Density Models}{37}{0}{4}
+\beamer@subsectionintoc {4}{3}{Distribution Models}{42}{0}{4}
+\beamer@subsectionintoc {4}{4}{Centroidal models}{45}{0}{4}
+\beamer@subsectionintoc {4}{5}{Connectivity Models}{48}{0}{4}
+\beamer@sectionintoc {5}{ML Techniques}{50}{0}{5}
+\beamer@subsectionintoc {5}{1}{SVM}{50}{0}{5}
+\beamer@subsectionintoc {5}{2}{Ensemble}{51}{0}{5}
+\beamer@subsectionintoc {5}{3}{ML in Production}{58}{0}{5}
+\beamer@sectionintoc {6}{Python Libraries}{59}{0}{6}
+\beamer@subsectionintoc {6}{1}{scikit-learn}{59}{0}{6}
+\beamer@sectionintoc {7}{Time Series}{61}{0}{7}
