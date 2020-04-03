@@ -58,3 +58,7 @@ for key, value in graph.items():
     graph1[key] = set(value.keys())
 
 x = map(func, graph.keys()) #x is the map object
+
+
+
+
