@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  5 APR 2020 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  5 APR 2020 22:38
 entering extended mode
 **./CustA.tex
 (CustA.tex
@@ -740,14 +740,6 @@ Dresden.sty"
 thememiniframes.sty")
 ("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamercolor
 themewhale.sty"))
-("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamertheme
-Madrid.sty"
-("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamercolor
-themeorchid.sty")
-("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerinner
-themerounded.sty")
-("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerouter
-themeinfolines.sty"))
 ("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.
 sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -895,14 +887,14 @@ LaTeX Font Info:    ... okay on input line 91.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=342.2953pt
+* \textwidth=307.28987pt
 * \textheight=244.6939pt
-* \oddsidemargin=-61.31996pt
-* \evensidemargin=-61.31996pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1024,9 +1016,10 @@ LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
 ut line 91.
- (CustA.nav) [1
+ (CustA.nav) [1{C:/Users/bijno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.ma
+p}
 
-{C:/Users/bijno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+]
 LaTeX Font Info:    Try loading font information for U+msa on input line 117.
 
 ("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -1046,7 +1039,7 @@ thkerncmss.
 ) [2
 
 ]
-<figs/reviews.png, id=101, 663.22781pt x 381.67593pt>
+<figs/reviews.png, id=197, 663.22781pt x 381.67593pt>
 File: figs/reviews.png Graphic file (type png)
 <use figs/reviews.png>
 Package pdftex.def Info: figs/reviews.png  used on input line 138.
@@ -1057,7 +1050,7 @@ Package pdftex.def Info: figs/reviews.png  used on input line 138.
 
 
  <./figs/reviews.png>]
-<figs/churn.png, id=153, 252.945pt x 94.85437pt>
+<figs/churn.png, id=301, 252.945pt x 94.85437pt>
 File: figs/churn.png Graphic file (type png)
 <use figs/churn.png>
 Package pdftex.def Info: figs/churn.png  used on input line 158.
@@ -1067,17 +1060,31 @@ Package pdftex.def Info: figs/churn.png  used on input line 158.
  <./figs/churn.png>]
 [6
 
-] [7
+]
+Overfull \hbox (13.78137pt too wide) in paragraph at lines 217--217
+ [] 
+ []
+
+
+Overfull \vbox (15.65395pt too high) detected at line 217
+ []
+
+[7
 
 ] [8
 
 ]
-<figs/churnltv.png, id=266, 787.44188pt x 249.93375pt>
+<figs/churnltv.png, id=516, 787.44188pt x 249.93375pt>
 File: figs/churnltv.png Graphic file (type png)
 <use figs/churnltv.png>
 Package pdftex.def Info: figs/churnltv.png  used on input line 245.
 (pdftex.def)             Requested size: 314.97118pt x 99.97173pt.
- [9
+
+Overfull \hbox (7.6813pt too wide) in paragraph at lines 245--245
+[]  
+ []
+
+[9
 
  <./figs/churnltv.png>] [10
 
@@ -1093,20 +1100,20 @@ Package pdftex.def Info: figs/churnltv.png  used on input line 245.
 
 ] [16
 
-]
-[17
+] [17
 
 ] [18
 
 ] [19
 
 ]
-<figs/other/whalecurve.png, id=554, 533.74406pt x 352.31625pt>
+<figs/other/whalecurve.png, id=1092, 533.74406pt x 352.31625pt>
 File: figs/other/whalecurve.png Graphic file (type png)
 <use figs/other/whalecurve.png>
 Package pdftex.def Info: figs/other/whalecurve.png  used on input line 298.
 (pdftex.def)             Requested size: 160.12445pt x 105.69568pt.
- [20
+
+[20
 
  <./figs/other/whalecurve.png>] [21
 
@@ -1128,23 +1135,22 @@ Package pdftex.def Info: figs/other/whalecurve.png  used on input line 298.
 \tf@snm=\write8
 \openout8 = `CustA.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
-
-(CustA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
+ (CustA.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `CustA.out' has not changed.
 (rerunfilecheck)             Checksum: 7554336F081B073E25062851BDDE9C64;382.
  ) 
 Here is how much of TeX's memory you used:
- 19998 strings out of 492973
- 399301 string characters out of 3126693
- 474897 words of memory out of 3000000
- 23362 multiletter control sequences out of 15000+200000
+ 19973 strings out of 492973
+ 398356 string characters out of 3126693
+ 497383 words of memory out of 3000000
+ 23349 multiletter control sequences out of 15000+200000
  14484 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,59p,774b,652s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,59p,774b,861s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmex10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmss10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1155,10 +1161,11 @@ no/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pf
 b><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssi10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmssi8.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CustA.pdf (25 pages, 481794 bytes).
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bijno/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on CustA.pdf (25 pages, 622621 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
+ 1455 PDF objects out of 1728 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
