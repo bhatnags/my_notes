@@ -17,7 +17,8 @@
 \titlepage
 \end{frame}
 
-\begin{frame}\frametitle{Table of contents}\tableofcontents
+\begin{frame}[allowframebreaks]\frametitle{Table of contents}
+\tableofcontents
 \end{frame} 
 
 
@@ -50,15 +51,38 @@ content...
 \end{frame}
 
 
+\begin{frame}\frametitle{Receiver Operating Characteristic (ROC) curve and AUC}
+	\begin{columns}
+		\begin{column}{0.5\paperwidth}
+			\includegraphics[scale=0.5]{roc}
+		\end{column}
+		\begin{column}{0.5\paperwidth}
+			TPR = Sensitivity = Recall = Probability of detection\\
+			FPR = Probability of false alarm\\
+			\begin{table}
+				\begin{tabular}{l|l}
+					\textbf{AUC values} & \textbf{Test quality}\\
+					0.9-1.0 & Excellent\\
+					0.8-0.9 & V good\\
+					0.7-0.8 & Good\\
+					0.6-0.7 & Satisfactory\\
+					0.5-0.6 & Unsatisfactory\\
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
 
 {%<--- Start local changes
 \setbeamertemplate{navigation symbols}{}
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{confusionmatrix}}
 \begin{frame}[plain]
 \vspace{2.5in}
-\textbf{Type I Error}: Reject $H_0$ when $H_0$ is true. $H_0$: usko bimari nahi hai \\
+\textbf{Type I Error}: error of first kind, Reject $H_0$ when $H_0$ is true. $H_0$: usko bimari nahi hai, \textbf{incorrect rejection} of true null hyp \\
 Prob of Type I Error = level of significance = $\alpha$ = 5\% (generally)\\
-\textbf{Type II error}: Not reject $H_0$ when $H_0$ is false \\
+\textbf{Type II error}: error of second kind, Not reject $H_0$ when $H_0$ is false, \textbf{failure to reject} false null hyp \\
 Prob of Type II Error = $\beta$ and power of hypothesis test = 1-$\beta$ \\
 1-$\beta$ = prob of rejecting a $H_0$ when $H_0$ is false\\
 %actual pos $=> H_1 is true$ test outcome is neg $=>$
@@ -697,6 +721,8 @@ but since we don't have population mean, we have sample mean, we adjust the abov
 \section{Inferential Stats}
 
 
+
+
 \subsection{AB Testing}
 
 \begin{frame}\frametitle{Real vs Empirical Conversion}
@@ -865,6 +891,12 @@ $\uparrow$ z value, more likely to reject $H_0$
 
 \end{frame}
 
+
+\subsection{something}
+\begin{frame}\frametitle{Outlier and Confidence Interval}
+	presented using box and whisker plots\\
+	
+\end{frame}
 
 
 

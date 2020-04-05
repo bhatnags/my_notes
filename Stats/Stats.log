@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  15 MAR 2020 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.6)  3 APR 2020 21:35
 entering extended mode
 **./Stats.tex
 (Stats.tex
@@ -902,186 +902,189 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 [1{C:/Users/bijno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-(Stats.toc)
-Overfull \vbox (21.78531pt too high) detected at line 21
- []
+(Stats.toc) [2
 
-[2
+] [3
+
 
 ]
-<statisticaltest.png, id=421, 341.77687pt x 467.49657pt>
+<statisticaltest.png, id=523, 341.77687pt x 467.49657pt>
 File: statisticaltest.png Graphic file (type png)
 <use statisticaltest.png>
-Package pdftex.def Info: statisticaltest.png  used on input line 45.
+Package pdftex.def Info: statisticaltest.png  used on input line 46.
 (pdftex.def)             Requested size: 184.55675pt x 252.44438pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 ("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 ("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 45.
+line 46.
 
 ("C:\Users\bijno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1
 mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [3
+) [4
 
- <./statisticaltest.png>] [4
+ <./statisticaltest.png>] [5
 
 ]
-<confusionmatrix.png, id=518, 947.03813pt x 459.21562pt>
+<roc.png, id=622, 290.08376pt x 280.04625pt>
+File: roc.png Graphic file (type png)
+<use roc.png>
+Package pdftex.def Info: roc.png  used on input line 73.
+(pdftex.def)             Requested size: 145.04152pt x 140.02277pt.
+ [6
+
+ <./roc.png>]
+<confusionmatrix.png, id=714, 947.03813pt x 459.21562pt>
 File: confusionmatrix.png Graphic file (type png)
 <use confusionmatrix.png>
-Package pdftex.def Info: confusionmatrix.png  used on input line 66.
+Package pdftex.def Info: confusionmatrix.png  used on input line 89.
 (pdftex.def)             Requested size: 364.19536pt x 176.59184pt.
- [5
-
- <./confusionmatrix.png>]
-<TypesTests.png, id=525, 1028.34187pt x 578.16pt>
-File: TypesTests.png Graphic file (type png)
-<use TypesTests.png>
-Package pdftex.def Info: TypesTests.png  used on input line 77.
-(pdftex.def)             Requested size: 287.93376pt x 161.8837pt.
-
-Overfull \vbox (14.08836pt too high) detected at line 77
- []
-
-[6
-
- <./TypesTests.png>]
-<teststats.png, id=613, 1476.9579pt x 642.9621pt>
-File: teststats.png Graphic file (type png)
-<use teststats.png>
-Package pdftex.def Info: teststats.png  used on input line 83.
-(pdftex.def)             Requested size: 364.19536pt x 158.54251pt.
  [7
 
- <./teststats.png (PNG copy)>]
-<CdfPdfPmf.png, id=702, 371.88937pt x 172.39406pt>
-File: CdfPdfPmf.png Graphic file (type png)
-<use CdfPdfPmf.png>
-Package pdftex.def Info: CdfPdfPmf.png  used on input line 111.
-(pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
+ <./confusionmatrix.png>]
+<TypesTests.png, id=721, 1028.34187pt x 578.16pt>
+File: TypesTests.png Graphic file (type png)
+<use TypesTests.png>
+Package pdftex.def Info: TypesTests.png  used on input line 100.
+(pdftex.def)             Requested size: 287.93376pt x 161.8837pt.
 
-Overfull \hbox (9.7995pt too wide) in paragraph at lines 111--111
-[]  
- []
-
-<PmfCdfContinuous.png, id=703, 508.14844pt x 327.47343pt>
-File: PmfCdfContinuous.png Graphic file (type png)
-<use PmfCdfContinuous.png>
-Package pdftex.def Info: PmfCdfContinuous.png  used on input line 111.
-(pdftex.def)             Requested size: 152.4457pt x 98.24278pt.
-<pdfcdfDiscrete.png, id=704, 529.98pt x 363.60844pt>
-File: pdfcdfDiscrete.png Graphic file (type png)
-<use pdfcdfDiscrete.png>
-Package pdftex.def Info: pdfcdfDiscrete.png  used on input line 111.
-(pdftex.def)             Requested size: 132.49466pt x 90.90189pt.
-
-Overfull \hbox (10.18192pt too wide) in paragraph at lines 111--111
-[][] 
- []
-
-
-Overfull \vbox (50.69482pt too high) detected at line 111
+Overfull \vbox (14.08836pt too high) detected at line 100
  []
 
 [8
 
- <./CdfPdfPmf.png> <./PmfCdfContinuous.png> <./pdfcdfDiscrete.png>]
+ <./TypesTests.png>]
+<teststats.png, id=811, 1476.9579pt x 642.9621pt>
+File: teststats.png Graphic file (type png)
+<use teststats.png>
+Package pdftex.def Info: teststats.png  used on input line 106.
+(pdftex.def)             Requested size: 364.19536pt x 158.54251pt.
+ [9
+
+ <./teststats.png (PNG copy)>]
+<CdfPdfPmf.png, id=901, 371.88937pt x 172.39406pt>
 File: CdfPdfPmf.png Graphic file (type png)
 <use CdfPdfPmf.png>
-Package pdftex.def Info: CdfPdfPmf.png  used on input line 111.
+Package pdftex.def Info: CdfPdfPmf.png  used on input line 134.
 (pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
 
-Overfull \hbox (9.7995pt too wide) in paragraph at lines 111--111
+Overfull \hbox (9.7995pt too wide) in paragraph at lines 134--134
 []  
  []
 
-<cdfpdfrfhf.png, id=797, 511.15968pt x 402.75468pt>
-File: cdfpdfrfhf.png Graphic file (type png)
-<use cdfpdfrfhf.png>
-Package pdftex.def Info: cdfpdfrfhf.png  used on input line 111.
-(pdftex.def)             Requested size: 163.57443pt x 128.88412pt.
+<PmfCdfContinuous.png, id=902, 508.14844pt x 327.47343pt>
+File: PmfCdfContinuous.png Graphic file (type png)
+<use PmfCdfContinuous.png>
+Package pdftex.def Info: PmfCdfContinuous.png  used on input line 134.
+(pdftex.def)             Requested size: 152.4457pt x 98.24278pt.
+<pdfcdfDiscrete.png, id=903, 529.98pt x 363.60844pt>
+File: pdfcdfDiscrete.png Graphic file (type png)
+<use pdfcdfDiscrete.png>
+Package pdftex.def Info: pdfcdfDiscrete.png  used on input line 134.
+(pdftex.def)             Requested size: 132.49466pt x 90.90189pt.
 
-Overfull \hbox (21.31065pt too wide) in paragraph at lines 111--111
-[] 
+Overfull \hbox (10.18192pt too wide) in paragraph at lines 134--134
+[][] 
  []
 
 
-Overfull \vbox (50.69482pt too high) detected at line 111
- []
-
-[9
-
- <./cdfpdfrfhf.png>]
-<Distributions.png, id=886, 644.4075pt x 460.72125pt>
-File: Distributions.png Graphic file (type png)
-<use Distributions.png>
-Package pdftex.def Info: Distributions.png  used on input line 157.
-(pdftex.def)             Requested size: 257.75844pt x 184.28523pt.
-
-Overfull \hbox (6.46275pt too wide) in paragraph at lines 157--157
- [] 
- []
-
-
-Overfull \vbox (8.39096pt too high) detected at line 157
+Overfull \vbox (50.69482pt too high) detected at line 134
  []
 
 [10
 
- <./Distributions.png>]
-<distributionChoice.png, id=975, 644.1666pt x 313.17pt>
-File: distributionChoice.png Graphic file (type png)
-<use distributionChoice.png>
-Package pdftex.def Info: distributionChoice.png  used on input line 168.
-(pdftex.def)             Requested size: 364.19536pt x 177.05605pt.
- [11
+ <./CdfPdfPmf.png> <./PmfCdfContinuous.png> <./pdfcdfDiscrete.png>]
+File: CdfPdfPmf.png Graphic file (type png)
+<use CdfPdfPmf.png>
+Package pdftex.def Info: CdfPdfPmf.png  used on input line 134.
+(pdftex.def)             Requested size: 130.16322pt x 60.33882pt.
 
- <./distributionChoice.png>]
-<DiscreteDistribution.png, id=1064, 743.02594pt x 490.08093pt>
-File: DiscreteDistribution.png Graphic file (type png)
-<use DiscreteDistribution.png>
-Package pdftex.def Info: DiscreteDistribution.png  used on input line 173.
-(pdftex.def)             Requested size: 364.19536pt x 240.21654pt.
- [12
-
- <./DiscreteDistribution.png>]
-<ContinuousDistribution.png, id=1069, 749.04843pt x 497.60907pt>
-File: ContinuousDistribution.png Graphic file (type png)
-<use ContinuousDistribution.png>
-Package pdftex.def Info: ContinuousDistribution.png  used on input line 180.
-(pdftex.def)             Requested size: 364.19536pt x 241.94754pt.
-
-Overfull \vbox (41.73425pt too high) detected at line 180
+Overfull \hbox (9.7995pt too wide) in paragraph at lines 134--134
+[]  
  []
 
-[13
+<cdfpdfrfhf.png, id=998, 511.15968pt x 402.75468pt>
+File: cdfpdfrfhf.png Graphic file (type png)
+<use cdfpdfrfhf.png>
+Package pdftex.def Info: cdfpdfrfhf.png  used on input line 134.
+(pdftex.def)             Requested size: 163.57443pt x 128.88412pt.
 
- <./ContinuousDistribution.png>]
-<UnivariateProbabDist.png, id=1159, 947.03813pt x 499.8675pt>
-File: UnivariateProbabDist.png Graphic file (type png)
-<use UnivariateProbabDist.png>
-Package pdftex.def Info: UnivariateProbabDist.png  used on input line 187.
-(pdftex.def)             Requested size: 364.19536pt x 192.22456pt.
+Overfull \hbox (21.31065pt too wide) in paragraph at lines 134--134
+[] 
+ []
+
+
+Overfull \vbox (50.69482pt too high) detected at line 134
+ []
+
+[11
+
+ <./cdfpdfrfhf.png>]
+<Distributions.png, id=1089, 644.4075pt x 460.72125pt>
+File: Distributions.png Graphic file (type png)
+<use Distributions.png>
+Package pdftex.def Info: Distributions.png  used on input line 180.
+(pdftex.def)             Requested size: 257.75844pt x 184.28523pt.
+
+Overfull \hbox (6.46275pt too wide) in paragraph at lines 180--180
+ [] 
+ []
+
+
+Overfull \vbox (8.39096pt too high) detected at line 180
+ []
+
+[12
+
+ <./Distributions.png>]
+<distributionChoice.png, id=1180, 644.1666pt x 313.17pt>
+File: distributionChoice.png Graphic file (type png)
+<use distributionChoice.png>
+Package pdftex.def Info: distributionChoice.png  used on input line 191.
+(pdftex.def)             Requested size: 364.19536pt x 177.05605pt.
+ [13
+
+ <./distributionChoice.png>]
+<DiscreteDistribution.png, id=1272, 743.02594pt x 490.08093pt>
+File: DiscreteDistribution.png Graphic file (type png)
+<use DiscreteDistribution.png>
+Package pdftex.def Info: DiscreteDistribution.png  used on input line 196.
+(pdftex.def)             Requested size: 364.19536pt x 240.21654pt.
  [14
 
- <./UnivariateProbabDist.png>]
-Overfull \vbox (3.44829pt too high) detected at line 215
+ <./DiscreteDistribution.png>]
+<ContinuousDistribution.png, id=1277, 749.04843pt x 497.60907pt>
+File: ContinuousDistribution.png Graphic file (type png)
+<use ContinuousDistribution.png>
+Package pdftex.def Info: ContinuousDistribution.png  used on input line 203.
+(pdftex.def)             Requested size: 364.19536pt x 241.94754pt.
+
+Overfull \vbox (41.73425pt too high) detected at line 203
  []
 
 [15
 
-] [16
+ <./ContinuousDistribution.png>]
+<UnivariateProbabDist.png, id=1368, 947.03813pt x 499.8675pt>
+File: UnivariateProbabDist.png Graphic file (type png)
+<use UnivariateProbabDist.png>
+Package pdftex.def Info: UnivariateProbabDist.png  used on input line 210.
+(pdftex.def)             Requested size: 364.19536pt x 192.22456pt.
+ [16
 
-] [17
+ <./UnivariateProbabDist.png>]
+Overfull \vbox (3.44829pt too high) detected at line 238
+ []
+
+[17
 
 ] [18
 
@@ -1089,161 +1092,161 @@ Overfull \vbox (3.44829pt too high) detected at line 215
 
 ] [20
 
+] [21
+
+] [22
+
 ]
-<chisq.png, id=1778, 517.18219pt x 176.91093pt>
+<chisq.png, id=2001, 517.18219pt x 176.91093pt>
 File: chisq.png Graphic file (type png)
 <use chisq.png>
-Package pdftex.def Info: chisq.png  used on input line 325.
+Package pdftex.def Info: chisq.png  used on input line 348.
 (pdftex.def)             Requested size: 258.59045pt x 88.45525pt.
- [21
+ [23
 
- <./chisq.png>] [22
-
-] [23
-
-] [24
+ <./chisq.png>] [24
 
 ] [25
 
 ] [26
 
+] [27
+
+] [28
+
 ]
-<exponential.png, id=2303, 326.72063pt x 192.72pt>
+<exponential.png, id=2538, 326.72063pt x 192.72pt>
 File: exponential.png Graphic file (type png)
 <use exponential.png>
-Package pdftex.def Info: exponential.png  used on input line 428.
+Package pdftex.def Info: exponential.png  used on input line 451.
 (pdftex.def)             Requested size: 163.35991pt x 96.35976pt.
 
-Overfull \hbox (9.71498pt too wide) in paragraph at lines 428--428
+Overfull \hbox (9.71498pt too wide) in paragraph at lines 451--451
  [] 
  []
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 428.
-
-[27
-
- <./exponential.png>] [28
-
-]
-<figs/likelihoodmean.png, id=2479, 823.57687pt x 456.95718pt>
-File: figs/likelihoodmean.png Graphic file (type png)
-<use figs/likelihoodmean.png>
-Package pdftex.def Info: figs/likelihoodmean.png  used on input line 447.
-(pdftex.def)             Requested size: 123.53119pt x 68.54062pt.
-<figs/likelihoodmean2.png, id=2480, 829.59938pt x 435.87843pt>
-File: figs/likelihoodmean2.png Graphic file (type png)
-<use figs/likelihoodmean2.png>
-Package pdftex.def Info: figs/likelihoodmean2.png  used on input line 447.
-(pdftex.def)             Requested size: 124.43454pt x 65.37894pt.
-<figs/likelihoodsd.png, id=2481, 740.0147pt x 339.51843pt>
-File: figs/likelihoodsd.png Graphic file (type png)
-<use figs/likelihoodsd.png>
-Package pdftex.def Info: figs/likelihoodsd.png  used on input line 447.
-(pdftex.def)             Requested size: 110.9974pt x 50.92555pt.
-<figs/likelihoodsd2.png, id=2482, 841.64438pt x 425.33907pt>
-File: figs/likelihoodsd2.png Graphic file (type png)
-<use figs/likelihoodsd2.png>
-Package pdftex.def Info: figs/likelihoodsd2.png  used on input line 447.
-(pdftex.def)             Requested size: 126.24121pt x 63.7981pt.
-<figs/likelihoodsd3.png, id=2483, 855.195pt x 425.33907pt>
-File: figs/likelihoodsd3.png Graphic file (type png)
-<use figs/likelihoodsd3.png>
-Package pdftex.def Info: figs/likelihoodsd3.png  used on input line 447.
-(pdftex.def)             Requested size: 128.27371pt x 63.7981pt.
-
-Overfull \vbox (8.79703pt too high) detected at line 447
- []
+LaTeX Warning: Command \textendash invalid in math mode on input line 451.
 
 [29
 
- <./figs/likelihoodmean.png> <./figs/likelihoodmean2.png> <./figs/likelihoodsd.
-png> <./figs/likelihoodsd2.png> <./figs/likelihoodsd3.png>]
-<Data.png, id=2576, 792.71156pt x 426.09187pt>
-File: Data.png Graphic file (type png)
-<use Data.png>
-Package pdftex.def Info: Data.png  used on input line 474.
-(pdftex.def)             Requested size: 317.07901pt x 170.43372pt.
+ <./exponential.png>] [30
 
-Overfull \hbox (9.78914pt too wide) in paragraph at lines 474--474
- [] 
- []
+]
+<figs/likelihoodmean.png, id=2718, 823.57687pt x 456.95718pt>
+File: figs/likelihoodmean.png Graphic file (type png)
+<use figs/likelihoodmean.png>
+Package pdftex.def Info: figs/likelihoodmean.png  used on input line 470.
+(pdftex.def)             Requested size: 123.53119pt x 68.54062pt.
+<figs/likelihoodmean2.png, id=2719, 829.59938pt x 435.87843pt>
+File: figs/likelihoodmean2.png Graphic file (type png)
+<use figs/likelihoodmean2.png>
+Package pdftex.def Info: figs/likelihoodmean2.png  used on input line 470.
+(pdftex.def)             Requested size: 124.43454pt x 65.37894pt.
+<figs/likelihoodsd.png, id=2720, 740.0147pt x 339.51843pt>
+File: figs/likelihoodsd.png Graphic file (type png)
+<use figs/likelihoodsd.png>
+Package pdftex.def Info: figs/likelihoodsd.png  used on input line 470.
+(pdftex.def)             Requested size: 110.9974pt x 50.92555pt.
+<figs/likelihoodsd2.png, id=2721, 841.64438pt x 425.33907pt>
+File: figs/likelihoodsd2.png Graphic file (type png)
+<use figs/likelihoodsd2.png>
+Package pdftex.def Info: figs/likelihoodsd2.png  used on input line 470.
+(pdftex.def)             Requested size: 126.24121pt x 63.7981pt.
+<figs/likelihoodsd3.png, id=2722, 855.195pt x 425.33907pt>
+File: figs/likelihoodsd3.png Graphic file (type png)
+<use figs/likelihoodsd3.png>
+Package pdftex.def Info: figs/likelihoodsd3.png  used on input line 470.
+(pdftex.def)             Requested size: 128.27371pt x 63.7981pt.
 
-[30
-
- <./Data.png>]
-<QuantitativeQualitative.png, id=2665, 797.22844pt x 458.46281pt>
-File: QuantitativeQualitative.png Graphic file (type png)
-<use QuantitativeQualitative.png>
-Package pdftex.def Info: QuantitativeQualitative.png  used on input line 486.
-(pdftex.def)             Requested size: 239.17038pt x 137.5399pt.
-
-Overfull \vbox (8.45581pt too high) detected at line 486
+Overfull \vbox (8.79703pt too high) detected at line 470
  []
 
 [31
 
- <./QuantitativeQualitative.png>]
-<DescriptiveInferential.png, id=2755, 899.61093pt x 471.26062pt>
-File: DescriptiveInferential.png Graphic file (type png)
-<use DescriptiveInferential.png>
-Package pdftex.def Info: DescriptiveInferential.png  used on input line 500.
-(pdftex.def)             Requested size: 260.88048pt x 136.66208pt.
+ <./figs/likelihoodmean.png> <./figs/likelihoodmean2.png> <./figs/likelihoodsd.
+png> <./figs/likelihoodsd2.png> <./figs/likelihoodsd3.png>]
+<Data.png, id=2818, 792.71156pt x 426.09187pt>
+File: Data.png Graphic file (type png)
+<use Data.png>
+Package pdftex.def Info: Data.png  used on input line 497.
+(pdftex.def)             Requested size: 317.07901pt x 170.43372pt.
 
-Overfull \vbox (7.25148pt too high) detected at line 500
+Overfull \hbox (9.78914pt too wide) in paragraph at lines 497--497
+ [] 
  []
 
 [32
 
- <./DescriptiveInferential.png>]
-<inferentialstats.png, id=2844, 721.19438pt x 526.21594pt>
-File: inferentialstats.png Graphic file (type png)
-<use inferentialstats.png>
-Package pdftex.def Info: inferentialstats.png  used on input line 506.
-(pdftex.def)             Requested size: 364.19536pt x 265.73294pt.
+ <./Data.png>]
+<QuantitativeQualitative.png, id=2909, 797.22844pt x 458.46281pt>
+File: QuantitativeQualitative.png Graphic file (type png)
+<use QuantitativeQualitative.png>
+Package pdftex.def Info: QuantitativeQualitative.png  used on input line 509.
+(pdftex.def)             Requested size: 239.17038pt x 137.5399pt.
 
-Overfull \vbox (4.58632pt too high) detected at line 506
+Overfull \vbox (8.45581pt too high) detected at line 509
  []
 
 [33
 
- <./inferentialstats.png>]
-<JointMarginalConditional.png, id=2850, 550.30594pt x 374.14781pt>
-File: JointMarginalConditional.png Graphic file (type png)
-<use JointMarginalConditional.png>
-Package pdftex.def Info: JointMarginalConditional.png  used on input line 514.
-(pdftex.def)             Requested size: 275.1523pt x 187.07344pt.
+ <./QuantitativeQualitative.png>]
+<DescriptiveInferential.png, id=3000, 899.61093pt x 471.26062pt>
+File: DescriptiveInferential.png Graphic file (type png)
+<use DescriptiveInferential.png>
+Package pdftex.def Info: DescriptiveInferential.png  used on input line 523.
+(pdftex.def)             Requested size: 260.88048pt x 136.66208pt.
 
-Overfull \vbox (2.58932pt too high) detected at line 514
+Overfull \vbox (7.25148pt too high) detected at line 523
  []
 
 [34
 
- <./JointMarginalConditional.png>]
-Overfull \vbox (2.18947pt too high) detected at line 525
+ <./DescriptiveInferential.png>]
+<inferentialstats.png, id=3091, 721.19438pt x 526.21594pt>
+File: inferentialstats.png Graphic file (type png)
+<use inferentialstats.png>
+Package pdftex.def Info: inferentialstats.png  used on input line 529.
+(pdftex.def)             Requested size: 364.19536pt x 265.73294pt.
+
+Overfull \vbox (4.58632pt too high) detected at line 529
  []
 
 [35
 
-]
-Overfull \vbox (4.20473pt too high) detected at line 546
+ <./inferentialstats.png>]
+<JointMarginalConditional.png, id=3097, 550.30594pt x 374.14781pt>
+File: JointMarginalConditional.png Graphic file (type png)
+<use JointMarginalConditional.png>
+Package pdftex.def Info: JointMarginalConditional.png  used on input line 537.
+(pdftex.def)             Requested size: 275.1523pt x 187.07344pt.
+
+Overfull \vbox (2.58932pt too high) detected at line 537
  []
 
 [36
 
-] [37
-
-] [38
-
-]
-Overfull \vbox (3.24193pt too high) detected at line 608
+ <./JointMarginalConditional.png>]
+Overfull \vbox (2.18947pt too high) detected at line 548
  []
 
-[39
+[37
+
+]
+Overfull \vbox (4.20473pt too high) detected at line 569
+ []
+
+[38
+
+] [39
 
 ] [40
 
-] [41
+]
+Overfull \vbox (3.24193pt too high) detected at line 631
+ []
+
+[41
 
 ] [42
 
@@ -1255,22 +1258,22 @@ Overfull \vbox (3.24193pt too high) detected at line 608
 
 ] [46
 
-]
-<figs/hypothesisBayesian.png, id=3993, 449.42906pt x 314.67563pt>
-File: figs/hypothesisBayesian.png Graphic file (type png)
-<use figs/hypothesisBayesian.png>
-Package pdftex.def Info: figs/hypothesisBayesian.png  used on input line 726.
-(pdftex.def)             Requested size: 224.71397pt x 157.33742pt.
- [47
+] [47
 
 ] [48
 
-
- <./figs/hypothesisBayesian.png>] [49
+]
+<figs/hypothesisBayesian.png, id=4266, 449.42906pt x 314.67563pt>
+File: figs/hypothesisBayesian.png Graphic file (type png)
+<use figs/hypothesisBayesian.png>
+Package pdftex.def Info: figs/hypothesisBayesian.png  used on input line 751.
+(pdftex.def)             Requested size: 224.71397pt x 157.33742pt.
+ [49
 
 ] [50
 
-] [51
+
+ <./figs/hypothesisBayesian.png>] [51
 
 ] [52
 
@@ -1278,138 +1281,144 @@ Package pdftex.def Info: figs/hypothesisBayesian.png  used on input line 726.
 
 ] [54
 
-
 ] [55
-
 
 ] [56
 
 
 ] [57
 
+
 ] [58
 
+
+] [59
+
+] [60
+
 ]
-<figs/conf1.png, id=5045, 574.39594pt x 366.61969pt>
+<figs/conf1.png, id=5342, 574.39594pt x 366.61969pt>
 File: figs/conf1.png Graphic file (type png)
 <use figs/conf1.png>
-Package pdftex.def Info: figs/conf1.png  used on input line 828.
+Package pdftex.def Info: figs/conf1.png  used on input line 853.
 (pdftex.def)             Requested size: 114.87714pt x 73.32263pt.
 
-Overfull \hbox (20.2709pt too wide) in paragraph at lines 828--828
+Overfull \hbox (20.2709pt too wide) in paragraph at lines 853--853
 [][]  
  []
 
-<figs/conf2.png, id=5046, 453.19313pt x 303.38344pt>
+<figs/conf2.png, id=5343, 453.19313pt x 303.38344pt>
 File: figs/conf2.png Graphic file (type png)
 <use figs/conf2.png>
-Package pdftex.def Info: figs/conf2.png  used on input line 828.
+Package pdftex.def Info: figs/conf2.png  used on input line 853.
 (pdftex.def)             Requested size: 90.63701pt x 60.6756pt.
 
-Overfull \hbox (105.56627pt too wide) in paragraph at lines 828--828
+Overfull \hbox (105.56627pt too wide) in paragraph at lines 853--853
 [][]  
  []
 
-<figs/conf4.png, id=5047, 608.2725pt x 348.55219pt>
+<figs/conf4.png, id=5344, 608.2725pt x 348.55219pt>
 File: figs/conf4.png Graphic file (type png)
 <use figs/conf4.png>
-Package pdftex.def Info: figs/conf4.png  used on input line 828.
+Package pdftex.def Info: figs/conf4.png  used on input line 853.
 (pdftex.def)             Requested size: 121.65234pt x 69.7092pt.
 
-Overfull \hbox (27.04611pt too wide) in paragraph at lines 828--828
+Overfull \hbox (27.04611pt too wide) in paragraph at lines 853--853
 [][]  
  []
 
-<figs/conf5.png, id=5048, 593.96906pt x 378.66469pt>
+<figs/conf5.png, id=5345, 593.96906pt x 378.66469pt>
 File: figs/conf5.png Graphic file (type png)
 <use figs/conf5.png>
-Package pdftex.def Info: figs/conf5.png  used on input line 828.
+Package pdftex.def Info: figs/conf5.png  used on input line 853.
 (pdftex.def)             Requested size: 118.7917pt x 75.73158pt.
 
-Overfull \hbox (24.18547pt too wide) in paragraph at lines 828--828
+Overfull \hbox (24.18547pt too wide) in paragraph at lines 853--853
 [][]  
  []
 
-<figs/conf6.png, id=5049, 573.64313pt x 374.14781pt>
+<figs/conf6.png, id=5346, 573.64313pt x 374.14781pt>
 File: figs/conf6.png Graphic file (type png)
 <use figs/conf6.png>
-Package pdftex.def Info: figs/conf6.png  used on input line 828.
+Package pdftex.def Info: figs/conf6.png  used on input line 853.
 (pdftex.def)             Requested size: 114.7266pt x 74.82823pt.
 
-Overfull \hbox (20.12036pt too wide) in paragraph at lines 828--828
+Overfull \hbox (20.12036pt too wide) in paragraph at lines 853--853
 [][]  
  []
 
-[59
+[61
 
  <./figs/conf1.png> <./figs/conf2.png> <./figs/conf4.png> <./figs/conf5.png> <.
-/figs/conf6.png>] [60
-
-] [61
-
-] [62
+/figs/conf6.png>] [62
 
 ] [63
 
 ] [64
 
+] [65
+
+] [66
+
+] [67
+
 ]
-Overfull \hbox (1459.17659pt too wide) in paragraph at lines 916--916
+Overfull \hbox (1459.17659pt too wide) in paragraph at lines 947--947
  [] 
  []
 
-[65
+[68
 
-] [66
+] [69
 
 ]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 958.
-
-[67
-
-] [68
-
-
-] [69
-
-]
-<figs/abtestbayes.png, id=6016, 926.71219pt x 491.58656pt>
-File: figs/abtestbayes.png Graphic file (type png)
-<use figs/abtestbayes.png>
-Package pdftex.def Info: figs/abtestbayes.png  used on input line 985.
-(pdftex.def)             Requested size: 185.33916pt x 98.31557pt.
-<figs/abtestbayesengine.png, id=6017, 588.69937pt x 225.09094pt>
-File: figs/abtestbayesengine.png Graphic file (type png)
-<use figs/abtestbayesengine.png>
-Package pdftex.def Info: figs/abtestbayesengine.png  used on input line 985.
-(pdftex.def)             Requested size: 176.61116pt x 67.52779pt.
-
-Overfull \hbox (807.44469pt too wide) in paragraph at lines 985--985
-[]  
- []
+(amsmath)                 on input line 989.
 
 [70
 
 ] [71
 
 
- <./figs/abtestbayes.png> <./figs/abtestbayesengine.png>] [72
-
-] [73
+] [72
 
 ]
-[74
+<figs/abtestbayes.png, id=6424, 926.71219pt x 491.58656pt>
+File: figs/abtestbayes.png Graphic file (type png)
+<use figs/abtestbayes.png>
+Package pdftex.def Info: figs/abtestbayes.png  used on input line 1016.
+(pdftex.def)             Requested size: 185.33916pt x 98.31557pt.
+<figs/abtestbayesengine.png, id=6425, 588.69937pt x 225.09094pt>
+File: figs/abtestbayesengine.png Graphic file (type png)
+<use figs/abtestbayesengine.png>
+Package pdftex.def Info: figs/abtestbayesengine.png  used on input line 1016.
+(pdftex.def)             Requested size: 176.61116pt x 67.52779pt.
 
-] [75
+Overfull \hbox (807.44469pt too wide) in paragraph at lines 1016--1016
+[]  
+ []
+
+[73
+
+] [74
+
+
+ <./figs/abtestbayes.png> <./figs/abtestbayesengine.png>] [75
 
 ] [76
 
-] [77
+]
+[77
 
 ] [78
+
+] [79
+
+] [80
+
+] [81
 
 ]
 \tf@nav=\write6
@@ -1421,20 +1430,20 @@ Overfull \hbox (807.44469pt too wide) in paragraph at lines 985--985
 \tf@snm=\write8
 \openout8 = `Stats.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1039.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1039.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1070.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1070.
  (Stats.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1039.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1039.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1070.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1070.
 
 Package rerunfilecheck Info: File `Stats.out' has not changed.
-(rerunfilecheck)             Checksum: 9FE01374555E8CCCAC5050FFB9FF672D;978.
+(rerunfilecheck)             Checksum: EA442935535D5C54B3AEF2DD51F8F7BB;1040.
  ) 
 Here is how much of TeX's memory you used:
- 17390 strings out of 492973
- 335269 string characters out of 3126693
- 491014 words of memory out of 3000000
- 20682 multiletter control sequences out of 15000+200000
+ 17411 strings out of 492973
+ 335486 string characters out of 3126693
+ 494817 words of memory out of 3000000
+ 20695 multiletter control sequences out of 15000+200000
  14589 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,63p,814b,769s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1463,9 +1472,9 @@ fb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy9.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb><C:/Users/bijno/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Stats.pdf (78 pages, 7207265 bytes).
+Output written on Stats.pdf (81 pages, 7293964 bytes).
 PDF statistics:
- 6904 PDF objects out of 7423 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 336 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7333 PDF objects out of 7423 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 
